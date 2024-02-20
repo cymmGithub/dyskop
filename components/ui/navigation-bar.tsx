@@ -17,46 +17,34 @@ import {
 
 const components: { title: string; href: string; description: string }[] = [
 	{
-		title: 'Alert Dialog',
+		title: 'WYKOPY LINIOWE POD:',
 		href: '/docs/primitives/alert-dialog',
 		description:
 			'A modal dialog that interrupts the user with important content and expects a response.',
 	},
 	{
-		title: 'Hover Card',
+		title: 'WYKOPY:',
 		href: '/docs/primitives/hover-card',
 		description:
 			'For sighted users to preview content available behind a link.',
 	},
 	{
-		title: 'Progress',
-		href: '/docs/primitives/progress',
+		title: 'INNE:',
+		href: '/inne',
 		description:
 			'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
 	},
 	{
-		title: 'Scroll-area',
+		title: 'KSZTAŁTOWANIE TERENU',
 		href: '/docs/primitives/scroll-area',
 		description: 'Visually or semantically separates content.',
-	},
-	{
-		title: 'Tabs',
-		href: '/docs/primitives/tabs',
-		description:
-			'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
-	},
-	{
-		title: 'Tooltip',
-		href: '/docs/primitives/tooltip',
-		description:
-			'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
 	},
 ];
 
 const NavigationBar = () => {
 	return (
 		<NavigationMenu>
-			<NavigationMenuList className="hidden md:flex md:space-x-4">
+			<NavigationMenuList className="hidden md:flex md:space-x-4 ml-20">
 				<NavigationMenuItem>
 					<NavigationMenuTrigger>O nas</NavigationMenuTrigger>
 					<NavigationMenuContent>
@@ -83,34 +71,22 @@ const NavigationBar = () => {
 								</NavigationMenuLink>
 							</li>
 							<ListItem title="Gdzie działamy ?">
-								Firma Dys-Kop mieści się w Dysie k. Lublina.
+							Usługi świadczymy głównie w Lublinie i powiecie lubelskim oraz na terenie powiatów ościennych: świdnickiego, lubartowskiego, opolskiego, puławskiego i kraśnickiego. Przy większych projektach działamy na terenie całego województwa lubelskiego oraz ościennych.
 							</ListItem>
-							<ListItem title="Installation">
-								How to install dependencies and structure your app.
-							</ListItem>
-						</ul>
-					</NavigationMenuContent>
-				</NavigationMenuItem>
-				<NavigationMenuItem>
-					<NavigationMenuTrigger>Zakres usług</NavigationMenuTrigger>
-					<NavigationMenuContent>
-						<ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-							{components.map((component) => (
-								<ListItem
-									key={component.title}
-									title={component.title}
-									href={component.href}
-								>
-									{component.description}
-								</ListItem>
-							))}
 						</ul>
 					</NavigationMenuContent>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
 					<Link href="/galeria" legacyBehavior passHref>
 						<NavigationMenuLink className={navigationMenuTriggerStyle()}>
-							Galeria
+							Zakres Usług
+						</NavigationMenuLink>
+					</Link>
+				</NavigationMenuItem>
+				<NavigationMenuItem>
+					<Link href="/galeria" legacyBehavior passHref>
+						<NavigationMenuLink className={navigationMenuTriggerStyle()}>
+							Realizacje
 						</NavigationMenuLink>
 					</Link>
 				</NavigationMenuItem>
@@ -129,13 +105,13 @@ const ListItem = React.forwardRef<
 				<a
 					ref={ref}
 					className={cn(
-						'block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
+						'block select-none space-y-1 rounded-md p-3 eleading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground',
 						className
 					)}
 					{...props}
 				>
-					<div className="text-sm font-medium leading-none">{title}</div>
-					<p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+					<div className="text-md mb-4 font-medium leading-none">{title}</div>
+					<p className="text-sm leading-snug text-muted-foreground">
 						{children}
 					</p>
 				</a>
