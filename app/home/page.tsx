@@ -2,14 +2,14 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { FaPhone } from 'react-icons/fa6';
 
-const HeroSection = () => {
+const Home = () => {
 	return (
-		<section className="md:py-20 bg-gradient-to-r from gray-00 to gray-200 space-y-10">
+		<section className="md:my-10">
 			<div className="container mx-auto text-center">
 				<div
 					className="text-4xl sm:text-6xl flex justify-center font-bold md:px-20 pb-10
 				text-gradient bg-gradient-to-r from-black to-yellow-400 bg-clip-text
-				text-transparent"
+				text-transparent "
 				>
 					<h1>USŁUGI MINIKOPARKĄ</h1>
 				</div>
@@ -20,7 +20,7 @@ const HeroSection = () => {
 							to-gray-400
 							bg-clip-text
 							text-transparent
-							font-bold
+							font-black
 							"
 				>
 					Dzięki niewielkim gabarytom i dużej mocy maszyny, jesteśmy w stanie
@@ -28,10 +28,7 @@ const HeroSection = () => {
 				</p>
 				<div className="flex gap-4 justify-center p-5">
 					<Link href="/kontakt" passHref legacyBehavior>
-						<Button
-							className="md:hidden text-md bg-amber-400 px-14"
-							size="lg"
-						>
+						<Button className="md:hidden text-md bg-amber-400 px-14" size="lg">
 							Kontakt
 						</Button>
 					</Link>
@@ -50,4 +47,4 @@ const HeroSection = () => {
 	);
 };
 
-export default HeroSection;
+export default Home;

@@ -13,14 +13,14 @@ const Navbar = () => {
 			<PhoneNumber />
 			<NavigationBar />
 			<Burger />
-			<div className='flex justify-between items-center'>
+			<div className="flex justify-between items-center">
 				<SocialButtons />
 				<Link href="/kontakt" passHref legacyBehavior>
 					<Button
-						className="hidden lg:flex text-md font-bold bg-amber-400 hover:bg-gray-600 px-14"
+						className="hidden lg:flex text-md font-bold bg-amber-400 hover:bg-blue-600 px-14"
 						size="lg"
 					>
-						Kontakt
+						<span className='mt-1'>KONTAKT</span>
 					</Button>
 				</Link>
 			</div>

@@ -1,12 +1,17 @@
 import type { Metadata } from 'next';
 import Navbar from '../components/navbar/navbar';
+import Footer from '../components/footer/footer';
 import { Outfit } from 'next/font/google';
+import localFont from 'next/font/local'
+
+// Font files can be colocated inside of `pages`
+const myFont = localFont({ src: '../public/fonts/Consolas.ttf' })
 import './globals.css';
 
 const font = Outfit({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'Dys-kop Tomasz Sobka',
+	title: 'Dys-kop | USŁUGI MINIKOPARKĄ',
 	description: 'Usługi Minikoparką',
 };
 
@@ -17,9 +22,10 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${font.className} md:container mx-auto text-center`}>
+			<body className={`${myFont.className} md:container mx-auto text-center `}>
 				<Navbar />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

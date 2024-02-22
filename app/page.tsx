@@ -1,12 +1,10 @@
-import Navbar from '../components/navbar/navbar';
-import HeroSection from './hero-section/page';
-import Footer from '../components/footer/page'
+import HeroSection from './home/page';
 
 export default function Home() {
 	return (
 		<div className='md:container mx-auto text-center'>
+			<div className='absolute h-full w-full dots' />
 			<HeroSection />
-			<Footer />
 		</div>
 	);
 }
