@@ -7,7 +7,7 @@ const Home = () => {
 		<section className="md:my-10">
 			<div className="container mx-auto text-center">
 				<div
-					className="text-4xl sm:text-6xl flex justify-center font-bold md:px-20 pb-10
+					className="text-4xl sm:text-6xl flex justify-center font-bold md:px-20 pb-5 md:pb-10
 				text-gradient bg-gradient-to-r from-black to-yellow-400 bg-clip-text
 				text-transparent "
 				>

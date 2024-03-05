@@ -19,7 +19,7 @@ export default async function Realizations() {
 					<Image
 						src={`/img/gallery/${imageWithBlur.image}`}
 						alt='test image'
-						className='object-cover cursor-pointer group-hover:opacity-75'
+						className='object-cover cursor-pointer md:group-hover:opacity-75'
 						fill={true}
 						sizes='(min-width: 1380px) 251px, (min-width: 1120px) calc(25vw - 26px), (min-width: 860px) calc(33.33vw - 32px), (min-width: 780px) calc(50vw - 44px), (min-width: 540px) 50vw, calc(100vw - 16px)'
 						placeholder='blur'

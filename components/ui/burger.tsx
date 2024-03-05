@@ -13,7 +13,7 @@ const Burger = () => {
 		<div className="lg:hidden">
 			<Sheet>
 				<SheetTrigger>
-					<AlignJustify className='ml-8 mr-2' />
+					<AlignJustify className='ml-10 mr-2' />
 				</SheetTrigger>
 				<SheetContent>
 					<SheetHeader>
