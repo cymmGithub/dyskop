@@ -19,10 +19,10 @@ const Burger = () => {
 					<SheetHeader>
 						<SheetDescription>
 							<div className="flex flex-col space-y-4 items-start w-full text-lg text-black mt-10">
-								<Link href="/usługi">O Nas</Link>
-								<Link href="/usługi">Zakres Usług</Link>
-								<Link href="/galeria">Galeria</Link>
-								<Link href="/kotakt">Kontakt</Link>
+								<Link href="/o-nas">O Nas</Link>
+								<Link href="/zakres-uslug">Zakres Usług</Link>
+								<Link href="/realizacje">Realizacje</Link>
+								<Link href="/kontakt">Kontakt</Link>
 							</div>
 						</SheetDescription>
 					</SheetHeader>

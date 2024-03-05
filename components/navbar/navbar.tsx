@@ -17,7 +17,7 @@ const Navbar = () => {
 				<SocialButtons />
 				<Link href="/kontakt" passHref legacyBehavior>
 					<Button
-						className="hidden lg:flex text-md font-bold bg-amber-400 hover:bg-blue-600 px-14"
+						className="hidden lg:flex shadow-2xl text-md font-bold bg-amber-400 hover:bg-blue-600 px-14"
 						size="lg"
 					>
 						<span className='mt-1'>KONTAKT</span>

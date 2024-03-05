@@ -77,14 +77,14 @@ const NavigationBar = () => {
 					</NavigationMenuContent>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
-					<Link href="/galeria" legacyBehavior passHref>
+					<Link href="/zakres-uslug" legacyBehavior passHref>
 						<NavigationMenuLink className={navigationMenuTriggerStyle()}>
 							Zakres Usług
 						</NavigationMenuLink>
 					</Link>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
-					<Link href="/realizations" legacyBehavior passHref>
+					<Link href="/realizacje" legacyBehavior passHref>
 						<NavigationMenuLink className={navigationMenuTriggerStyle()}>
 							Realizacje
 						</NavigationMenuLink>

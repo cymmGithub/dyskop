@@ -1,8 +1,7 @@
 
-export default function Galeria() {
+export default function AboutUs() {
 	return (
 		<div className='md:container mx-auto text-center'>
-			<h1>Kontakt </h1>
 		</div>
 	);
 }

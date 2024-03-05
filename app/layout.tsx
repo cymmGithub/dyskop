@@ -2,10 +2,10 @@ import type { Metadata } from 'next';
 import Navbar from '../components/navbar/navbar';
 import Footer from '../components/footer/footer';
 import { Outfit } from 'next/font/google';
-import localFont from 'next/font/local'
+import localFont from 'next/font/local';
 
 // Font files can be colocated inside of `pages`
-const myFont = localFont({ src: '../public/fonts/Consolas.ttf' })
+const myFont = localFont({ src: '../public/fonts/Consolas.ttf' });
 import './globals.css';
 
 const font = Outfit({ subsets: ['latin'] });
@@ -21,11 +21,13 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body className={`${myFont.className} md:container mx-auto text-center `}>
-				<Navbar />
-				{children}
-				<Footer />
+		<html lang='en'>
+			<body>
+				<main className={`${myFont.className} md:container mx-auto text-center`}>
+					<Navbar />
+					{children}
+					<Footer />
+				</main>
 			</body>
 		</html>
 	);
