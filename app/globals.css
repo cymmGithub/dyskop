@@ -102,8 +102,7 @@ body {
 .new_footer_top .footer_bg {
 	position: absolute;
 	bottom: 0;
-	background: url('https://i.imgur.com/fze5J3F.png')
-		no-repeat scroll center 0;
+	background: url('https://i.imgur.com/fze5J3F.png') no-repeat scroll center 0;
 	width: 100%;
 	height: 185px;
 }
@@ -116,16 +115,16 @@ body {
 	background-size: 100%;
 	bottom: 0;
 	left: 38%;
-  transform: rotateY(180deg);
+	transform: rotateY(180deg);
 	position: absolute;
 	-webkit-animation: myfirst 30s linear infinite;
 	animation: myfirst 30s linear infinite;
 }
 
 @media only screen and (max-width: 600px) {
-  .new_footer_top .footer_bg .footer_bg_two  {
-    animation: myfirst 10s linear infinite;
-  }
+	.new_footer_top .footer_bg .footer_bg_two {
+		animation: myfirst 10s linear infinite;
+	}
 }
 
 @-moz-keyframes myfirst {

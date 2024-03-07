@@ -13,7 +13,7 @@ const Footer = () => {
 					<div className="row align-items-center">
 						<div className="col-lg-6 col-sm-7">
 							<p className="mb-0 f_400">
-								© Firma Dys-Kop, Dys koło Lublina | NIP 7122223334
+								© Firma Dys-Kop, Dys koło Lublina | NIP 7133124621
 							</p>
 						</div>
 					</div>
