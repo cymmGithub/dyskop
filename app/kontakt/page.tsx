@@ -56,7 +56,7 @@ export default function Contact() {
 							htmlFor='phone-number'
 							className='block text-sm font-semibold leading-6 text-gray-900'
 						>
-							Number telefonu
+							Numer telefonu
 						</label>
 						<div className='mt-2.5'>
 							<PhoneInput

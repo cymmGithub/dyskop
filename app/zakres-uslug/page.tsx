@@ -17,7 +17,7 @@ export default function Services() {
 							className='rounded-lg opacity-80'
 						/>
 						<div className='group relative'>
-							<h3 className='mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600'>
+							<h3 className='mt-3 text-lg font-semibold leading-6 text-gray-900'>
 								WYKOPY
 							</h3>
 							<ul className='mt-2 sm:mt-5 text-gray-600'>
@@ -42,7 +42,7 @@ export default function Services() {
 							className='rounded-lg opacity-70 mb-1'
 						/>
 						<div className='group relative'>
-							<h3 className='mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600'>
+							<h3 className='mt-3 text-lg font-semibold leading-6 text-gray-900'>
 								WYKOPY LINIOWE POD
 							</h3>
 							<ul className='mt-2 sm:mt-5 text-gray-600'>
@@ -69,7 +69,7 @@ export default function Services() {
 							className='rounded-lg opacity-80 mb-3'
 						/>
 						<div className='group relative'>
-							<h3 className='mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600'>
+							<h3 className='mt-3 text-lg font-semibold leading-6 text-gray-900'>
 								INNE
 							</h3>
 							<ul className='mt-2 sm:mt-5 text-gray-600'>
