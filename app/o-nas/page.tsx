@@ -3,21 +3,8 @@ import React, { useState } from 'react';
 import { ReactImageTurntable } from 'react-image-turntable';
 import { get360images } from '@/lib/get360images';
 
-const people = [
-	{
-		name: 'Leslie Alexander',
-		role: 'Co-Founder / CEO',
-		imageUrl:
-			'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-	},
-	// More people...
-];
 export default function Example() {
 	const [rotationDisabled, setRotationDisabled] = useState(false);
-	// const dirRelativeToPublicFolder = 'img/360';
-	// const dir = path.resolve('./public', dirRelativeToPublicFolder);
-	// const images = fs.readdirSync(dir);
-
 	const handleKeyDown = (ev: React.KeyboardEvent<HTMLDivElement>) => {
 		if (rotationDisabled) return;
 
@@ -49,11 +36,6 @@ export default function Example() {
 				<div className=''>
 					<ReactImageTurntable
 						images={get360images}
-						autoRotate={{ disabled: true, interval: 200 }}
-						onPointerDown={() => setRotationDisabled(true)}
-						onPointerUp={() => setRotationDisabled(false)}
-						onKeyDown={handleKeyDown}
-						onKeyUp={() => setRotationDisabled(false)}
 					/>
 				</div>
 			</div>
