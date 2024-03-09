@@ -20,16 +20,14 @@ export default function Services() {
 							<h3 className='mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600'>
 								WYKOPY
 							</h3>
-							<p className='mt-2 sm:mt-5 text-gray-600'>
-								<ul>
-									<li>- odkopywanie fundamentów pod izolacje</li>
-									<li>- niwelacje i kształtowanie terenu</li>
-									<li>- skarpowanie</li>
-									<li>- zbieranie humusu (warstwy wierzchniej ziemi)</li>
-									<li>- korytowanie</li>
-									<li>- oczyszczanie rowów</li>
-								</ul>
-							</p>
+							<ul className='mt-2 sm:mt-5 text-gray-600'>
+								<li>- odkopywanie fundamentów pod izolacje</li>
+								<li>- niwelacje i kształtowanie terenu</li>
+								<li>- skarpowanie</li>
+								<li>- zbieranie humusu (warstwy wierzchniej ziemi)</li>
+								<li>- korytowanie</li>
+								<li>- oczyszczanie rowów</li>
+							</ul>
 						</div>
 					</article>
 					<article
@@ -37,7 +35,7 @@ export default function Services() {
 						className='flex max-w-xl flex-col justify-center items-center mb-3 sm:mb-0'
 					>
 						<Image
-							src={`/img/connections.png`}
+							src={`/img/connections-service.png`}
 							height={100}
 							width={260}
 							alt='Usługi'
@@ -47,18 +45,16 @@ export default function Services() {
 							<h3 className='mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600'>
 								WYKOPY LINIOWE POD
 							</h3>
-							<p className='mt-2 sm:mt-5 text-gray-600'>
-								<ul>
-									<li>
-										- przyłącza: elektryczne, gazowe, wodne, kanalizacyjne,
-										telekomunikacyjne
-									</li>
-									<li>- światłowody</li>
-									<li>- fundamenty</li>
-									<li>- sieci rur drenarskich</li>
-									<li>- nawodnienie/ odwodnienie</li>
-								</ul>
-							</p>
+							<ul className='mt-2 sm:mt-5 text-gray-600'>
+								<li>
+									- przyłącza: elektryczne, gazowe, wodne, kanalizacyjne,
+									telekomunikacyjne
+								</li>
+								<li>- światłowody</li>
+								<li>- fundamenty</li>
+								<li>- sieci rur drenarskich</li>
+								<li>- nawodnienie/ odwodnienie</li>
+							</ul>
 						</div>
 					</article>
 					<article
@@ -76,17 +72,15 @@ export default function Services() {
 							<h3 className='mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600'>
 								INNE
 							</h3>
-							<p className='mt-2 sm:mt-5 text-gray-600'>
-								<ul>
-									<li>- wyburzenia obiektów małej architektury</li>
-									<li>- wyrywanie korzeni</li>
-									<li>
-										- wiercenie otworów pod słupy konktrukcyjne/ogrodzeniowe
-									</li>
-									<li>- budowa dróg dojazdowych</li>
-									<li>- melioracje i drenaże</li>
-								</ul>
-							</p>
+							<ul className='mt-2 sm:mt-5 text-gray-600'>
+								<li>- wyburzenia obiektów małej architektury</li>
+								<li>- wyrywanie korzeni</li>
+								<li>
+									- wiercenie otworów pod słupy konktrukcyjne/ogrodzeniowe
+								</li>
+								<li>- budowa dróg dojazdowych</li>
+								<li>- melioracje i drenaże</li>
+							</ul>
 						</div>
 					</article>
 				</div>
