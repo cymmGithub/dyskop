@@ -44,37 +44,13 @@ const components: { title: string; href: string; description: string }[] = [
 const NavigationBar = () => {
 	return (
 		<NavigationMenu>
-			<NavigationMenuList className="hidden md:flex md:space-x-4 ml-20">
+			<NavigationMenuList className="hidden md:flex md:space-x-4">
 				<NavigationMenuItem>
-					<NavigationMenuTrigger>O nas</NavigationMenuTrigger>
-					<NavigationMenuContent>
-						<ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-							<li className="row-span-3">
-								<NavigationMenuLink asChild>
-									<a
-										className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-										href="/"
-									>
-										<Image
-											src="/img/navbar/miniexcavator-navbar.png"
-											alt="Miniexcavator photo"
-											className="rounded"
-											width={250}
-											height={120}
-										></Image>
-										<div className="mb-2 mt-4 text-lg font-medium">Dyskop</div>
-										<p className="text-sm leading-tight text-muted-foreground">
-											Świadczymy usługi profesjonalną minikoparką Caterpillar o
-											wadze 2 ton.
-										</p>
-									</a>
-								</NavigationMenuLink>
-							</li>
-							<ListItem title="Gdzie działamy ?">
-							Usługi świadczymy głównie w Lublinie i powiecie lubelskim oraz na terenie powiatów ościennych: świdnickiego, lubartowskiego, opolskiego, puławskiego i kraśnickiego. Przy większych projektach działamy na terenie całego województwa lubelskiego oraz ościennych.
-							</ListItem>
-						</ul>
-					</NavigationMenuContent>
+					<Link href="/o-nas" legacyBehavior passHref>
+						<NavigationMenuLink className={navigationMenuTriggerStyle()}>
+							O Nas
+						</NavigationMenuLink>
+					</Link>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
 					<Link href="/zakres-uslug" legacyBehavior passHref>

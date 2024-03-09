@@ -1,16 +1,28 @@
+'use client';
+
+import { useState } from 'react';
+import PhoneInput from 'react-phone-number-input/input';
+
+type Tagged<A, T> = A & { __tag?: T };
+type E164Number = Tagged<string, 'E164Number'>;
+
 export default function Contact() {
+	const [valueE, setValueE] = useState<E164Number>();
+
 	return (
-		<div className='isolate bg-white px-6 pt-5 pb=10 lg:px-8'>
+		<div className='isolate bg-white px-6 pb=10 lg:px-8'>
 			<div
 				className='absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]'
 				aria-hidden='true'
 			></div>
 			<div className='mx-auto max-w-2xl text-center'>
-				<h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-					Napisz do nas
-				</h2>
-				<p className='mt-2 text-lg leading-8 text-gray-600'>
-					Zazwyczaj odpisujemy w ciągu 24 h :)
+				<p className='mt-2 text-sm leading-8 text-gray-600'>
+					Usługi świadczymy głównie w <b>Lublinie</b> i powiecie lubelskim oraz na
+					terenie powiatów ościennych: <b>świdnickiego</b>, <b>lubartowskiego</b>, <b>opolskiego</b>,
+					<b>puławskiego</b> i <b>kraśnickiego</b>. Przy większych projektach działamy na
+					terenie całego województwa lubelskiego oraz ościennych. Skontaktuj się
+					z nami bezpośrednio telefonicznie <b className='font-bold text-md'>506 502 709</b> lub
+					wypełnij krótki formularz, dzięki któremu wyślesz do nas maila.
 				</p>
 			</div>
 			<form
@@ -19,7 +31,7 @@ export default function Contact() {
 				name='EmailForm'
 				className='mx-auto mt-7 mb-3 max-w-xl'
 			>
-				<div className='grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2'>
+				<div className='grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2'>
 					<div>
 						<label
 							htmlFor='first-name'
@@ -39,17 +51,16 @@ export default function Contact() {
 					</div>
 					<div>
 						<label
-							htmlFor='last-name'
+							htmlFor='phone-number'
 							className='block text-sm font-semibold leading-6 text-gray-900'
 						>
-							Nazwisko
+							Phone number
 						</label>
 						<div className='mt-2.5'>
-							<input
-								type='text'
-								name='last-name'
-								id='last-name'
-								autoComplete='family-name'
+							<PhoneInput
+								country='PL'
+								value={valueE}
+								onChange={setValueE}
 								className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
 							/>
 						</div>
@@ -63,6 +74,7 @@ export default function Contact() {
 						</label>
 						<div className='mt-2.5'>
 							<input
+								required
 								type='email'
 								name='email'
 								id='email'
