@@ -1,6 +1,6 @@
 const Footer = () => {
 	return (
-		<footer className="new_footer_area bg_color">
+		<footer className="new_footer_area bg_color sticky top-[100vh]">
 			<div className="new_footer_top">
 				<div className="container"></div>
 				<div className="footer_bg">

@@ -23,7 +23,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body>
-				<main className={`${myFont.className} md:container mx-auto text-center`}>
+				<main className={`${myFont.className} md:container mx-auto text-center min-h-screen`}>
 					<Navbar />
 					{children}
 					<Footer />

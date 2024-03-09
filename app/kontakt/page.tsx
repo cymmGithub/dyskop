@@ -1,19 +1,4 @@
-/*
-  This example requires some changes to your config:
-
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
-
-export default function Example() {
+export default function Contact() {
 	return (
 		<div className='isolate bg-white px-6 pt-5 pb=10 lg:px-8'>
 			<div
@@ -25,7 +10,7 @@ export default function Example() {
 					Napisz do nas
 				</h2>
 				<p className='mt-2 text-lg leading-8 text-gray-600'>
-					Zazwyczaj odpisujemy ciągu 24 h :)
+					Zazwyczaj odpisujemy w ciągu 24 h :)
 				</p>
 			</div>
 			<form
