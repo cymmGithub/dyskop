@@ -10,19 +10,21 @@ export default function Contact() {
 	const [valueE, setValueE] = useState<E164Number>();
 
 	return (
-		<div className='isolate bg-white px-6 pb=10 lg:px-8'>
+		<div className='isolate bg-white px-6 pt-1 pb=10 lg:px-8'>
 			<div
 				className='absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]'
 				aria-hidden='true'
 			></div>
 			<div className='mx-auto max-w-2xl text-center'>
 				<p className='mt-2 text-sm leading-8 text-gray-600'>
-					Usługi świadczymy głównie w <b>Lublinie</b> i powiecie lubelskim oraz na
-					terenie powiatów ościennych: <b>świdnickiego</b>, <b>lubartowskiego</b>, <b>opolskiego</b>,
-					<b>puławskiego</b> i <b>kraśnickiego</b>. Przy większych projektach działamy na
-					terenie całego województwa lubelskiego oraz ościennych. Skontaktuj się
-					z nami bezpośrednio telefonicznie <b className='font-bold text-md'>506 502 709</b> lub
-					wypełnij krótki formularz, dzięki któremu wyślesz do nas maila.
+					Usługi świadczymy głównie w <b>Lublinie</b> i powiecie lubelskim oraz
+					na terenie powiatów ościennych: <b>świdnickiego</b>,{' '}
+					<b>lubartowskiego</b>, <b>opolskiego</b>, <b>puławskiego</b> i{' '}
+					<b>kraśnickiego</b>. Przy większych projektach działamy na terenie
+					całego województwa lubelskiego oraz ościennych. Skontaktuj się z nami
+					bezpośrednio telefonicznie{' '}
+					<b className='font-bold text-md'>506 502 709</b> lub wypełnij krótki
+					formularz, dzięki któremu wyślesz do nas maila.
 				</p>
 			</div>
 			<form
