@@ -4,7 +4,7 @@ export default function Services() {
 	return (
 		<div className='bg-white sm:py-20'>
 			<div className='mx-auto max-w-7xl '>
-				<div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8  lg:mx-0 lg:max-w-none lg:grid-cols-3'>
+				<div className='mx-5 grid max-w-2xl grid-cols-1 gap-x-8  lg:mx-0 lg:max-w-none lg:grid-cols-3'>
 					<article
 						key={'9cd218fc-8733-4001-9cdc-24f914d7e71f'}
 						className='flex max-w-xl flex-col justify-center items-center mb-3 sm:mb-0'
