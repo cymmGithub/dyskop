@@ -1,4 +1,5 @@
 'use client';
+
 import React from 'react';
 import { FaCircleInfo } from 'react-icons/fa6';
 import { ReactImageTurntable } from 'react-image-turntable';
@@ -31,23 +32,27 @@ export default function AboutUs() {
 						idealnie wyrównany.
 					</p>
 				</div>
-				<div>
+				<div className='turntable-image-container'>
 					<Popover>
-						<PopoverTrigger className='flex gap-2 ms-7 justify-center items-center'>
-							<FaCircleInfo className='text-sm  h hover:scale-125' />
-							Informacje techniczne
+						<PopoverTrigger className='flex gap-2 ms-7 text-xs text-center items-center'>
+							<FaCircleInfo className='hover:scale-125 text-lg' />
+							<span>Informacje techniczne</span>
 						</PopoverTrigger>
-						<PopoverContent className='flex flex-col gap-2'>
-							<span>
-								Koparka posiada rozsuwane gąsiennice dzięki czemu może wjechać
-								w bardzo ciasne miejsca - <b>nawet o szerokości 1m</b>.
-							</span>
+						<PopoverContent className='flex flex-col gap-2 shadow-xl'>
 							- Podstawowe możliwości wykopów:
 							<ul className='list-disc mx-5'>
-								<li>łyżki kopiące o szer.: <b>30cm, 60cm, 100cm</b> (skarpowa)</li>
-								<li>maksymalna głębokość kopania - <b>2,5m</b></li>
-								<li>maksymalny zasięg ramienia - <b>3,8m</b></li>
-								<li>rozstaw gąsiennic od <b>100cm</b> do <b>130cm</b></li>
+								<li>
+									łyżki kopiące o szer.: <b>30cm, 60cm, 100cm</b> (skarpowa)
+								</li>
+								<li>
+									maksymalna głębokość kopania - <b>2,5m</b>
+								</li>
+								<li>
+									maksymalny zasięg ramienia - <b>3,8m</b>
+								</li>
+								<li>
+									gąsiennice rozsuwane od <b>100cm</b> do <b>130cm</b>
+								</li>
 							</ul>
 						</PopoverContent>
 					</Popover>

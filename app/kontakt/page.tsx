@@ -16,7 +16,7 @@ export default function Contact() {
 				aria-hidden='true'
 			></div>
 			<div className='mx-auto max-w-2xl text-center'>
-				<p className='mt-2 text-sm leading-8 text-gray-600'>
+				<p className='mt-2 text-sm leading-7 text-gray-600'>
 					Usługi świadczymy głównie w <b>Lublinie</b> i powiecie lubelskim oraz
 					na terenie powiatów ościennych: <b>świdnickiego</b>,{' '}
 					<b>lubartowskiego</b>, <b>opolskiego</b>, <b>puławskiego</b> i{' '}
@@ -56,7 +56,7 @@ export default function Contact() {
 							htmlFor='phone-number'
 							className='block text-sm font-semibold leading-6 text-gray-900'
 						>
-							Phone number
+							Number telefonu
 						</label>
 						<div className='mt-2.5'>
 							<PhoneInput
