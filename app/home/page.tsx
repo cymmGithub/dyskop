@@ -32,7 +32,7 @@ const Home = () => {
 							Kontakt
 						</Button>
 					</Link>
-					<div className="hidden md:flex md:space-x-4 mr-10 justify-between items-center">
+					<div className="hidden md:flex md:space-x-4 justify-between items-center">
 						<FaPhone />
 						<span className="text-2xl font-bold">506 502 709</span>
 					</div>
