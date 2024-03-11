@@ -22,7 +22,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang='en'>
+		<html lang='pl'>
 			<body>
 				<main className={`${myFont.className} md:container mx-auto text-center min-h-screen`}>
 					<Navbar />
