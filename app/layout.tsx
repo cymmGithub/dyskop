@@ -12,8 +12,8 @@ import './globals.css';
 const font = Outfit({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-	title: 'Dys-kop | USŁUGI MINIKOPARKĄ',
-	description: 'Usługi Minikoparką',
+	title: 'Dys-kop | USŁUGI MINIKOPARKĄ | Dys, Lublin',
+	description: '',
 };
 
 export default function RootLayout({
