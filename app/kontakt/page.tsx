@@ -17,12 +17,7 @@ export default function Contact() {
 			></div>
 			<div className='mx-auto max-w-2xl text-center'>
 				<p className='mt-2 text-sm leading-7 text-gray-600'>
-					Usługi świadczymy głównie w <b>Lublinie</b> i powiecie lubelskim oraz
-					na terenie powiatów ościennych: <b>świdnickiego</b>,{' '}
-					<b>lubartowskiego</b>, <b>opolskiego</b>, <b>puławskiego</b> i{' '}
-					<b>kraśnickiego</b>. Przy większych projektach działamy na terenie
-					całego województwa lubelskiego oraz ościennych. Skontaktuj się z nami
-					bezpośrednio telefonicznie{' '}
+					Skontaktuj się z nami bezpośrednio telefonicznie{' '}
 					<b className='font-bold text-md'>506 502 709</b> lub wypełnij krótki
 					formularz, dzięki któremu wyślesz do nas maila.
 				</p>

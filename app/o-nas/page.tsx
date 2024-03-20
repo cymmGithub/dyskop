@@ -23,13 +23,11 @@ export default function AboutUs() {
 						ziemne szybko i sprawnie.
 					</p>
 					<p className='mt-6 leading-8 text-gray-600'>
-						<b>
-							Maszyna ma fukncje pływającego lemiesza (niespotykaną w innych
-							minikoparkach)
-						</b>
-						, polegającą na tym, że system automatycznie w czasie jazdy koryguje
-						jego pozycję, dzięki czemu po zakończeniu wykopów teren zostanie
-						idealnie wyrównany.
+						Usługi świadczymy głównie w <b>Lublinie</b> i powiecie lubelskim
+						oraz na terenie powiatów ościennych: <b>świdnickiego</b>,{' '}
+						<b>lubartowskiego</b>, <b>opolskiego</b>, <b>puławskiego</b> i{' '}
+						<b>kraśnickiego</b>. Przy większych projektach działamy na terenie
+						całego województwa lubelskiego oraz ościennych.
 					</p>
 				</div>
 				<div className='turntable-image-container'>
@@ -54,6 +52,12 @@ export default function AboutUs() {
 									gąsiennice rozsuwane od <b>100cm</b> do <b>130cm</b>
 								</li>
 							</ul>
+							<b>
+								Maszyna ma fukncje pływającego lemiesza (niespotykaną w innych
+								minikoparkach).
+							</b>
+							System automatycznie w czasie jazdy koryguje jego pozycję, dzięki
+							czemu po zakończeniu wykopów teren zostanie idealnie wyrównany.
 						</PopoverContent>
 					</Popover>
 					<ReactImageTurntable
