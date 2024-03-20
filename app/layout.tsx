@@ -29,6 +29,9 @@ export default function RootLayout({
 					{children}
 					<Footer />
 				</main>
+				<div className='hidden absolute'>
+					#uslugi #minikoparka #dys #dyskop #lublin
+				</div>
 			</body>
 			<GoogleAnalytics gaId="G-3X4T8QRHVC" />
 		</html>
