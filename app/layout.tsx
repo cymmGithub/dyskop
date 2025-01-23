@@ -25,13 +25,15 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='pl'>
-			<body>
+			<body className='h-screen overflow-hidden'>
 				<main
-					className={`${myFont.className} md:container mx-auto text-center min-h-screen`}
+					className={`${myFont.className} md:container mx-auto text-center h-screen flex flex-col`}
 				>
 					<ToastContainer />
 					<Navbar />
-					<ToastProvider>{children}</ToastProvider>
+					<div className='flex-1 min-h-0'>
+						<ToastProvider>{children}</ToastProvider>
+					</div>
 					<Footer />
 				</main>
 				<div className='hidden absolute'>

@@ -3,7 +3,6 @@ import requestIp from 'request-ip'
 
 const rateLimitMap = new Map();
 
-// This function can be marked `async` if using `await` inside
 export function middleware(req: any, res: any) {
 	const ip = requestIp.getClientIp(req);
 	const limit = 1; // Limiting requests to 5 per minute per IP
