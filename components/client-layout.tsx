@@ -7,11 +7,12 @@ import Footer from './footer/footer';
 import { useEffect, useState } from 'react';
 import LoadingSpinner from './ui/loading-spinner';
 import ToastProvider from './toast-provider/ToastProvider';
+import type { NextFont } from 'next/dist/compiled/@next/font';
 import '../app/globals.css';
 
 interface ClientLayoutProps {
   children: React.ReactNode;
-  myFont: any; // Using any for the font type as it's a complex Next.js type
+  myFont: NextFont;
 }
 
 export default function ClientLayout({ children, myFont }: ClientLayoutProps) {

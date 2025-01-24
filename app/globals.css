@@ -67,11 +67,8 @@
 }
 
 @layer base {
-	* {
-		@apply border-border;
-	}
-	body {
-		@apply bg-background text-foreground;
+	html {
+		@apply bg-white text-foreground;
 	}
 }
 
@@ -80,7 +77,7 @@ body {
 }
 
 .new_footer_area {
-	background: #ffffff00;
+	background: transparent;
 }
 
 .new_footer_top {
@@ -117,31 +114,12 @@ body {
 	left: 38%;
 	transform: rotateY(180deg);
 	position: absolute;
-	-webkit-animation: myfirst 30s linear infinite;
 	animation: myfirst 30s linear infinite;
 }
 
 @media only screen and (max-width: 600px) {
 	.new_footer_top .footer_bg .footer_bg_two {
 		animation: myfirst 10s linear infinite;
-	}
-}
-
-@-moz-keyframes myfirst {
-	0% {
-		left: -25%;
-	}
-	100% {
-		left: 100%;
-	}
-}
-
-@-webkit-keyframes myfirst {
-	0% {
-		left: -25%;
-	}
-	100% {
-		left: 100%;
 	}
 }
 
@@ -153,8 +131,6 @@ body {
 		left: 100%;
 	}
 }
-
-/*************footer End*****************/
 
 @keyframes slideIn {
 	0% {
@@ -186,139 +162,12 @@ body {
 	animation: slideUp 1s ease-out;
 }
 
-/* Add these new animations */
 @keyframes bounce {
 	0%, 100% {
 		transform: translateY(0);
 	}
 	50% {
 		transform: translateY(-10px);
-	}
-}
-
-@keyframes pulse {
-	0% {
-		transform: scale(1);
-	}
-	50% {
-		transform: scale(1.2);
-	}
-	100% {
-		transform: scale(1);
-	}
-}
-
-.loader {
-	position: absolute;
-	margin: auto;
-	inset: 0;
-	width: 6.250em;
-	height: 6.250em;
-	animation: rotate5123 2.4s linear infinite;
-}
-
-.black {
-	inset: 0;
-	background: rgb(0, 0, 0);
-	animation: flash 2.4s linear infinite;
-	opacity: 0;
-}
-
-.dot {
-	position: absolute;
-	margin: auto;
-	width: 2.4em;
-	height: 2.4em;
-	border-radius: 100%;
-}
-
-.dot:nth-child(2) {
-	inset-block: 0;
-	left: 0;
-	background: #000000;
-	animation: dotsY 2.4s linear infinite;
-}
-
-.dot:nth-child(3) {
-	inset-inline: 0;
-	top: 0;
-	background: #00917b;
-	animation: dotsX 2.4s linear infinite;
-}
-
-.dot:nth-child(4) {
-	inset-block: 0;
-	right: 0;
-	background: #7100e4;
-	animation: dotsY 2.4s linear infinite;
-}
-
-.dot:nth-child(5) {
-	inset-inline: 0;
-	bottom: 0;
-	background: #F6B21B;
-	animation: dotsX 2.4s linear infinite;
-}
-
-@keyframes rotate5123 {
-	0% {
-		transform: rotate(0);
-	}
-
-	10% {
-		width: 6.250em;
-		height: 6.250em;
-	}
-
-	66% {
-		width: 2.4em;
-		height: 2.4em;
-	}
-
-	100% {
-		transform: rotate(360deg);
-		width: 6.250em;
-		height: 6.250em;
-	}
-}
-
-@keyframes dotsY {
-	66% {
-		opacity: .1;
-		width: 2.4em;
-	}
-
-	77% {
-		opacity: 1;
-		width: 0;
-	}
-}
-
-@keyframes dotsX {
-	66% {
-		opacity: .1;
-		height: 2.4em;
-	}
-
-	77% {
-		opacity: 1;
-		height: 0;
-	}
-}
-
-@keyframes flash {
-	33% {
-		opacity: 0;
-		border-radius: 0%;
-	}
-
-	55% {
-		opacity: .6;
-		border-radius: 100%;
-	}
-
-	66% {
-		opacity: 0;
 	}
 }
 

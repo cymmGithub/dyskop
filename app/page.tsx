@@ -50,7 +50,9 @@ export default function Home() {
 						</div>
 						<div className='hidden md:flex md:space-x-4 justify-between items-center phone-bounce me-5'>
 							<FaPhone className='text-2xl' />
-							<span className='text-3xl font-bold'>506 502 709</span>
+							<a href="tel:506502709" className='text-3xl font-bold hover:text-amber-500 transition-colors'>
+								506 502 709
+							</a>
 						</div>
 					</div>
 				</div>
