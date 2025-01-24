@@ -8,21 +8,25 @@ import SocialButtons from '../social-buttons/social-buttons';
 
 const Navbar = () => {
 	return (
-		<div className="flex justify-between items-center sm:px-10 px-5 h-40">
-			<Logo />
-			<PhoneNumber />
-			<NavigationBar />
-			<Burger />
-			<div className="flex justify-between items-center">
+		<div className="flex justify-center items-center sm:px-10 px-5 h-24 md:h-28">
+			<div className="flex-1 flex justify-start">
+				<Logo />
+			</div>
+			<div className="flex-1 flex justify-center items-center gap-2 sm:gap-4 md:gap-8">
+				<PhoneNumber />
+				<NavigationBar />
+			</div>
+			<div className="flex-1 flex justify-end items-center gap-4">
 				<SocialButtons />
 				<Link href="/kontakt" passHref legacyBehavior>
 					<Button
-						className="hidden lg:flex shadow-2xl text-md font-bold bg-amber-400 hover:bg-amber-300 px-14"
-						size="lg"
+						className="hidden lg:flex shadow-2xl text-sm font-bold bg-amber-400 hover:bg-amber-300 px-10"
+						size="default"
 					>
-						<span className='mt-1'>KONTAKT</span>
+						<span>KONTAKT</span>
 					</Button>
 				</Link>
+				<Burger />
 			</div>
 		</div>
 	);

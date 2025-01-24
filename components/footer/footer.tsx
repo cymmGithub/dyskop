@@ -8,14 +8,12 @@ const Footer = () => {
 					<div className="footer_bg_two"></div>
 				</div>
 			</div>
-			<div className="footer_bottom">
+			<div className="footer_bottom py-2">
 				<div className="container">
-					<div className="row align-items-center">
-						<div className="col-lg-6 col-sm-7">
-							<p className="mb-0 f_400">
-								© Firma Dys-Kop, kontakt@dys-kop.pl | NIP 7133124621
-							</p>
-						</div>
+					<div className="flex justify-center items-center">
+						<p className="text-sm">
+							© Firma Dys-Kop, kontakt@dys-kop.pl | NIP 7133124621
+						</p>
 					</div>
 				</div>
 			</div>
