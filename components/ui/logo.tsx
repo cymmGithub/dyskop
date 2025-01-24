@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Logo = () => {
 	return (
 		<Link href="/" passHref legacyBehavior>
-			<div className="flex w-[80px] md:w-[260px] lg:me-14 hover:cursor-pointer">
+			<div className="flex w-[80px] md:w-[260px] hover:cursor-pointer">
 				<Image
 					src="/img/logo/dyskop-logo.png"
 					width={150}
