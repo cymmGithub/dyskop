@@ -208,25 +208,6 @@ body {
 	}
 }
 
-.chat-bubble {
-	animation: bounce 2s ease-in-out infinite;
-	cursor: pointer;
-	transition: all 0.3s ease;
-}
-
-.chat-bubble:hover {
-	animation: none;
-	transform: scale(1.1);
-}
-
-.chat-bubble .phone-icon {
-	animation: pulse 2s ease-in-out infinite;
-}
-
-.chat-bubble:hover .phone-icon {
-	animation: none;
-}
-
 .loader {
 	position: absolute;
 	margin: auto;
@@ -338,5 +319,15 @@ body {
 
 	66% {
 		opacity: 0;
+	}
+}
+
+.phone-bounce {
+	animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes dash {
+	to {
+		stroke-dashoffset: 0;
 	}
 }
