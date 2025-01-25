@@ -18,10 +18,10 @@ export default function Services() {
 								className='rounded-lg opacity-80'
 							/>
 							<div className='group relative'>
-								<h3 className='mt-3 text-lg font-semibold leading-6 text-gray-900'>
+								<h3 className='mt-3 text-base sm:text-lg font-semibold leading-6 text-gray-900'>
 									WYKOPY
 								</h3>
-								<ul className='mt-2 sm:mt-5 text-gray-600'>
+								<ul className='mt-2 sm:mt-5 text-sm sm:text-base text-gray-600'>
 									<li>- odkopywanie fundamentów pod izolacje</li>
 									<li>- niwelacje i kształtowanie terenu</li>
 									<li>- skarpowanie</li>
@@ -43,10 +43,10 @@ export default function Services() {
 								className='rounded-lg opacity-70 mb-1'
 							/>
 							<div className='group relative'>
-								<h3 className='mt-3 text-lg font-semibold leading-6 text-gray-900'>
+								<h3 className='mt-3 text-base sm:text-lg font-semibold leading-6 text-gray-900'>
 									WYKOPY LINIOWE POD
 								</h3>
-								<ul className='mt-2 sm:mt-5 text-gray-600'>
+								<ul className='mt-2 sm:mt-5 text-sm sm:text-base text-gray-600'>
 									<li>
 										- przyłącza: elektryczne, gazowe, wodne, kanalizacyjne,
 										telekomunikacyjne
@@ -70,10 +70,10 @@ export default function Services() {
 								className='rounded-lg opacity-80 mb-3'
 							/>
 							<div className='group relative'>
-								<h3 className='mt-3 text-lg font-semibold leading-6 text-gray-900'>
+								<h3 className='mt-3 text-base sm:text-lg font-semibold leading-6 text-gray-900'>
 									INNE
 								</h3>
-								<ul className='mt-2 sm:mt-5 text-gray-600'>
+								<ul className='mt-2 sm:mt-5 text-sm sm:text-base text-gray-600'>
 									<li>- wyburzenia obiektów małej architektury</li>
 									<li>- wyrywanie korzeni</li>
 									<li>

@@ -17,14 +17,14 @@ export default function AboutUs() {
 			<div className='relative z-10 min-h-full flex items-center py-4 sm:py-8'>
 				<div className='container mx-auto flex justify-evenly flex-col-reverse sm:flex-row'>
 					<div className='w-full max-w-md mx-auto px-2 sm:mx-5 sm:px-0'>
-						<p className='leading-[1.5rem] sm:leading-8 text-gray-600 text-center sm:text-left'>
+						<p className='leading-[1.5rem] sm:leading-8 text-sm sm:text-base text-gray-600 text-center sm:text-left'>
 							Firma Dys-Kop mieści się w Dysie k. Lublina. Świadczymy usługi
 							profesjonalną minikoparką <b>Caterpillar 301.8</b> o wadze 2 ton.
 							Maszyna ta ma największą moc w klasie koparek do 2 ton przez co jest
 							w stanie dotrzeć tam gdzie nie wjedzie duży sprzęt i wykonać roboty
 							ziemne szybko i sprawnie.
 						</p>
-						<p className='mt-4 sm:mt-6 leading-[1.5rem] sm:leading-8 text-gray-600 text-center sm:text-left'>
+						<p className='mt-4 sm:mt-6 leading-[1.5rem] sm:leading-8 text-sm sm:text-base text-gray-600 text-center sm:text-left'>
 							Usługi świadczymy głównie w <b>Lublinie</b> i powiecie lubelskim
 							oraz na terenie powiatów ościennych: <b>świdnickiego</b>,{' '}
 							<b>lubartowskiego</b>, <b>opolskiego</b>, <b>puławskiego</b> i{' '}
@@ -34,11 +34,11 @@ export default function AboutUs() {
 					</div>
 					<div className='turntable-image-container'>
 						<Popover>
-							<PopoverTrigger className='flex gap-2 ms-7 text-xs text-center items-center'>
+							<PopoverTrigger className='flex gap-2 ms-7 text-xs sm:text-sm text-center items-center'>
 								<FaCircleInfo className='hover:scale-125 text-lg' />
 								<span>Informacje techniczne</span>
 							</PopoverTrigger>
-							<PopoverContent className='flex flex-col gap-2 shadow-xl'>
+							<PopoverContent className='flex flex-col gap-2 shadow-xl text-sm sm:text-base'>
 								- Podstawowe możliwości wykopów:
 								<ul className='list-disc mx-5'>
 									<li>
