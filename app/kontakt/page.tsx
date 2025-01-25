@@ -61,30 +61,30 @@ export default function Contact() {
 	};
 
 	return (
-		<div className='relative h-full overflow-hidden'>
+		<div className='relative h-full overflow-y-auto'>
 			<div className='absolute inset-0 sketchy-bg'></div>
 			<div className='relative z-10 isolate px-6 mt-36 md:mt-32 lg:mt-44 pb-10 lg:px-8 max-w-5xl mx-auto'>
 				<div className='mx-auto max-w-2xl text-center'>
-					<p className='mt-2 text-sm md:text-md leading-6 md:leading-7 text-gray-600'>
+					<p className='mt-2 text-md leading-7 text-gray-600'>
 						Skontaktuj się z nami bezpośrednio telefonicznie{' '}
-						<b className='font-bold text-sm md:text-md'>506 502 709</b> lub wypełnij krótki
+						<b className='font-bold text-md'>506 502 709</b> lub wypełnij krótki
 						formularz, dzięki któremu wyślesz do nas maila.
 					</p>
 				</div>
 				<form
-					className='mx-auto mt-4 md:mt-7 mb-3 max-w-xl'
+					className='mx-auto mt-7 mb-3 max-w-xl'
 					onSubmit={handleSubmit}
 					id='contact-form'
 				>
-					<div className='grid grid-cols-1 gap-x-8 gap-y-1.5 sm:gap-y-2 sm:grid-cols-2'>
+					<div className='grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2'>
 						<div>
 							<label
 								htmlFor='name'
-								className='block text-xs md:text-sm font-semibold leading-6 text-gray-900'
+								className='block text-sm font-semibold leading-6 text-gray-900'
 							>
 								Imię
 							</label>
-							<div className='mt-1.5 md:mt-2.5'>
+							<div className='mt-2.5'>
 								<input
 									type='text'
 									name='name'
@@ -97,11 +97,11 @@ export default function Contact() {
 						<div>
 							<label
 								htmlFor='phone-number'
-								className='block text-xs md:text-sm font-semibold leading-6 text-gray-900'
+								className='block text-sm font-semibold leading-6 text-gray-900'
 							>
 								Numer telefonu
 							</label>
-							<div className='mt-1.5 md:mt-2.5'>
+							<div className='mt-2.5'>
 								<PhoneInput
 									name='phone'
 									country='PL'
@@ -114,11 +114,11 @@ export default function Contact() {
 						<div className='sm:col-span-2'>
 							<label
 								htmlFor='email'
-								className='block text-xs md:text-sm font-semibold leading-6 text-gray-900'
+								className='block text-sm font-semibold leading-6 text-gray-900'
 							>
 								Email do kontaktu
 							</label>
-							<div className='mt-1.5 md:mt-2.5'>
+							<div className='mt-2.5'>
 								<input
 									required
 									type='email'
@@ -132,11 +132,11 @@ export default function Contact() {
 						<div className='sm:col-span-2'>
 							<label
 								htmlFor='message'
-								className='block text-xs md:text-sm font-semibold leading-6 text-gray-900'
+								className='block text-sm font-semibold leading-6 text-gray-900'
 							>
 								Wiadomość
 							</label>
-							<div className='mt-1.5 md:mt-2.5'>
+							<div className='mt-2.5'>
 								<textarea
 									required
 									name='message'
@@ -157,7 +157,7 @@ export default function Contact() {
 							</div>
 						</div>
 					</div>
-					<div className='mt-6 md:mt-10'>
+					<div className='mt-10'>
 						<button
 							type='submit'
 							className='relative flex w-full justify-center rounded-md h-10 bg-indigo-600 px-3.5 py-3 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
