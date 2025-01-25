@@ -8,6 +8,9 @@ import {
 	SheetTrigger,
 } from '@/components/ui/sheet';
 import Link from 'next/link';
+import { Outfit } from 'next/font/google';
+
+const font = Outfit({ subsets: ['latin'] });
 
 const Burger = () => {
 	return (
@@ -19,7 +22,7 @@ const Burger = () => {
 				<SheetContent>
 					<SheetHeader>
 						<SheetDescription>
-							<div className='flex flex-col space-y-4 items-start w-full text-lg text-black mt-10'>
+							<div className={`flex flex-col space-y-4 items-start w-full text-lg text-black mt-10 ${font.className}`}>
 								<SheetClose asChild>
 									<Link href='/o-nas'>O Nas</Link>
 								</SheetClose>

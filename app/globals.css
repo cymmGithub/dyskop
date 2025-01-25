@@ -67,11 +67,8 @@
 }
 
 @layer base {
-	* {
-		@apply border-border;
-	}
-	body {
-		@apply bg-background text-foreground;
+	html {
+		@apply bg-white text-foreground;
 	}
 }
 
@@ -80,11 +77,11 @@ body {
 }
 
 .new_footer_area {
-	background: #ffffff00;
+	background: transparent;
 }
 
 .new_footer_top {
-	padding: 0px 0px 240px;
+	padding: 0px 0px 190px;
 	position: relative;
 	overflow-x: hidden;
 }
@@ -96,7 +93,7 @@ body {
 	font-weight: 300;
 	line-height: 20px;
 	color: #7f88a6;
-	padding: 27px 0px;
+	padding: 10px 0px;
 }
 
 .new_footer_top .footer_bg {
@@ -117,31 +114,12 @@ body {
 	left: 38%;
 	transform: rotateY(180deg);
 	position: absolute;
-	-webkit-animation: myfirst 30s linear infinite;
 	animation: myfirst 30s linear infinite;
 }
 
 @media only screen and (max-width: 600px) {
 	.new_footer_top .footer_bg .footer_bg_two {
 		animation: myfirst 10s linear infinite;
-	}
-}
-
-@-moz-keyframes myfirst {
-	0% {
-		left: -25%;
-	}
-	100% {
-		left: 100%;
-	}
-}
-
-@-webkit-keyframes myfirst {
-	0% {
-		left: -25%;
-	}
-	100% {
-		left: 100%;
 	}
 }
 
@@ -154,4 +132,74 @@ body {
 	}
 }
 
-/*************footer End*****************/
+@keyframes slideIn {
+	0% {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideUp {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-slideIn {
+	animation: slideIn 1s ease-out;
+}
+
+.animate-slideUp {
+	animation: slideUp 1s ease-out;
+}
+
+@keyframes bounce {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+}
+
+.phone-bounce {
+	animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes dash {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+.sketchy-bg {
+	background-color: #ffffff;
+	background-image:
+		radial-gradient(#f5f5f5 1px, transparent 1px),
+		repeating-linear-gradient(45deg, #f5f5f5 0, #f5f5f5 1px, #ffffff 0, #ffffff 50%);
+	background-size: 20px 20px, 20px 20px;
+	background-position: 0 0;
+	opacity: 0.7;
+}
+
+.sketchy-bg::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image:
+		repeating-linear-gradient(-45deg, #f5f5f5 0, #f5f5f5 1px, transparent 1px, transparent 20px);
+	opacity: 0.5;
+	pointer-events: none;
+}

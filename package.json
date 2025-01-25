@@ -29,7 +29,8 @@
     "react-toastify": "^10.0.5",
     "request-ip": "^3.3.0",
     "tailwind-merge": "^2.2.1",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "yet-another-react-lightbox": "^3.21.7"
   },
   "devDependencies": {
     "@types/node": "^20",

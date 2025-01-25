@@ -42,12 +42,11 @@ export async function POST(req, res) {
 			replyTo: email,
 			subject: `Formularz kontaktowy Dys-kop.pl`,
 			html: `
-		    <p>Imię nadawcy: ${name} </p>
-		    <p>Email do kontaktu: ${email} </p>
-		    <p>Numer do kontaktu: ${phone} </p>
-		    <p>Wiadomość: ${message} </p>
-
-		    `,
+				<p>Imię nadawcy: ${name} </p>
+				<p>Email do kontaktu: ${email} </p>
+				<p>Numer do kontaktu: ${phone} </p>
+				<p>Wiadomość: ${message} </p>
+			`,
 		});
 		return NextResponse.json({
 			message: 'Wiadomość wysłana, odezwiemy się niebawem!',

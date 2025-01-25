@@ -1,16 +1,10 @@
 import type { Metadata } from 'next';
-import { ToastContainer } from 'react-toastify';
-import { GoogleAnalytics } from '@next/third-parties/google';
-import Navbar from '../components/navbar/navbar';
-import Footer from '../components/footer/footer';
 import { Outfit } from 'next/font/google';
 import localFont from 'next/font/local';
+import ClientLayout from '../components/client-layout';
 
 // Font files can be colocated inside of `pages`
 const myFont = localFont({ src: '../public/fonts/Consolas.ttf' });
-import './globals.css';
-import ToastProvider from '@/components/toast-provider/ToastProvider';
-
 const font = Outfit({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -25,20 +19,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='pl'>
-			<body>
-				<main
-					className={`${myFont.className} md:container mx-auto text-center min-h-screen`}
-				>
-					<ToastContainer />
-					<Navbar />
-					<ToastProvider>{children}</ToastProvider>
-					<Footer />
-				</main>
+			<body className='h-screen overflow-hidden'>
+				<ClientLayout myFont={myFont}>{children}</ClientLayout>
 				<div className='hidden absolute'>
 					#uslugi #minikoparka #dys #dyskop #lublin
 				</div>
 			</body>
-			<GoogleAnalytics gaId='G-3X4T8QRHVC' />
 		</html>
 	);
 }
