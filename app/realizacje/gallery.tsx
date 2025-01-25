@@ -17,7 +17,7 @@ export default function Gallery({ images }: GalleryProps) {
 	const [photoIndex, setPhotoIndex] = useState(0);
 
 	return (
-		<section className='container mx-auto h-full relative overflow-hidden mt-4 md:mt-6'>
+		<section className='container mx-auto h-full relative overflow-hidden pt-36 md:pt-32'>
 			<div className='absolute inset-0 sketchy-bg'></div>
 			<div className='relative z-20 px-2 sm:py-4 grid gap-1 grid-cols-3 md:grid-cols-gallery-sm md:gap-2 max-w-5xl mx-auto -mb-20'>
 				{images.map((imageWithBlur, i) => (
