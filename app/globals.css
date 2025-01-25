@@ -81,7 +81,7 @@ body {
 }
 
 .new_footer_top {
-	padding: 0px 0px 240px;
+	padding: 0px 0px 190px;
 	position: relative;
 	overflow-x: hidden;
 }
@@ -93,7 +93,7 @@ body {
 	font-weight: 300;
 	line-height: 20px;
 	color: #7f88a6;
-	padding: 27px 0px;
+	padding: 10px 0px;
 }
 
 .new_footer_top .footer_bg {
