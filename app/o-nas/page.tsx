@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { FaCircleInfo } from 'react-icons/fa6';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa6';
 import { ReactImageTurntable } from 'react-image-turntable';
 import { get360images } from '@/lib/get360images';
 import {
@@ -66,6 +67,11 @@ export default function AboutUs() {
 							images={get360images}
 							className='cursor-pointer mx-5 sm:mx-0'
 						/>
+						<div className="flex justify-center items-center gap-2 text-gray-500 mt-2 mb-8 sm:mb-0">
+							<FaArrowLeft className="animate-pulse" />
+							<span className="text-sm">Obróć 360°</span>
+							<FaArrowRight className="animate-pulse" />
+						</div>
 					</div>
 				</div>
 			</div>

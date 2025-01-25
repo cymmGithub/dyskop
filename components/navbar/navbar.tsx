@@ -9,7 +9,7 @@ import SocialButtons from '../social-buttons/social-buttons';
 const Navbar = () => {
 	return (
 		<nav className='fixed top-0 left-0 right-0 z-50'>
-			<div className='md:bg-white bg-white/70 backdrop-blur-sm shadow-sm'>
+			<div className='bg-white/70 backdrop-blur-sm shadow-sm md:bg-white md:backdrop-blur-none md:shadow-none'>
 				<div className='container mx-auto px-5 sm:px-10'>
 					<div className="flex justify-center items-center sm:px-10 px-5 h-24 md:h-28">
 						<div className="flex-1 flex justify-start">
