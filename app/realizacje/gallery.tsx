@@ -18,7 +18,6 @@ export default function Gallery({ images }: GalleryProps) {
 
 	return (
 		<section className='container mx-auto h-full relative overflow-hidden pt-36 md:pt-32'>
-			<div className='absolute inset-0 sketchy-bg'></div>
 			<div className='relative z-20 px-2 sm:py-4 grid gap-1 grid-cols-3 md:grid-cols-gallery-sm md:gap-2 max-w-5xl mx-auto -mb-20 mt-6 md:mt-0'>
 				{images.map((imageWithBlur, i) => (
 					<div

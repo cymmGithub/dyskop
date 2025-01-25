@@ -14,7 +14,6 @@ import {
 export default function AboutUs() {
 	return (
 		<div className='relative h-full overflow-y-auto overflow-x-hidden pt-24 md:pt-28'>
-			<div className='absolute inset-0 sketchy-bg'></div>
 			<div className='relative z-10 min-h-full flex items-center py-4 sm:py-8'>
 				<div className='container mx-auto flex justify-evenly flex-col-reverse sm:flex-row'>
 					<div className='max-w-md mx-5'>

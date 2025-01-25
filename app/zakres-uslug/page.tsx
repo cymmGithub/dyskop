@@ -3,7 +3,6 @@ import Image from 'next/image';
 export default function Services() {
 	return (
 		<div className='relative h-full overflow-y-auto overflow-x-hidden pt-24 md:pt-28'>
-			<div className='absolute inset-0 sketchy-bg'></div>
 			<div className='relative z-10 min-h-full flex items-center py-4 sm:py-8'>
 				<div className='container mx-auto'>
 					<div className='mx-5 grid max-w-2xl grid-cols-1 gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-3'>
