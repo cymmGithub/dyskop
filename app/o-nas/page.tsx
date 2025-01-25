@@ -16,15 +16,15 @@ export default function AboutUs() {
 		<div className='relative h-full overflow-y-auto overflow-x-hidden pt-24 md:pt-28'>
 			<div className='relative z-10 min-h-full flex items-center py-4 sm:py-8'>
 				<div className='container mx-auto flex justify-evenly flex-col-reverse sm:flex-row'>
-					<div className='max-w-md mx-5'>
-						<p className='leading-8 text-gray-600'>
+					<div className='w-full max-w-md mx-auto px-2 sm:mx-5 sm:px-0'>
+						<p className='leading-[1.5rem] sm:leading-8 text-gray-600 text-center sm:text-left'>
 							Firma Dys-Kop mieści się w Dysie k. Lublina. Świadczymy usługi
 							profesjonalną minikoparką <b>Caterpillar 301.8</b> o wadze 2 ton.
 							Maszyna ta ma największą moc w klasie koparek do 2 ton przez co jest
 							w stanie dotrzeć tam gdzie nie wjedzie duży sprzęt i wykonać roboty
 							ziemne szybko i sprawnie.
 						</p>
-						<p className='mt-6 leading-8 text-gray-600'>
+						<p className='mt-4 sm:mt-6 leading-[1.5rem] sm:leading-8 text-gray-600 text-center sm:text-left'>
 							Usługi świadczymy głównie w <b>Lublinie</b> i powiecie lubelskim
 							oraz na terenie powiatów ościennych: <b>świdnickiego</b>,{' '}
 							<b>lubartowskiego</b>, <b>opolskiego</b>, <b>puławskiego</b> i{' '}

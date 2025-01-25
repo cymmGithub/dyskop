@@ -5,7 +5,7 @@ export default function Services() {
 		<div className='relative h-full overflow-y-auto overflow-x-hidden pt-24 md:pt-28'>
 			<div className='relative z-10 min-h-full flex items-center py-4 sm:py-8'>
 				<div className='container mx-auto'>
-					<div className='mx-5 grid max-w-2xl grid-cols-1 gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-3'>
+					<div className=' grid max-w-2xl grid-cols-1 gap-x-8 lg:mx-0 lg:max-w-none lg:grid-cols-3'>
 						<article
 							key={'9cd218fc-8733-4001-9cdc-24f914d7e71f'}
 							className='flex max-w-xl flex-col justify-center items-center mb-3 sm:mb-0'

@@ -81,7 +81,7 @@ body {
 }
 
 .new_footer_top {
-	padding: 0px 0px 120px;
+	padding: 0px 0px 100px;
 	position: relative;
 	overflow: hidden;
 }
@@ -112,7 +112,7 @@ body {
 	right: 0;
 	background: url('https://i.imgur.com/fze5J3F.png') no-repeat scroll center bottom;
 	width: 100%;
-	height: 120px;
+	height: 100px;
 	background-size: contain;
 	pointer-events: none;
 	transform: translateZ(0);
