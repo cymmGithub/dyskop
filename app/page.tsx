@@ -6,8 +6,8 @@ import Image from 'next/image';
 export default function Home() {
 	return (
 		<section className='h-full relative overflow-hidden'>
-			<div className='absolute inset-0 sketchy-bg'></div>
-			<div className='container mx-auto h-full px-5 sm:px-10 py-1 md:p-8 flex flex-col relative z-10 pt-24 md:pt-28'>
+			<div className='absolute inset-0 sketchy-bg mt-12 md:mt-20'></div>
+			<div className='container mx-auto h-full px-5 sm:px-10 py-1 md:p-8 flex flex-col relative z-10 pt-20 md:pt-28'>
 				<div className='flex flex-col max-w-5xl mx-auto w-full gap-4 md:gap-8 animate-slideUp opacity-0 pt-3 md:pt-8' style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
 					<div
 						className='text-2xl sm:text-2xl md:text-4xl flex flex-col items-center font-bold
