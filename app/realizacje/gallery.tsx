@@ -17,13 +17,13 @@ export default function Gallery({ images }: GalleryProps) {
 	const [photoIndex, setPhotoIndex] = useState(0);
 
 	return (
-		<section className='container mx-auto h-full relative overflow-hidden pt-36 md:pt-32'>
+		<section className='container mx-auto h-full relative overflow-hidden pt-16 md:pt-32'>
 			<div className='relative z-20 px-2 sm:py-4 grid gap-1 grid-cols-3 md:grid-cols-gallery-sm md:gap-2 max-w-5xl mx-auto -mb-20 mt-6 md:mt-0'>
 				{images.map((imageWithBlur, i) => (
 					<div
 						key={i}
 						className={`aspect-square bg-gray-200 rounded-md shadow-sm relative overflow-hidden group md:shadow-md md:rounded-lg ${
-							i >= 9 ? 'hidden md:block' : ''
+							i >= 12 ? 'hidden md:block' : ''
 						}`}
 						onClick={() => {
 							setPhotoIndex(i);
