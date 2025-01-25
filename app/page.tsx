@@ -58,14 +58,14 @@ export default function Home() {
 				</div>
 
 				<div
-					className='relative h-[calc(100%-100px)] sm:h-[calc(100%-110px)] md:h-[calc(100%-250px)] animate-slideUp opacity-0 mt-1 md:mt-12 max-w-5xl mx-auto w-full'
+					className='relative h-[calc(100%-200px)] sm:h-[calc(100%-110px)] md:h-[calc(100%-250px)] animate-slideUp opacity-0 mt-1 md:mt-12 max-w-5xl mx-auto w-[85%] sm:w-full'
 					style={{ animationDelay: '2s', animationFillMode: 'forwards' }}
 				>
 					<Image
 						src='/img/homepage/landing-page.png'
 						alt='Usługi minikoparką'
 						fill
-						className='rounded-xl object-contain'
+						className='rounded-xl object-contain px-4 sm:px-0'
 						priority
 					/>
 				</div>
