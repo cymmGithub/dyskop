@@ -13,7 +13,7 @@ import {
 const NavigationBar = () => {
 	return (
 		<NavigationMenu>
-			<NavigationMenuList className="hidden md:flex md:space-x-4">
+			<NavigationMenuList className="hidden md:flex md:space-x-2 lg:space-x-4">
 				<NavigationMenuItem>
 					<Link href="/o-nas" legacyBehavior passHref>
 						<NavigationMenuLink className={navigationMenuTriggerStyle()}>
