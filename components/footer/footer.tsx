@@ -1,6 +1,11 @@
+import { usePathname } from 'next/navigation';
+
 const Footer = () => {
+	const pathname = usePathname();
+	const isContactPage = pathname === '/kontakt';
+
 	return (
-		<footer className="new_footer_area bg_color sticky top-[100vh]">
+		<footer className={`new_footer_area bg_color sticky top-[100vh] ${isContactPage ? 'sm:block hidden' : ''}`}>
 			<div className="new_footer_top">
 				<div className="container"></div>
 				<div className="footer_bg">
