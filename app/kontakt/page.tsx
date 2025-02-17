@@ -139,7 +139,7 @@ export default function Contact() {
 									name='message'
 									id='message'
 									rows={3}
-									className='w-full rounded-md border border-gray-300 px-2.5 sm:px-3 py-1.5 sm:py-2 text-gray-900 placeholder:text-gray-400 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 text-sm sm:text-base'
+									className='w-full rounded-md border border-gray-300 px-2.5 sm:px-3 py-1.5 sm:py-2 text-gray-900 placeholder:text-gray-400 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 text-sm sm:text-base max-h-[230px] overflow-y-auto resize-y'
 									defaultValue={''}
 								/>
 							</div>
