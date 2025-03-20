@@ -9,7 +9,7 @@ const font = Outfit({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	title: 'Dys-kop | USŁUGI MINIKOPARKĄ | Dys, Lublin',
-	description: '',
+	description: 'Usługi minikoparką: wykopy pod przyłącza; odkopywanie fundamentów; wyrywanie korzeni; utwardzanie podjazdów; odwodnienia budynków. Lublin; Dys; Niemce; Łęczna; Jastków; Garbów; Lubartów; Serniki Świdnik; Mełgiew; Bełżyce',
 };
 
 export default function RootLayout({
