@@ -18,12 +18,12 @@ export default function Gallery({ images }: GalleryProps) {
 
 	return (
 		<section className='container mx-auto h-full relative overflow-hidden pt-16 md:pt-32'>
-			<div className='relative z-20 px-2 sm:py-4 grid gap-1 grid-cols-3 md:grid-cols-gallery-sm md:gap-2 max-w-5xl mx-auto -mb-20 mt-6 md:mt-0'>
+			<div className='relative z-20 px-2 sm:py-4 grid gap-1 grid-cols-3 sm:grid-cols-gallery-sm md:gap-2 max-w-5xl mx-auto -mb-20 mt-6 md:mt-0'>
 				{images.map((imageWithBlur, i) => (
 					<div
 						key={i}
 						className={`aspect-square bg-gray-200 rounded-md shadow-sm relative overflow-hidden group md:shadow-md md:rounded-lg ${
-							i >= 12 ? 'hidden md:block' : ''
+							i >= 15 ? 'hidden md:block' : ''
 						}`}
 						onClick={() => {
 							setPhotoIndex(i);
@@ -32,10 +32,10 @@ export default function Gallery({ images }: GalleryProps) {
 					>
 						<Image
 							src={`/img/gallery/${imageWithBlur.image}`}
-							alt='test image'
-							className='object-cover cursor-pointer md:group-hover:opacity-75 transition-opacity'
+							alt={`${imageWithBlur.image} - zdjęcie z galerii`}
+							className='object-cover cursor-pointer md:group-hover:opacity-75 md:group-hover:scale-110 transition-all duration-300 ease-in-out'
 							fill={true}
-							sizes='(max-width: 768px) 28vw, (min-width: 1380px) 180px, (min-width: 1120px) calc(20vw - 24px), (min-width: 860px) calc(25vw - 32px), calc(33vw - 16px)'
+							sizes='(max-width: 768px) 28vw, (min-width: 1380px) 180px, (min-width: 1120px) calc(20vw - 24px), (min-width: 860px) calc(25vw - 32px), calc(33vw - 50px)'
 							placeholder='blur'
 							blurDataURL={imageWithBlur.base64}
 						/>

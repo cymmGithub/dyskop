@@ -56,7 +56,7 @@ const config: Config = {
       },
       gridTemplateColumns: {
         'gallery': 'repeat(1, 1fr)',
-        'gallery-sm': 'repeat(auto-fit, minmax(180px, 1fr))',
+        'gallery-sm': 'repeat(auto-fit, minmax(135px, 1fr))',
       },
       borderRadius: {
         lg: "var(--radius)",
