@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 export default function Services() {
 	return (
-		<div className='relative h-full overflow-y-auto overflow-x-hidden pt-24 md:pt-28'>
-			<div className='relative z-10 min-h-full flex items-center py-4 sm:py-8'>
+		<div className='relative h-screen overflow-y-auto overflow-x-hidden pt-24 md:pt-28 pb-20'>
+			<div className='relative z-10 py-4 sm:py-8'>
 				<div className='container mx-auto'>
 					<div className='grid max-w-2xl grid-cols-1 gap-x-6 lg:mx-0 lg:max-w-none lg:grid-cols-4'>
 						<article

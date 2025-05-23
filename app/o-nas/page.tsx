@@ -63,7 +63,7 @@ export default function AboutUs() {
 							</Popover>
 							, która gwarantuje wykonanie idealnie równych i pionowych odwiertów
 							(możliwe również wiercenie pod innym zadanym kątem). Realizujemy
-							również kompleksowe usługi dla branży sadowniczej i ogrodzeniowej,
+							kompleksowe usługi dla branży sadowniczej i ogrodzeniowej,
 							polegające na wykonaniu odwiertów i wstawieniu chwytakiem słupków
 							betonowych lub drewnianych. Ponadto wkręcamy różnego rodzaju
 							kotwy.

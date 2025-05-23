@@ -9,7 +9,7 @@ const Footer = () => {
 			className={`bg-white relative z-50 ${isContactPage ? 'sm:block hidden' : ''}`}
 			style={{
 				WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 35%)',
-				maskImage: 'linear-gradient(to bottom, transparent 0%, black 30%)'
+				maskImage: 'linear-gradient(to bottom, transparent 0%, black 35%)'
 			}}
 		>
 			<div className="new_footer_top">

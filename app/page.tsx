@@ -5,9 +5,9 @@ import { FaPhone } from 'react-icons/fa';
 
 export default function Home() {
 	return (
-		<section className='h-full relative overflow-hidden'>
+		<section className='min-h-screen relative overflow-x-hidden'>
 			<div className='absolute inset-0 sketchy-bg mt-12 md:mt-20'></div>
-			<div className='container mx-auto gap-6 sm:gap-10 h-full px-5 sm:px-10 py-1 md:p-8 flex flex-col relative z-10 pt-20 md:pt-28'>
+			<div className='container mx-auto gap-6 sm:gap-10 min-h-screen px-5 sm:px-10 py-1 md:p-8 flex flex-col relative z-10 pt-20 md:pt-28 pb-20'>
 				<div
 					className='flex flex-col max-w-5xl mx-auto w-full gap-2 md:gap-4 animate-slideUp opacity-0 pt-3 md:pt-8'
 					style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}
@@ -60,7 +60,7 @@ export default function Home() {
 						</div>
 					</div>
 				<div
-					className='relative h-full animate-slideUp opacity-0 max-w-5xl mx-auto w-full'
+					className='relative flex-1 animate-slideUp opacity-0 max-w-5xl mx-auto w-full'
 					style={{ animationDelay: '2s', animationFillMode: 'forwards' }}
 				>
 					<Card />
