@@ -5,7 +5,13 @@ const Footer = () => {
 	const isContactPage = pathname === '/kontakt';
 
 	return (
-		<footer className={`new_footer_area bg_color sticky top-[100vh] ${isContactPage ? 'sm:block hidden' : ''}`}>
+		<footer
+			className={`bg-white relative z-50 ${isContactPage ? 'sm:block hidden' : ''}`}
+			style={{
+				WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 35%)',
+				maskImage: 'linear-gradient(to bottom, transparent 0%, black 30%)'
+			}}
+		>
 			<div className="new_footer_top">
 				<div className="container"></div>
 				<div className="footer_bg">
@@ -13,7 +19,7 @@ const Footer = () => {
 					<div className="footer_bg_two"></div>
 				</div>
 			</div>
-			<div className="footer_bottom py-2">
+			<div className="footer_bottom">
 				<div className="container">
 					<div className="flex justify-center items-center">
 						<p className="text-sm">
