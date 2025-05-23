@@ -2,13 +2,13 @@ import Image from 'next/image';
 
 export default function Services() {
 	return (
-		<div className='relative h-screen overflow-y-auto overflow-x-hidden pt-24 md:pt-28 pb-20'>
-			<div className='relative z-10 py-4 sm:py-8'>
+		<div className='relative h-screen overflow-y-auto overflow-x-hidden pb-32 sm:pb-10 pt-24 md:pt-28'>
+			<div className='relative z-10 py-4 sm:py-8 w-full mt-0 md:mt-16 lg:mt-24'>
 				<div className='container mx-auto'>
 					<div className='grid max-w-2xl grid-cols-1 gap-x-6 lg:mx-0 lg:max-w-none lg:grid-cols-4'>
 						<article
 							key={'9cd218fc-8733-4001-9cdc-24f914d7e71f'}
-							className='flex max-w-xl flex-col items-center mb-12 sm:mb-0 opacity-0 animate-slideUp'
+							className='flex max-w-xl flex-col items-center mb-12 md:mb-0 opacity-0 animate-slideUp'
 							style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
 						>
 							<div className='flex flex-col items-center w-full'>
@@ -36,7 +36,7 @@ export default function Services() {
 						</article>
 						<article
 							key={'8c1bddeb-84f7-43b5-9884-218aa47189f3'}
-							className='flex max-w-xl flex-col items-center mb-12 sm:mb-0 opacity-0 animate-slideUp'
+							className='flex max-w-xl flex-col items-center mb-12 md:mb-0 opacity-0 animate-slideUp'
 							style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}
 						>
 							<div className='flex flex-col items-center w-full'>
@@ -68,7 +68,7 @@ export default function Services() {
 						</article>
 						<article
 							key={'drilling-services-001'}
-							className='flex max-w-xl flex-col items-center mb-12 sm:mb-0 opacity-0 animate-slideUp'
+							className='flex max-w-xl flex-col items-center mb-12 md:mb-0 opacity-0 animate-slideUp'
 							style={{ animationDelay: '1.3s', animationFillMode: 'forwards' }}
 						>
 							<div className='flex flex-col items-center w-full'>
@@ -97,7 +97,7 @@ export default function Services() {
 						</article>
 						<article
 							key={'758d0c19-4d01-470d-acff-5959960dedab'}
-							className='flex max-w-xl flex-col items-center mb-12 sm:mb-0 opacity-0 animate-slideUp'
+							className='flex max-w-xl flex-col items-center mb-12 md:mb-0 opacity-0 animate-slideUp'
 							style={{ animationDelay: '1.8s', animationFillMode: 'forwards' }}
 						>
 							<div className='flex flex-col items-center w-full'>

@@ -15,21 +15,21 @@ import { Badge } from '@/components/ui/badge';
 
 export default function AboutUs() {
 	return (
-		<div className='relative h-full overflow-y-auto overflow-x-hidden pt-24 md:pt-28'>
-			<div className='relative z-10 min-h-full flex items-center py-4 sm:py-8'>
+		<div className='relative h-screen overflow-y-auto overflow-x-hidden pt-20 md:pt-28 pb-32 sm:pb-20'>
+			<div className='relative z-10 py-4 sm:py-8'>
 				<div className='container mx-auto flex justify-evenly flex-col-reverse sm:flex-row'>
 					<div className='w-full max-w-md mx-auto px-2 sm:mx-5 sm:px-0'>
-						<p className='leading-[1.5rem] sm:leading-8 text-sm sm:text-[13px] text-gray-600 text-center sm:text-left'>
+						<p className='leading-[1.5rem] sm:leading-8 text-sm sm:text-[13px] text-gray-600 text-center'>
 							Firma Dys-Kop mieści się w Dysie k. Lublina. Świadczymy usługi
 							profesjonalną minikoparką <b>Caterpillar 301.8</b> o wadze 2 ton.
 						</p>
-						<p className='mt-4 sm:mt-3 leading-[1.5rem] sm:leading-8 text-sm sm:text-[13px] text-gray-600 text-center sm:text-left'>
+						<p className='mt-4 sm:mt-3 leading-[1.5rem] sm:leading-8 text-sm sm:text-[13px] text-gray-600 text-center'>
 							Oferujemy również odwierty wiertnicą{' '}
 							<Popover>
 								<PopoverTrigger>
 									<Badge
 										variant="secondary"
-										className="inline-flex items-center gap-1 cursor-pointer hover:bg-amber-100 transition-colors duration-200 text-xs sm:text-[13px] font-bold px-2 py-0.5"
+										className="inline-flex items-center gap-1 cursor-pointer bg-amber-300 hover:bg-amber-400 transition-colors duration-200 text-xs sm:text-[13px] font-bold px-2 py-0.5"
 									>
 										<FaCircleInfo className="w-3 h-3" />
 										DIGGA PDX2H-2
@@ -37,10 +37,12 @@ export default function AboutUs() {
 								</PopoverTrigger>
 								<PopoverContent className='flex flex-col gap-2 shadow-xl text-sm sm:text-base w-80 sm:w-96'>
 									<div className='flex justify-center gap-2 mb-2'>
+
 										<Image
 											src='/img/homepage/wiertlo-1.png'
 											alt='Wiertnica DIGGA PDX2H-2 - widok 1'
 											width={100}
+
 											height={100}
 											className='rounded-md object-contain'
 										/>
@@ -68,7 +70,7 @@ export default function AboutUs() {
 							betonowych lub drewnianych. Ponadto wkręcamy różnego rodzaju
 							kotwy.
 						</p>
-						<p className='mt-4 sm:mt-3 leading-[1.5rem] sm:leading-8 text-sm sm:text-[13px] text-gray-600 text-center sm:text-left'>
+						<p className='mt-4 sm:mt-3 leading-[1.5rem] sm:leading-8 text-sm sm:text-[13px] text-gray-600 text-center'>
 							Usługi świadczymy głównie w <b>Lublinie</b> i powiecie lubelskim
 							oraz na terenie powiatów ościennych: <b>świdnickiego</b>,{' '}
 							<b>lubartowskiego</b>, <b>opolskiego</b>, <b>puławskiego</b> i{' '}
