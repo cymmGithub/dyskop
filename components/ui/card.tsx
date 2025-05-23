@@ -1,6 +1,7 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const cards = [
   { label: 'Wykopy', icon: (
@@ -34,24 +35,48 @@ const cards = [
 
 const Card = () => {
   const [activeMobileCard, setActiveMobileCard] = useState<string | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 640 || 'ontouchstart' in window);
+    };
+
+    checkIfMobile();
+    window.addEventListener('resize', checkIfMobile);
+
+    return () => window.removeEventListener('resize', checkIfMobile);
+  }, []);
+
+  const handleCardClick = (e: React.MouseEvent, cardLabel: string) => {
+    // Only apply two-click behavior on mobile
+    if (isMobile) {
+      // If card is not active yet, prevent navigation and activate it
+      if (activeMobileCard !== cardLabel) {
+        e.preventDefault();
+        setActiveMobileCard(cardLabel);
+      }
+      // If card is already active, allow navigation to proceed (do nothing)
+    }
+    // On desktop, allow immediate navigation (do nothing to prevent default)
+  };
 
   return (
     <div className="flex justify-center items-center relative sm:me-12 mt-6 md:mt-0">
       <div className="flex justify-center items-center relative group/fan">
         {cards.map((card, idx) => (
-          <div
+          <Link
             key={card.label}
+            href="/zakres-uslug"
             data-text={card.label}
-            onClick={() => {
-              setActiveMobileCard(prev => prev === card.label ? null : card.label);
-            }}
+            onClick={(e) => handleCardClick(e, card.label)}
             className={`group/item relative w-44 h-44 sm:w-52 sm:h-52 bg-white/90 border border-white/10 shadow-lg cursor-pointer flex justify-center items-center transition-all duration-500 rounded-lg backdrop-blur-sm -mx-16 ${activeMobileCard === card.label ? 'z-20 scale-105 -translate-y-2 rotate-0' : `${card.label === 'Wiertnica' ? 'z-10' : 'z-0'} rotate-[var(--r)]`}  sm:group-hover/fan:rotate-0 sm:group-hover/fan:mx-[10px] ${card.label === 'Wiertnica' ? 'sm:z-10' : 'sm:z-0'}`}
             style={{
               '--r': `${card.r}deg`,
             } as React.CSSProperties}
           >
             {card.icon}
-          </div>
+          </Link>
         ))}
       </div>
     </div>
