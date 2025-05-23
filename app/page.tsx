@@ -21,21 +21,21 @@ export default function Home() {
 						</h1>
 					</div>
 					<div className='text-black flex flex-row gap-8 sm:gap-12 md:gap-20 font-bold text-sm sm:text-base md:text-xl items-center justify-center italic ms-4'>
-						<div className='relative'>
-							<h3 className='relative z-10 inline transform -skew-x-12 bg-[linear-gradient(rgba(245,158,11,0.4),rgba(245,158,11,0.4))] bg-[length:100%_0.75rem] bg-bottom bg-no-repeat [box-decoration:clone] [-webkit-box-decoration:clone] px-2 text-transparent'>
+						<Link href='/zakres-uslug' className='relative'>
+							<h3 className='relative z-10 inline transform -skew-x-12 bg-[linear-gradient(rgba(245,158,11,0.4),rgba(245,158,11,0.4))] bg-[length:100%_0.75rem] bg-bottom bg-no-repeat [box-decoration:clone] [-webkit-box-decoration:clone] px-2 text-transparent hover:bg-[length:100%_1rem] transition-all duration-300 cursor-pointer'>
 								<span className="inline transform skew-x-12 text-black">PRACE ZIEMNE</span>
 							</h3>
-						</div>
-						<div className='relative'>
-							<h3 className='relative z-10 inline transform -skew-x-12 bg-[linear-gradient(rgba(245,158,11,0.4),rgba(245,158,11,0.4))] bg-[length:100%_0.75rem] bg-bottom bg-no-repeat [box-decoration:clone] [-webkit-box-decoration:clone] px-2 text-transparent'>
+						</Link>
+						<Link href='/zakres-uslug' className='relative'>
+							<h3 className='relative z-10 inline transform -skew-x-12 bg-[linear-gradient(rgba(245,158,11,0.4),rgba(245,158,11,0.4))] bg-[length:100%_0.75rem] bg-bottom bg-no-repeat [box-decoration:clone] [-webkit-box-decoration:clone] px-2 text-transparent hover:bg-[length:100%_1rem] transition-all duration-300 cursor-pointer'>
 								<span className="inline transform skew-x-12 text-black">ODWIERTY WIERTNICĄ</span>
 							</h3>
-						</div>
-						<div className='relative'>
-							<h3 className='relative z-10 inline transform -skew-x-12 bg-[linear-gradient(rgba(245,158,11,0.4),rgba(245,158,11,0.4))] bg-[length:100%_0.75rem] bg-bottom bg-no-repeat [box-decoration:clone] [-webkit-box-decoration:clone] px-2 text-transparent'>
+						</Link>
+						<Link href='/zakres-uslug' className='relative'>
+							<h3 className='relative z-10 inline transform -skew-x-12 bg-[linear-gradient(rgba(245,158,11,0.4),rgba(245,158,11,0.4))] bg-[length:100%_0.75rem] bg-bottom bg-no-repeat [box-decoration:clone] [-webkit-box-decoration:clone] px-2 text-transparent hover:bg-[length:100%_1rem] transition-all duration-300 cursor-pointer'>
 								<span className="inline transform skew-x-12 text-black">WSTAWIANIE SŁUPKÓW</span>
 							</h3>
-						</div>
+						</Link>
 					</div>
 				</div>
 				<div
