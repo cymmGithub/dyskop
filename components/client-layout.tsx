@@ -31,7 +31,7 @@ export default function ClientLayout({ children, myFont }: ClientLayoutProps) {
   return (
     <>
       <main
-        className={`${myFont.className} md:container mx-auto text-center h-screen flex flex-col`}
+        className={`${myFont.className} md:container mx-auto h-screen flex flex-col`}
       >
         <ToastContainer />
         <Navbar />

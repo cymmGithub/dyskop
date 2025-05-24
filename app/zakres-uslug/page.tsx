@@ -25,11 +25,23 @@ export default function Services() {
 									<h3 className='mt-4 text-sm sm:text-base font-semibold leading-6 text-gray-900 text-center'>
 										PRACE ZIEMNE
 									</h3>
-									<ul className='mt-1 sm:mt-3 text-xs sm:text-sm text-gray-600'>
-										<li>- odkopywanie fundamentów pod izolacje</li>
-										<li>- niwelacje i kształtowanie terenu</li>
-										<li>- ściąganie humusu, korytowani</li>
-										<li>- wykopy pod zbiorniki podziemne</li>
+									<ul className='mt-1 sm:mt-3 text-xs sm:text-sm text-gray-600 space-y-1'>
+										<li className='flex items-start space-x-2'>
+											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
+											<span>odkopywanie fundamentów pod izolacje</span>
+										</li>
+										<li className='flex items-start space-x-2'>
+											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
+											<span>niwelacje i kształtowanie terenu</span>
+										</li>
+										<li className='flex items-start space-x-2'>
+											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
+											<span>ściąganie humusu, korytowani</span>
+										</li>
+										<li className='flex items-start space-x-2'>
+											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
+											<span>wykopy pod zbiorniki podziemne</span>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -53,15 +65,27 @@ export default function Services() {
 									<h3 className='mt-4 text-sm sm:text-base font-semibold leading-6 text-gray-900 text-center'>
 										WYKOPY LINIOWE POD
 									</h3>
-									<ul className='mt-1 sm:mt-3 text-xs sm:text-sm text-gray-600'>
-										<li>
-											- przyłącza: elektryczne, gazowe, wodne, kanalizacyjne,
-											telekomunikacyjne
+									<ul className='mt-1 sm:mt-3 text-xs sm:text-sm text-gray-600 space-y-1'>
+										<li className='flex items-start space-x-2'>
+											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
+											<span>przyłącza: elektryczne, gazowe, wodne, kanalizacyjne, telekomunikacyjne</span>
 										</li>
-										<li>- światłowody</li>
-										<li>- fundamenty</li>
-										<li>- sieci rur drenarskich</li>
-										<li>- nawodnienie/ odwodnienie</li>
+										<li className='flex items-start space-x-2'>
+											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
+											<span>światłowody</span>
+										</li>
+										<li className='flex items-start space-x-2'>
+											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
+											<span>fundamenty</span>
+										</li>
+										<li className='flex items-start space-x-2'>
+											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
+											<span>sieci rur drenarskich</span>
+										</li>
+										<li className='flex items-start space-x-2'>
+											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
+											<span>nawodnienie/ odwodnienie</span>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -85,12 +109,27 @@ export default function Services() {
 									<h3 className='mt-4 text-sm sm:text-base font-semibold leading-6 text-gray-900 text-center'>
 										ODWIERTY POD
 									</h3>
-									<ul className='mt-1 sm:mt-3 text-xs sm:text-sm text-gray-600'>
-										<li>- słupki ogrodzeniowe</li>
-										<li>- konstrukcje/rusztowania sadownicze</li>
-										<li>- znaki drogowe</li>
-										<li>- konstrukcje fotowoltaiczne</li>
-										<li>- nasadzenia i inne</li>
+									<ul className='mt-1 sm:mt-3 text-xs sm:text-sm text-gray-600 space-y-1'>
+										<li className='flex items-start space-x-2'>
+											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
+											<span>słupki ogrodzeniowe</span>
+										</li>
+										<li className='flex items-start space-x-2'>
+											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
+											<span>konstrukcje/rusztowania sadownicze</span>
+										</li>
+										<li className='flex items-start space-x-2'>
+											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
+											<span>znaki drogowe</span>
+										</li>
+										<li className='flex items-start space-x-2'>
+											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
+											<span>konstrukcje fotowoltaiczne</span>
+										</li>
+										<li className='flex items-start space-x-2'>
+											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
+											<span>nasadzenia i inne</span>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -114,12 +153,27 @@ export default function Services() {
 									<h3 className='mt-4 text-sm sm:text-base font-semibold leading-6 text-gray-900 text-center'>
 										INNE
 									</h3>
-									<ul className='mt-1 sm:mt-3 text-xs sm:text-sm text-gray-600'>
-										<li>- wstawianie słupków betonowych/drewnianych</li>
-										<li>- montaż/demontaż podkładów kolejowych</li>
-										<li>- wyrywanie korzeni</li>
-										<li>- odprowadzenia wody deszczowej od budynków</li>
-										<li>- utwardzanie podjazdów</li>
+									<ul className='mt-1 sm:mt-3 text-xs sm:text-sm text-gray-600 space-y-1'>
+										<li className='flex items-start space-x-2'>
+											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
+											<span>wstawianie słupków betonowych/drewnianych</span>
+										</li>
+										<li className='flex items-start space-x-2'>
+											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
+											<span>montaż/demontaż podkładów kolejowych</span>
+										</li>
+										<li className='flex items-start space-x-2'>
+											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
+											<span>wyrywanie korzeni</span>
+										</li>
+										<li className='flex items-start space-x-2'>
+											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
+											<span>odprowadzenia wody deszczowej od budynków</span>
+										</li>
+										<li className='flex items-start space-x-2'>
+											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
+											<span>utwardzanie podjazdów</span>
+										</li>
 									</ul>
 								</div>
 							</div>

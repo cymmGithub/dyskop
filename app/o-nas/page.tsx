@@ -18,22 +18,22 @@ export default function AboutUs() {
 		<div className='relative h-screen overflow-y-auto overflow-x-hidden pt-20 md:pt-28 pb-32 sm:pb-20'>
 			<div className='relative z-10 py-4 sm:py-8'>
 				<div className='container mx-auto flex justify-evenly flex-col-reverse sm:flex-row'>
-					<div className='w-full max-w-md mx-auto px-2 sm:mx-5 sm:px-0'>
-						<p className='leading-[1.5rem] sm:leading-8 text-sm sm:text-[13px] text-gray-600 text-center'>
+					<div className='w-full max-w-xl mx-auto  sm:mx-5 sm:px-0'>
+						<p className='leading-[1.5rem] sm:leading-8 text-sm sm:text-[14px] text-gray-600'>
 							Firma Dys-Kop mieści się w Dysie k. Lublina. Świadczymy usługi
 							profesjonalną minikoparką <b>Caterpillar 301.8</b> o wadze 2 ton.
 						</p>
-						<p className='mt-4 sm:mt-3 leading-[1.5rem] sm:leading-8 text-sm sm:text-[13px] text-gray-600 text-center'>
+						<p className='mt-4 sm:mt-3 leading-[1.5rem] sm:leading-8 text-sm sm:text-[14px] text-gray-600'>
 							Oferujemy również odwierty wiertnicą{' '}
 							<Popover>
 								<PopoverTrigger>
 									<Badge
 										variant="secondary"
-										className="inline-flex items-center gap-1 cursor-pointer bg-amber-300 hover:bg-amber-400 transition-colors duration-200 text-xs sm:text-[13px] font-bold px-2 py-0.5"
+										className="inline-flex items-center gap-1 cursor-pointer bg-amber-300 hover:bg-amber-400 transition-colors duration-200 text-xs sm:text-[14px] font-bold px-2 py-0.5"
 									>
 										<FaCircleInfo className="w-3 h-3" />
 										DIGGA PDX2H-2
-									</Badge>
+									</Badge>,&nbsp;
 								</PopoverTrigger>
 								<PopoverContent className='flex flex-col gap-2 shadow-xl text-sm sm:text-base w-80 sm:w-96'>
 									<div className='flex justify-center gap-2 mb-2'>
@@ -63,14 +63,15 @@ export default function AboutUs() {
 									</ul>
 								</PopoverContent>
 							</Popover>
-							, która gwarantuje wykonanie idealnie równych i pionowych odwiertów
-							(możliwe również wiercenie pod innym zadanym kątem). Realizujemy
+							która gwarantuje wykonanie idealnie równych i pionowych odwiertów
+							(możliwe również wiercenie pod innym zadanym kątem). <br></br>Realizujemy
 							kompleksowe usługi dla branży sadowniczej i ogrodzeniowej,
 							polegające na wykonaniu odwiertów i wstawieniu chwytakiem słupków
-							betonowych lub drewnianych. Ponadto wkręcamy różnego rodzaju
+							betonowych lub drewnianych.
+							Ponadto wkręcamy różnego rodzaju
 							kotwy.
 						</p>
-						<p className='mt-4 sm:mt-3 leading-[1.5rem] sm:leading-8 text-sm sm:text-[13px] text-gray-600 text-center'>
+						<p className='mt-4 sm:mt-3 leading-[1.5rem] sm:leading-8 text-sm sm:text-[14px] text-gray-600'>
 							Usługi świadczymy głównie w <b>Lublinie</b> i powiecie lubelskim
 							oraz na terenie powiatów ościennych: <b>świdnickiego</b>,{' '}
 							<b>lubartowskiego</b>, <b>opolskiego</b>, <b>puławskiego</b> i{' '}
@@ -80,7 +81,7 @@ export default function AboutUs() {
 					</div>
 					<div className='turntable-image-container'>
 						<Popover>
-							<PopoverTrigger className='flex gap-2 ms-7 text-xs sm:text-sm text-center items-center'>
+							<PopoverTrigger className='flex gap-2 ms-7 text-xs sm:text-sm items-center'>
 								<FaCircleInfo className='hover:scale-125 text-lg' />
 								<span>Informacje techniczne</span>
 							</PopoverTrigger>
@@ -113,7 +114,7 @@ export default function AboutUs() {
 							images={get360images}
 							className='cursor-pointer mx-5 sm:mx-0'
 						/>
-						<div className='flex justify-center items-center gap-2 text-gray-500 mt-2 mb-8 sm:mb-0'>
+						<div className='flex justify-center items-center gap-2 text-gray-500 mb-8 sm:mb-0'>
 							<FaArrowLeft className='animate-pulse' />
 							<span className='text-sm'>Obróć 360°</span>
 							<FaArrowRight className='animate-pulse' />

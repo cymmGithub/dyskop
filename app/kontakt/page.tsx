@@ -61,7 +61,7 @@ export default function Contact() {
 	};
 
 	return (
-		<div className='relative w-full bg-white pt-24 sm:pt-28'>
+		<div className='relative w-full bg-white pt-24 sm:pt-28 text-center'>
 			<div className='w-full px-4 sm:px-6 lg:px-8 py-2 sm:py-4'>
 				<div className='max-w-xl mx-auto'>
 					<div className='text-center mb-3 sm:mb-6'>

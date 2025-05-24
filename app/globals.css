@@ -76,6 +76,7 @@ body {
 	background: #ffffff00;
 }
 
+
 .new_footer_area {
 	background: transparent;
 }
@@ -90,6 +91,9 @@ body {
 	.new_footer_top {
 		padding: 0px 0px 190px;
 		overflow-x: hidden;
+	}
+	p {
+		text-wrap: balance;
 	}
 }
 
@@ -151,6 +155,9 @@ body {
 @media only screen and (max-width: 600px) {
 	.new_footer_top .footer_bg .footer_bg_two {
 		animation: myfirst 10s linear infinite;
+	}
+	p {
+		text-align: center;
 	}
 }
 
