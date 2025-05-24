@@ -16,7 +16,7 @@ export default function Services() {
 									<Image
 										src={`/img/dig-service.png`}
 										height={80}
-										width={200}
+										width={240}
 										alt='Usługi'
 										className='rounded-lg opacity-80 object-contain'
 									/>
@@ -56,7 +56,7 @@ export default function Services() {
 									<Image
 										src={`/img/connections-service.png`}
 										height={80}
-										width={200}
+										width={220}
 										alt='Usługi'
 										className='rounded-lg opacity-70 object-contain'
 									/>
