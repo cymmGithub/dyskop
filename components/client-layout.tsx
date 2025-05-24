@@ -1,7 +1,6 @@
 'use client';
 
 import { ToastContainer } from 'react-toastify';
-import { GoogleAnalytics } from '@next/third-parties/google';
 import Navbar from './navbar/navbar';
 import Footer from './footer/footer';
 import { useEffect, useState } from 'react';
@@ -41,7 +40,6 @@ export default function ClientLayout({ children, myFont }: ClientLayoutProps) {
         </div>
         <Footer />
       </main>
-      <GoogleAnalytics gaId='G-3X4T8QRHVC' />
     </>
   );
 }

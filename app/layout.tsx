@@ -1,15 +1,14 @@
 import type { Metadata } from 'next';
-import { Outfit } from 'next/font/google';
+import Script from 'next/script';
 import localFont from 'next/font/local';
 import ClientLayout from '../components/client-layout';
 
-// Font files can be colocated inside of `pages`
 const myFont = localFont({ src: '../public/fonts/Consolas.ttf' });
-const font = Outfit({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	title: 'Dys-kop | USŁUGI MINIKOPARKĄ | Dys, Lublin',
-	description: 'Usługi minikoparką: wykopy pod przyłącza; odkopywanie fundamentów; wyrywanie korzeni; utwardzanie podjazdów; odwodnienia budynków. Lublin; Dys; Niemce; Łęczna; Jastków; Garbów; Lubartów; Serniki Świdnik; Mełgiew; Bełżyce',
+	description:
+		'Usługi minikoparką: wykopy pod przyłącza; odkopywanie fundamentów; wyrywanie korzeni; utwardzanie podjazdów; odwodnienia budynków. Lublin; Dys; Niemce; Łęczna; Jastków; Garbów; Lubartów; Serniki Świdnik; Mełgiew; Bełżyce',
 };
 
 export default function RootLayout({
@@ -25,6 +24,15 @@ export default function RootLayout({
 					#uslugi #minikoparka #dys #dyskop #lublin
 				</div>
 			</body>
+			<Script src='https://www.googletagmanager.com/gtag/js?id=AW-17061194297' />
+			<Script id='google-analytics'>
+				{`
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+					gtag('config', 'AW-17061194297');
+         		`}
+			</Script>
 		</html>
 	);
 }
