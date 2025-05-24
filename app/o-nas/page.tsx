@@ -19,11 +19,11 @@ export default function AboutUs() {
 			<div className='relative z-10 py-4 sm:py-8'>
 				<div className='container mx-auto flex justify-evenly flex-col-reverse sm:flex-row'>
 					<div className='w-full max-w-xl mx-auto  sm:mx-5 sm:px-0'>
-						<p className='leading-[1.5rem] sm:leading-8 text-sm sm:text-[14px] text-gray-600'>
+						<p className='leading-[1.5rem] sm:leading-9 text-sm sm:text-[14px] text-gray-600'>
 							Firma Dys-Kop mieści się w Dysie k. Lublina. Świadczymy usługi
 							profesjonalną minikoparką <b>Caterpillar 301.8</b> o wadze 2 ton.
 						</p>
-						<p className='mt-4 sm:mt-3 leading-[1.5rem] sm:leading-8 text-sm sm:text-[14px] text-gray-600'>
+						<p className='mt-4 sm:mt-3 leading-[1.5rem] sm:leading-9 text-sm sm:text-[14px] text-gray-600'>
 							Oferujemy również odwierty wiertnicą{' '}
 							<Popover>
 								<PopoverTrigger>
@@ -71,7 +71,7 @@ export default function AboutUs() {
 							Ponadto wkręcamy różnego rodzaju
 							kotwy.
 						</p>
-						<p className='mt-4 sm:mt-3 leading-[1.5rem] sm:leading-8 text-sm sm:text-[14px] text-gray-600'>
+						<p className='mt-4 sm:mt-3 leading-[1.5rem] sm:leading-9 text-sm sm:text-[14px] text-gray-600'>
 							Usługi świadczymy głównie w <b>Lublinie</b> i powiecie lubelskim
 							oraz na terenie powiatów ościennych: <b>świdnickiego</b>,{' '}
 							<b>lubartowskiego</b>, <b>opolskiego</b>, <b>puławskiego</b> i{' '}
