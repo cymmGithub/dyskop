@@ -5,12 +5,13 @@ const Logo = () => {
 	return (
 		<Link href="/" passHref legacyBehavior>
 			<div className="flex w-[60px] md:w-[260px] hover:cursor-pointer">
-				<Image
-					src="/img/logo/dyskop-logo.png"
-					width={150}
-					height={150}
-					alt="Logo"
-				/>
+			<Image
+				src="/img/logo/dyskop-logo.png"
+				width={150}
+				height={150}
+				alt="Logo"
+				priority
+			/>
 			</div>
 		</Link>
 	);
