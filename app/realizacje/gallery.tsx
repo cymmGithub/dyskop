@@ -1,14 +1,15 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
+import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import { useState } from 'react';
+import { useState } from "react";
 
 interface GalleryProps {
 	images: {
-		image: string;
+		src: string;
 		base64: string;
+		alt?: string;
 	}[];
 }
 
@@ -29,13 +30,13 @@ export default function Gallery({ images }: GalleryProps) {
 						}}
 					>
 						<Image
-							src={`/img/gallery/${imageWithBlur.image}`}
-							alt={`${imageWithBlur.image} - zdjęcie z galerii`}
+							src={imageWithBlur.src}
+							alt={imageWithBlur.alt || `Zdjęcie z galerii ${i + 1}`}
 							className='object-cover cursor-pointer md:group-hover:opacity-75 md:group-hover:scale-110 transition-all duration-300 ease-in-out'
 							fill={true}
 							sizes='(max-width: 768px) 28vw, (min-width: 1380px) 180px, (min-width: 1120px) calc(20vw - 24px), (min-width: 860px) calc(25vw - 32px), calc(33vw - 50px)'
-							placeholder='blur'
-							blurDataURL={imageWithBlur.base64}
+							placeholder={imageWithBlur.base64 ? 'blur' : 'empty'}
+							blurDataURL={imageWithBlur.base64 || undefined}
 						/>
 					</div>
 				))}
@@ -46,7 +47,7 @@ export default function Gallery({ images }: GalleryProps) {
 				close={() => setIsOpen(false)}
 				index={photoIndex}
 				slides={images.map((img) => ({
-					src: `/img/gallery/${img.image}`,
+					src: img.src,
 				}))}
 			/>
 		</section>
