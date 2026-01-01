@@ -29,7 +29,7 @@ export default function ClientLayout({ children, myFont }: ClientLayoutProps) {
   if (isLoading) return <LoadingSpinner />;
 
   return (
-    <>
+    <div className="h-screen overflow-hidden">
       <main
         className={`${myFont.className} md:container mx-auto h-screen flex flex-col`}
       >
@@ -40,6 +40,6 @@ export default function ClientLayout({ children, myFont }: ClientLayoutProps) {
         </div>
         <Footer />
       </main>
-    </>
+    </div>
   );
 }

@@ -23,7 +23,7 @@ export default function AdminGallery({
 	};
 
 	return (
-		<div className='container mx-auto px-4 py-8 h-[80vh] min-h-[600px] flex flex-col'>
+		<div className='container mx-auto px-4 py-8 h-100 min-h-[600px] flex flex-col'>
 			<div className='flex justify-between items-center mb-8 flex-shrink-0'>
 				<h1 className='text-3xl font-bold'>Zarządzanie Galerią</h1>
 				<form action={logout}>
@@ -60,7 +60,7 @@ export default function AdminGallery({
 						disabled={isPending}
 						className='bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 disabled:opacity-50 transition-colors'
 					>
-						{isPending ? "Przesyłanie..." : "Wyślij"}
+						{isPending ? "Aktualizuję..." : "Wyślij"}
 					</button>
 				</form>
 			</div>
