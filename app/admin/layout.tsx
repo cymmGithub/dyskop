@@ -1,13 +1,12 @@
+'use client';
+
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import '../globals.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const myFont = localFont({ src: '../../public/fonts/Consolas.ttf' });
-
-export const metadata: Metadata = {
-	title: 'Admin Panel | Dys-kop',
-	description: 'Panel administracyjny zarządzania galerią',
-};
 
 export default function AdminLayout({
 	children,
@@ -17,6 +16,7 @@ export default function AdminLayout({
 	return (
 		<div className={`${myFont.className} bg-gray-50 min-h-screen`}>
 			{children}
+			<ToastContainer />
 		</div>
 	);
 }
