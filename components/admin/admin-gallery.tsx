@@ -13,6 +13,7 @@ export default function AdminGallery({
 }) {
 	const [isPending, startTransition] = useTransition();
 	const [imageToDelete, setImageToDelete] = useState<GalleryImage | null>(null);
+	const [selectedFileName, setSelectedFileName] = useState<string>("");
 
 	const handleDelete = () => {
 		if (!imageToDelete) return;
@@ -39,29 +40,41 @@ export default function AdminGallery({
 					action={async (formData) => {
 						startTransition(async () => {
 							await uploadImageAction(formData);
+							setSelectedFileName("");
 						});
 					}}
-					className='flex gap-4 items-center'
+					className='flex flex-col gap-4'
 				>
-					<input
-						type='file'
-						name='file'
-						accept='image/*'
-						required
-						className='block w-full text-sm text-gray-500
-						file:mr-4 file:py-2 file:px-4
-						file:rounded-full file:border-0
-						file:text-sm file:font-semibold
-						file:bg-blue-50 file:text-blue-700
-						hover:file:bg-blue-100'
-					/>
-					<button
-						type='submit'
-						disabled={isPending}
-						className='bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 disabled:opacity-50 transition-colors'
-					>
-						{isPending ? "Aktualizuję..." : "Wyślij"}
-					</button>
+					<div className='flex gap-4 items-center'>
+						<input
+							type='file'
+							name='file'
+							id='file-upload'
+							accept='image/*'
+							required
+							className='hidden'
+							onChange={(e) => {
+								const file = e.target.files?.[0];
+								setSelectedFileName(file ? file.name : "");
+							}}
+						/>
+						<label
+							htmlFor='file-upload'
+							className='cursor-pointer bg-blue-50 text-blue-700 px-4 py-2 rounded-full border-0 text-sm font-semibold hover:bg-blue-100 transition-colors'
+						>
+							Wybierz plik
+						</label>
+						<span className='text-sm text-gray-600 flex-1'>
+							{selectedFileName || "Nie wybrano pliku"}
+						</span>
+						<button
+							type='submit'
+							disabled={isPending || !selectedFileName}
+							className='bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 disabled:opacity-50 transition-colors'
+						>
+							{isPending ? "Aktualizuję..." : "Wyślij"}
+						</button>
+					</div>
 				</form>
 			</div>
 
