@@ -1,4 +1,7 @@
+'use client';
+
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 const Footer = () => {
 	const pathname = usePathname();
@@ -24,6 +27,8 @@ const Footer = () => {
 					<div className="flex justify-center items-center">
 						<p className="text-sm">
 							© Firma Dys-Kop, kontakt@dys-kop.pl | NIP 7133124621
+							<Link href="/login" className="opacity-1 ">
+							</Link>
 						</p>
 					</div>
 				</div>
