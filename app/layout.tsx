@@ -1,14 +1,87 @@
-import type { Metadata } from "next";
-import Script from "next/script";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import { GoogleAnalytics } from '@next/third-parties/google';
 import LayoutWrapper from "../components/layout-wrapper";
+import StructuredData from "../components/structured-data";
 
 const myFont = localFont({ src: "../public/fonts/Consolas.ttf" });
 
+export const viewport: Viewport = {
+	width: 'device-width',
+	initialScale: 1,
+	maximumScale: 5,
+	userScalable: true,
+	themeColor: '#ffffff',
+};
+
 export const metadata: Metadata = {
-	title: "Dys-kop | USŁUGI MINIKOPARKĄ | Dys, Lublin",
+	metadataBase: new URL('https://dys-kop.pl'),
+	title: {
+		default: "Dys-kop | Usługi minikoparką - Lublin i okolice",
+		template: "%s | Dys-kop"
+	},
 	description:
-		"Usługi minikoparką: wykopy pod przyłącza; odkopywanie fundamentów; wyrywanie korzeni; utwardzanie podjazdów; odwodnienia budynków. Lublin; Dys; Niemce; Łęczna; Jastków; Garbów; Lubartów; Serniki Świdnik; Mełgiew; Bełżyce",
+		"Profesjonalne usługi minikoparką Caterpillar 301.8 w Lublinie i okolicach. Oferujemy prace ziemne, wykopy liniowe, odwierty wiertnicą DIGGA oraz wstawianie słupków. Obsługujemy Lublin, Dys, Niemce, Łęcznę i okolice.",
+	keywords: [
+		"usługi minikoparką",
+		"minikoparka Lublin",
+		"prace ziemne",
+		"wykopy Lublin",
+		"wiertnica",
+		"odwierty",
+		"słupki ogrodzeniowe",
+		"Caterpillar 301.8",
+		"Dys",
+		"Niemce",
+		"Łęczna"
+	],
+	authors: [{ name: "Dys-kop" }],
+	creator: "Dys-kop",
+	publisher: "Dys-kop",
+	formatDetection: {
+		email: false,
+		address: false,
+		telephone: false,
+	},
+	openGraph: {
+		title: "Dys-kop | Usługi minikoparką - Lublin i okolice",
+		description:
+			"Profesjonalne usługi minikoparką Caterpillar 301.8 w Lublinie. Prace ziemne, wykopy, odwierty wiertnicą DIGGA, wstawianie słupków.",
+		url: 'https://dys-kop.pl',
+		siteName: 'Dys-kop',
+		locale: 'pl_PL',
+		type: 'website',
+		images: [
+			{
+				url: '/img/open-graph.png',
+				width: 1200,
+				height: 630,
+				alt: 'Dys-kop - Usługi minikoparką: prace ziemne, odwierty wiertnicą, wstawianie słupków - Lublin',
+			},
+		],
+	},
+	twitter: {
+		card: 'summary_large_image',
+		title: "Dys-kop | Usługi minikoparką - Lublin i okolice",
+		description:
+			"Profesjonalne usługi minikoparką Caterpillar 301.8 w Lublinie. Prace ziemne, wykopy, odwierty wiertnicą DIGGA.",
+		images: ['/img/open-graph.png'],
+	},
+	robots: {
+		index: true,
+		follow: true,
+		googleBot: {
+			index: true,
+			follow: true,
+			'max-video-preview': -1,
+			'max-image-preview': 'large',
+			'max-snippet': -1,
+		},
+	},
+	verification: {
+		// Add your verification tokens here when available
+		// google: 'your-google-verification-code',
+	},
 };
 
 export default function RootLayout({
@@ -18,21 +91,13 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='pl'>
+			<head>
+				<StructuredData />
+			</head>
 			<body>
 				<LayoutWrapper myFont={myFont}>{children}</LayoutWrapper>
-				<div className='hidden absolute'>
-					#uslugi #minikoparka #dys #dyskop #lublin
-				</div>
 			</body>
-			<Script src='https://www.googletagmanager.com/gtag/js?id=AW-17061194297' />
-			<Script id='google-analytics'>
-				{`
-					window.dataLayer = window.dataLayer || [];
-					function gtag(){dataLayer.push(arguments);}
-					gtag('js', new Date());
-					gtag('config', 'AW-17061194297');
-				`}
-			</Script>
+			<GoogleAnalytics gaId="AW-17061194297" />
 		</html>
 	);
 }

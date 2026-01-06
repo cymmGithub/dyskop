@@ -7,7 +7,7 @@ const cards = [
   { label: 'Wykopy', icon: (
     <Image
       src="/img/homepage/wykopy.png"
-      alt="Earn card illustration"
+      alt="Usługi wykopów i prac ziemnych minikoparką"
       width={120}
       height={120}
       className="h-[140px] w-[140px] object-contain opacity-80 filter brightness-[.85] saturate-[.65] group-hover/item:brightness-[1.2] group-hover/item:saturate-100 transition-all duration-300 ease-in-out"
@@ -16,7 +16,7 @@ const cards = [
   { label: 'Wiertnica', icon: (
     <Image
       src="/img/homepage/wiertnica.png"
-      alt="Code card illustration"
+      alt="Wiertnica DIGGA do odwiertów pod słupki"
       width={120}
       height={120}
       className="h-[150px] w-[150px] object-contain opacity-80 filter brightness-[.95] saturate-[.70] group-hover/item:brightness-[1.4] group-hover/item:saturate-100 transition-all duration-300 ease-in-out"
@@ -25,7 +25,7 @@ const cards = [
   { label: 'Slupki', icon: (
     <Image
       src="/img/homepage/slupki.png"
-      alt="Earn card illustration"
+      alt="Wstawianie słupków betonowych i drewnianych"
       width={120}
       height={120}
       className="h-[160px] w-[160px] object-contain opacity-80 filter brightness-[.85] saturate-[.65] group-hover/item:brightness-[1.2] group-hover/item:saturate-100 transition-all duration-300 ease-in-out"
@@ -64,7 +64,7 @@ const Card = () => {
   return (
     <div className="flex justify-center items-center relative sm:me-12 mt-6 md:mt-0">
       <div className="flex justify-center items-center relative group/fan">
-        {cards.map((card, idx) => (
+        {cards.map((card) => (
           <Link
             key={card.label}
             href="/zakres-uslug"

@@ -17,7 +17,7 @@ export default function Services() {
 										src={`/img/dig-service.png`}
 										height={80}
 										width={240}
-										alt='Usługi'
+										alt='Prace ziemne minikoparką - wykopy i niwelacje'
 										className='rounded-lg opacity-80 object-contain'
 									/>
 								</div>
@@ -57,7 +57,7 @@ export default function Services() {
 										src={`/img/connections-service.png`}
 										height={80}
 										width={220}
-										alt='Usługi'
+										alt='Wykopy liniowe pod przyłącza i instalacje'
 										className='rounded-lg opacity-70 object-contain'
 									/>
 								</div>
@@ -101,7 +101,7 @@ export default function Services() {
 										src={`/img/homepage/wiertnica.png`}
 										height={80}
 										width={200}
-										alt='Odwierty'
+										alt='Wiertnica DIGGA PDX2H-2 do precyzyjnych odwiertów'
 										className='rounded-lg opacity-80 object-contain'
 									/>
 								</div>
@@ -145,7 +145,7 @@ export default function Services() {
 										src={`/img/homepage/slupki.png`}
 										height={80}
 										width={220}
-										alt='Usługi'
+										alt='Wstawianie słupków i inne usługi minikoparką'
 										className='rounded-lg opacity-80 object-contain'
 									/>
 								</div>

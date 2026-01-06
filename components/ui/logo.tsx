@@ -9,7 +9,7 @@ const Logo = () => {
 				src="/img/logo/dyskop-logo.png"
 				width={150}
 				height={150}
-				alt="Logo"
+				alt="Dys-kop - Usługi minikoparką Lublin"
 				priority
 			/>
 			</div>
