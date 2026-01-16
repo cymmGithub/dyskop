@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
-import { GoogleAnalytics } from '@next/third-parties/google';
 import LayoutWrapper from "../components/layout-wrapper";
 import StructuredData from "../components/structured-data";
+import CookieConsentWrapper from "../components/cookie-consent/cookie-consent-wrapper";
 
 const myFont = localFont({ src: "../public/fonts/Consolas.ttf" });
 
@@ -95,9 +95,10 @@ export default function RootLayout({
 				<StructuredData />
 			</head>
 			<body>
-				<LayoutWrapper myFont={myFont}>{children}</LayoutWrapper>
+				<CookieConsentWrapper gaId="AW-17061194297">
+					<LayoutWrapper myFont={myFont}>{children}</LayoutWrapper>
+				</CookieConsentWrapper>
 			</body>
-			<GoogleAnalytics gaId="AW-17061194297" />
 		</html>
 	);
 }
