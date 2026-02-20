@@ -36,7 +36,7 @@ export default function Services() {
 										</li>
 										<li className='flex items-start space-x-2'>
 											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
-											<span>ściąganie humusu, korytowani</span>
+											<span>ściąganie humusu, korytowanie</span>
 										</li>
 										<li className='flex items-start space-x-2'>
 											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
