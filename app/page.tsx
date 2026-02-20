@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import Card from '@/components/ui/card';
-import { FaPhone } from 'react-icons/fa';
+import { FaPhoneAlt } from 'react-icons/fa';
 
 export default function Home() {
 	return (
@@ -53,7 +53,7 @@ export default function Home() {
 							</Link>
 						</div>
 						<div className='hidden md:flex md:space-x-4 justify-between items-center phone-bounce me-10'>
-							<FaPhone className='text-2xl' />
+							<FaPhoneAlt className='text-2xl' />
 							<a href="tel:506502709" className='text-3xl font-bold hover:text-amber-500 transition-colors'>
 								506 502 709
 							</a>
