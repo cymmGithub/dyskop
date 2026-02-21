@@ -8,7 +8,7 @@ export default function Home() {
 			<div className='container mx-auto gap-4 sm:gap-6 min-h-screen px-5 sm:px-10 py-1 md:p-8 flex flex-col relative z-10 pt-16 md:pt-24 pb-16'>
 				{/* Hero text */}
 				<div
-					className='flex flex-col max-w-3xl mx-auto w-full gap-2 md:gap-3 animate-slideUp opacity-0 pt-2 md:pt-4 text-center'
+					className='flex flex-col max-w-3xl mx-auto w-full gap-2 md:gap-3 animate-slideUp opacity-0 pt-6 md:pt-4 text-center'
 					style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}
 				>
 					<h1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>

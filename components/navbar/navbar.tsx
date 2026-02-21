@@ -12,7 +12,7 @@ const Navbar = () => {
 			<div className='bg-white/70 backdrop-blur-sm shadow-sm md:bg-white md:backdrop-blur-none md:shadow-none'>
 				<div className='container mx-auto px-1 sm:px-10'>
 					<div className="flex justify-center items-center sm:px-10 px-5 h-16 md:h-28">
-						<div className="flex-1 flex justify-start">
+						<div className="flex-1 flex justify-start md:me-16">
 							<Logo />
 						</div>
 						<div className="flex-1 flex justify-center items-center gap-2 sm:gap-2 md:gap-8 sm:me-2">

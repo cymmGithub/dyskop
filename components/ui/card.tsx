@@ -51,11 +51,11 @@ export default function ServiceCards() {
 						</div>
 
 						{/* Label inside the card */}
-						<div className="relative flex items-center justify-center px-4 py-2.5 border-t border-gray-100">
+						<div className="flex items-center justify-center gap-2 px-4 py-2.5 border-t border-gray-100">
 							<h3 className="font-bold text-sm text-gray-800 transition-colors duration-500 ease-out group-hover:text-amber-600">
 								{card.label}
 							</h3>
-							<HiArrowRight className="absolute right-4 text-gray-300 text-sm transition-all duration-500 ease-out group-hover:text-amber-500 group-hover:translate-x-1" />
+							<HiArrowRight className="text-gray-300 text-sm transition-all duration-500 ease-out group-hover:text-amber-500 group-hover:translate-x-1" />
 						</div>
 					</div>
 				</Link>
