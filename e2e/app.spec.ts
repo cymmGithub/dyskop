@@ -16,17 +16,17 @@ async function dismissCookieBanner(page: import("@playwright/test").Page) {
 test.describe("Homepage", () => {
   test("displays the main heading and service cards", async ({ page }) => {
     await page.goto("/");
-    await expect(page.getByRole("heading", { level: 1 })).toHaveText(
-      "USŁUGI MINIKOPARKĄ"
+    await expect(page.getByRole("heading", { level: 1 })).toContainText(
+      "Usługi minikoparką, wiertnicą i minitraktorem"
     );
     await expect(
-      page.getByRole("heading", { name: "PRACE ZIEMNE" })
+      page.getByRole("heading", { name: "USŁUGI MINIKOPARKĄ", exact: true })
     ).toBeVisible();
     await expect(
-      page.getByRole("heading", { name: "ODWIERTY WIERTNICĄ" })
+      page.getByRole("heading", { name: "KONSTRUKCJE SADOWNICZE", exact: true })
     ).toBeVisible();
     await expect(
-      page.getByRole("heading", { name: "WSTAWIANIE SŁUPKÓW" })
+      page.getByRole("heading", { name: "USŁUGI MINITRAKTOREM", exact: true })
     ).toBeVisible();
   });
 
