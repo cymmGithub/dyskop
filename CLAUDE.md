@@ -17,7 +17,7 @@ Dyskop (dys-kop.pl) is a Next.js 14 business website for a mini-excavator servic
 ## Architecture
 
 **App Router** (`app/`) — Pages use Next.js App Router with Polish URL slugs:
-- `o-nas/` (About), `zakres-uslug/` (Services), `realizacje/` (Gallery), `kontakt/` (Contact)
+- `o-nas/` (About), `uslugi-minikoparka-lublin/` (Services), `realizacje/` (Gallery), `kontakt/` (Contact)
 - `login/` and `admin/` — Admin dashboard for gallery management
 - `api/contact-form/` — Nodemailer-based email endpoint with rate limiting
 - `actions/` — Server actions for auth (cookie-based sessions) and gallery CRUD (Vercel Blob storage)

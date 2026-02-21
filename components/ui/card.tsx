@@ -29,7 +29,7 @@ export default function ServiceCards() {
 			{cards.map((card, i) => (
 				<Link
 					key={card.label}
-					href="/zakres-uslug"
+					href="/uslugi-minikoparka-lublin"
 					className="group animate-slideUp opacity-0"
 					style={{
 						animationDelay: delays[i],

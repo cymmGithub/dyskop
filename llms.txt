@@ -28,7 +28,7 @@ This is a server-side rendered Next.js application using the App Router, TypeScr
 - [app/page.tsx](./app/page.tsx): Home page featuring service overview and call-to-action
 - [app/layout.tsx](./app/layout.tsx): Root layout with metadata, SEO configuration, and Google Analytics
 - [app/o-nas/page.tsx](./app/o-nas/page.tsx): About us page with 360° excavator view and technical specifications
-- [app/zakres-uslug/page.tsx](./app/zakres-uslug/page.tsx): Scope of services page
+- [app/uslugi-minikoparka-lublin/page.tsx](./app/uslugi-minikoparka-lublin/page.tsx): Services page
 - [app/realizacje/page.tsx](./app/realizacje/page.tsx): Portfolio/gallery page showcasing completed projects
 - [app/kontakt/page.tsx](./app/kontakt/page.tsx): Contact page with form and business information
 - [app/admin/page.tsx](./app/admin/page.tsx): Admin dashboard for gallery management

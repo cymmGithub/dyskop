@@ -54,7 +54,7 @@ test.describe("Navigation", () => {
 
     await dismissCookieBanner(page);
     await page.getByRole("link", { name: "Zakres Usług" }).click();
-    await expect(page).toHaveURL("/zakres-uslug");
+    await expect(page).toHaveURL("/uslugi-minikoparka-lublin");
 
     await dismissCookieBanner(page);
     await page.getByRole("link", { name: "Realizacje" }).click();

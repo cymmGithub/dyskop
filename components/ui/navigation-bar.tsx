@@ -14,12 +14,12 @@ import {
 import { cn } from '@/lib/utils';
 
 const services = [
-	{ title: 'Wykopy', href: '/zakres-uslug', description: 'Wykopy pod fundamenty, instalacje i przyłącza' },
-	{ title: 'Niwelacja terenu', href: '/zakres-uslug', description: 'Wyrównywanie i profilowanie terenu' },
-	{ title: 'Rozbiórki', href: '/zakres-uslug', description: 'Rozbiórki małych obiektów i nawierzchni' },
-	{ title: 'Drenaż', href: '/zakres-uslug', description: 'Systemy odwadniające i drenaże opaskowe' },
-	{ title: 'Przygotowanie działki', href: '/zakres-uslug', description: 'Karczowanie, czyszczenie i przygotowanie gruntu' },
-	{ title: 'Transport materiałów', href: '/zakres-uslug', description: 'Załadunek i przemieszczanie materiałów sypkich' },
+	{ title: 'Wykopy', href: '/uslugi-minikoparka-lublin', description: 'Wykopy pod fundamenty, instalacje i przyłącza' },
+	{ title: 'Niwelacja terenu', href: '/uslugi-minikoparka-lublin', description: 'Wyrównywanie i profilowanie terenu' },
+	{ title: 'Rozbiórki', href: '/uslugi-minikoparka-lublin', description: 'Rozbiórki małych obiektów i nawierzchni' },
+	{ title: 'Drenaż', href: '/uslugi-minikoparka-lublin', description: 'Systemy odwadniające i drenaże opaskowe' },
+	{ title: 'Przygotowanie działki', href: '/uslugi-minikoparka-lublin', description: 'Karczowanie, czyszczenie i przygotowanie gruntu' },
+	{ title: 'Transport materiałów', href: '/uslugi-minikoparka-lublin', description: 'Załadunek i przemieszczanie materiałów sypkich' },
 ];
 
 const ListItem = React.forwardRef<

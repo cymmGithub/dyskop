@@ -16,12 +16,12 @@ import { Outfit } from 'next/font/google';
 const font = Outfit({ subsets: ['latin'] });
 
 const services = [
-	{ title: 'Wykopy', href: '/zakres-uslug' },
-	{ title: 'Niwelacja terenu', href: '/zakres-uslug' },
-	{ title: 'Rozbiórki', href: '/zakres-uslug' },
-	{ title: 'Drenaż', href: '/zakres-uslug' },
-	{ title: 'Przygotowanie działki', href: '/zakres-uslug' },
-	{ title: 'Transport materiałów', href: '/zakres-uslug' },
+	{ title: 'Wykopy', href: '/uslugi-minikoparka-lublin' },
+	{ title: 'Niwelacja terenu', href: '/uslugi-minikoparka-lublin' },
+	{ title: 'Rozbiórki', href: '/uslugi-minikoparka-lublin' },
+	{ title: 'Drenaż', href: '/uslugi-minikoparka-lublin' },
+	{ title: 'Przygotowanie działki', href: '/uslugi-minikoparka-lublin' },
+	{ title: 'Transport materiałów', href: '/uslugi-minikoparka-lublin' },
 ];
 
 const Burger = () => {
