@@ -80,14 +80,14 @@ test.describe("About page", () => {
   test("displays company description", async ({ page }) => {
     await page.goto("/o-nas");
     await expect(
-      page.getByText("Firma Dys-Kop mieści się w Dysie k. Lublina")
+      page.getByText("Dys-Kop to firma specjalizująca się")
     ).toBeVisible();
   });
 
-  test("has 360 turntable image slider", async ({ page }) => {
+  test("has equipment image", async ({ page }) => {
     await page.goto("/o-nas");
     await expect(
-      page.getByRole("slider", { name: "Image turntable" })
+      page.getByAltText(/Minikoparka Caterpillar 301.8/)
     ).toBeVisible();
   });
 });
