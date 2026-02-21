@@ -70,7 +70,7 @@ export default function AboutUs() {
 
 					{/* RIGHT — Equipment showcase */}
 					<div
-						className='w-full md:w-1/2 relative flex flex-col items-center opacity-0 animate-slideUp'
+						className='w-full md:w-1/2 relative flex flex-col items-center md:self-start md:mt-12 opacity-0 animate-slideUp'
 						style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
 					>
 						<div className='relative'>
