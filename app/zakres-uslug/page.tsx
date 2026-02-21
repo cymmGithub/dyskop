@@ -1,185 +1,142 @@
 import Image from 'next/image';
+import { FaMapMarkerAlt } from 'react-icons/fa';
+
+
+const services = [
+	{
+		title: 'PRACE ZIEMNE',
+		image: '/img/dig-service.png',
+		alt: 'Prace ziemne minikoparką - wykopy i niwelacje',
+		items: [
+			'odkopywanie fundamentów pod izolacje',
+			'niwelacje i kształtowanie terenu',
+			'ściąganie humusu, korytowanie',
+			'wykopy pod zbiorniki podziemne',
+		],
+	},
+	{
+		title: 'WYKOPY LINIOWE POD',
+		image: '/img/connections-service.png',
+		alt: 'Wykopy liniowe pod przyłącza i instalacje',
+		items: [
+			'przyłącza: elektryczne, gazowe, wodne, kanalizacyjne, telekomunikacyjne',
+			'światłowody',
+			'fundamenty',
+			'sieci rur drenarskich',
+			'nawodnienie/ odwodnienie',
+		],
+	},
+	{
+		title: 'ODWIERTY POD',
+		image: '/img/homepage/wiertnica.png',
+		alt: 'Wiertnica DIGGA PDX2H-2 do precyzyjnych odwiertów',
+		items: [
+			'słupki ogrodzeniowe',
+			'konstrukcje/rusztowania sadownicze',
+			'znaki drogowe',
+			'konstrukcje fotowoltaiczne',
+			'nasadzenia i inne',
+		],
+	},
+	{
+		title: 'INNE',
+		image: '/img/homepage/slupki.png',
+		alt: 'Wstawianie słupków i inne usługi minikoparką',
+		items: [
+			'wstawianie słupków betonowych/drewnianych',
+			'montaż/demontaż podkładów kolejowych',
+			'wyrywanie korzeni',
+			'odprowadzenia wody deszczowej od budynków',
+			'utwardzanie podjazdów',
+		],
+	},
+];
+
+const cardDelays = ['0.2s', '0.4s', '0.6s', '0.8s'];
 
 export default function Services() {
 	return (
-		<div className='relative h-screen overflow-y-auto overflow-x-hidden pb-32 sm:pb-10 pt-24 md:pt-28'>
-			<div className='relative z-10 py-4 sm:py-8 w-full mt-0 md:mt-16 lg:mt-24'>
-				<div className='container mx-auto'>
-					<div className='grid max-w-2xl grid-cols-1 gap-x-6 lg:mx-0 lg:max-w-none lg:grid-cols-4'>
-						<article
-							key={'9cd218fc-8733-4001-9cdc-24f914d7e71f'}
-							className='flex max-w-xl flex-col items-center mb-12 md:mb-0 opacity-0 animate-slideUp'
-							style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
-						>
-							<div className='flex flex-col items-center w-full'>
-								<div className='h-32 flex items-center justify-center mb-8'>
-									<Image
-										src={`/img/dig-service.png`}
-										height={80}
-										width={240}
-										alt='Prace ziemne minikoparką - wykopy i niwelacje'
-										className='rounded-lg opacity-80 object-contain'
-									/>
-								</div>
-								<div className='group relative w-full'>
-									<h3 className='mt-4 text-sm sm:text-base font-semibold leading-6 text-gray-900 text-center'>
-										PRACE ZIEMNE
-									</h3>
-									<ul className='mt-1 sm:mt-3 text-xs sm:text-sm text-gray-600 space-y-1'>
-										<li className='flex items-start space-x-2'>
-											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
-											<span>odkopywanie fundamentów pod izolacje</span>
-										</li>
-										<li className='flex items-start space-x-2'>
-											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
-											<span>niwelacje i kształtowanie terenu</span>
-										</li>
-										<li className='flex items-start space-x-2'>
-											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
-											<span>ściąganie humusu, korytowanie</span>
-										</li>
-										<li className='flex items-start space-x-2'>
-											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
-											<span>wykopy pod zbiorniki podziemne</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</article>
-						<article
-							key={'8c1bddeb-84f7-43b5-9884-218aa47189f3'}
-							className='flex max-w-xl flex-col items-center mb-12 md:mb-0 opacity-0 animate-slideUp'
-							style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}
-						>
-							<div className='flex flex-col items-center w-full'>
-								<div className='h-32 flex items-center justify-center mb-8'>
-									<Image
-										src={`/img/connections-service.png`}
-										height={80}
-										width={220}
-										alt='Wykopy liniowe pod przyłącza i instalacje'
-										className='rounded-lg opacity-70 object-contain'
-									/>
-								</div>
-								<div className='group relative w-full'>
-									<h3 className='mt-4 text-sm sm:text-base font-semibold leading-6 text-gray-900 text-center'>
-										WYKOPY LINIOWE POD
-									</h3>
-									<ul className='mt-1 sm:mt-3 text-xs sm:text-sm text-gray-600 space-y-1'>
-										<li className='flex items-start space-x-2'>
-											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
-											<span>przyłącza: elektryczne, gazowe, wodne, kanalizacyjne, telekomunikacyjne</span>
-										</li>
-										<li className='flex items-start space-x-2'>
-											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
-											<span>światłowody</span>
-										</li>
-										<li className='flex items-start space-x-2'>
-											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
-											<span>fundamenty</span>
-										</li>
-										<li className='flex items-start space-x-2'>
-											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
-											<span>sieci rur drenarskich</span>
-										</li>
-										<li className='flex items-start space-x-2'>
-											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
-											<span>nawodnienie/ odwodnienie</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</article>
-						<article
-							key={'drilling-services-001'}
-							className='flex max-w-xl flex-col items-center mb-12 md:mb-0 opacity-0 animate-slideUp'
-							style={{ animationDelay: '1.3s', animationFillMode: 'forwards' }}
-						>
-							<div className='flex flex-col items-center w-full'>
-								<div className='h-32 flex items-center justify-center mb-8'>
-									<Image
-										src={`/img/homepage/wiertnica.png`}
-										height={80}
-										width={200}
-										alt='Wiertnica DIGGA PDX2H-2 do precyzyjnych odwiertów'
-										className='rounded-lg opacity-80 object-contain'
-									/>
-								</div>
-								<div className='group relative w-full'>
-									<h3 className='mt-4 text-sm sm:text-base font-semibold leading-6 text-gray-900 text-center'>
-										ODWIERTY POD
-									</h3>
-									<ul className='mt-1 sm:mt-3 text-xs sm:text-sm text-gray-600 space-y-1'>
-										<li className='flex items-start space-x-2'>
-											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
-											<span>słupki ogrodzeniowe</span>
-										</li>
-										<li className='flex items-start space-x-2'>
-											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
-											<span>konstrukcje/rusztowania sadownicze</span>
-										</li>
-										<li className='flex items-start space-x-2'>
-											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
-											<span>znaki drogowe</span>
-										</li>
-										<li className='flex items-start space-x-2'>
-											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
-											<span>konstrukcje fotowoltaiczne</span>
-										</li>
-										<li className='flex items-start space-x-2'>
-											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
-											<span>nasadzenia i inne</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</article>
-						<article
-							key={'758d0c19-4d01-470d-acff-5959960dedab'}
-							className='flex max-w-xl flex-col items-center mb-12 md:mb-0 opacity-0 animate-slideUp'
-							style={{ animationDelay: '1.8s', animationFillMode: 'forwards' }}
-						>
-							<div className='flex flex-col items-center w-full'>
-								<div className='h-32 flex items-center justify-center mb-8'>
-									<Image
-										src={`/img/homepage/slupki.png`}
-										height={80}
-										width={220}
-										alt='Wstawianie słupków i inne usługi minikoparką'
-										className='rounded-lg opacity-80 object-contain'
-									/>
-								</div>
-								<div className='group relative w-full'>
-									<h3 className='mt-4 text-sm sm:text-base font-semibold leading-6 text-gray-900 text-center'>
-										INNE
-									</h3>
-									<ul className='mt-1 sm:mt-3 text-xs sm:text-sm text-gray-600 space-y-1'>
-										<li className='flex items-start space-x-2'>
-											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
-											<span>wstawianie słupków betonowych/drewnianych</span>
-										</li>
-										<li className='flex items-start space-x-2'>
-											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
-											<span>montaż/demontaż podkładów kolejowych</span>
-										</li>
-										<li className='flex items-start space-x-2'>
-											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
-											<span>wyrywanie korzeni</span>
-										</li>
-										<li className='flex items-start space-x-2'>
-											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
-											<span>odprowadzenia wody deszczowej od budynków</span>
-										</li>
-										<li className='flex items-start space-x-2'>
-											<span className='h-1.5 w-1.5 rounded-full bg-yellow-600 flex-shrink-0 mt-[0.4rem]'></span>
-											<span>utwardzanie podjazdów</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</article>
+		<div className='relative overflow-x-hidden pt-20 md:pt-28 pb-8 sm:pb-16'>
+			<div className='sketchy-bg absolute inset-0 opacity-30 pointer-events-none' />
+			<div className='relative z-10 container mx-auto px-5 sm:px-10'>
+				{/* Section 1: Hero + Coverage side by side */}
+				<section
+					className='flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-8 mb-5 md:mb-6 opacity-0 animate-slideUp mt-6'
+					style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}
+				>
+					{/* Left — Hero */}
+					<div className='border-l-4 border-amber-500 pl-6 md:flex-1'>
+						<h1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
+							Usługi minikoparką
+							<span className='block text-amber-500 text-base sm:text-lg md:text-xl mt-1 font-semibold tracking-normal'>
+								powiat lubelski i&nbsp;okolice
+							</span>
+						</h1>
+						<p className='mt-3 sm:mt-4 text-sm sm:text-base leading-relaxed text-gray-600 max-w-2xl text-left'>
+							Oferujemy profesjonalne usługi minikoparką, realizowane kompaktową maszyną{' '}
+							<b className='text-gray-800'>Caterpillar&nbsp;301.8</b>, idealną tam, gdzie duży sprzęt
+							nie ma dostępu lub mógłby uszkodzić otoczenie. Prace ziemne wykonujemy z&nbsp;precyzją
+							i&nbsp;dbałością o&nbsp;szczegóły — zarówno na prywatnych działkach, jak
+							i&nbsp;na&nbsp;inwestycjach budowlanych.
+						</p>
 					</div>
-				</div>
+
+					{/* Right — Coverage area */}
+					<div className='md:flex-1 md:max-w-sm'>
+						<h2 className='flex items-center gap-2 text-base sm:text-lg font-semibold text-gray-900 mb-3'>
+							<FaMapMarkerAlt className='text-amber-500 text-sm' />
+							Gdzie realizujemy usługi?
+						</h2>
+						<div className='flex flex-wrap gap-2'>
+
+							<span className='px-2.5 py-1 rounded-full text-xs text-gray-500'>
+								Usługi minikoparką wykonujemy w Lublinie oraz w miejscowościach powiatu lubelskiego i w promieniu około 30–40 km od Lublina — m.in. w Świdniku, Lubartowie, Konopnicy, Garbowie, Jastkowie i Turce.
+							</span>
+						</div>
+					</div>
+				</section>
+
+				{/* Section 2: Service Cards Grid */}
+				<section className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 sm:gap-6'>
+					{services.map((service, i) => (
+						<article
+							key={i}
+							className='group relative bg-white rounded-xl border border-gray-200 overflow-hidden transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-xl hover:shadow-amber-400/15 hover:border-amber-300 opacity-0 animate-slideUp'
+							style={{ animationDelay: cardDelays[i], animationFillMode: 'forwards' }}
+						>
+							{/* Amber accent top line */}
+							<div className='absolute top-0 left-0 right-0 h-0.5 bg-amber-400 transform scale-x-0 origin-left transition-transform duration-500 ease-out group-hover:scale-x-100 z-10' />
+
+							{/* Image strip */}
+							<div className='h-28 sm:h-32 md:h-28 flex items-center justify-center overflow-hidden'>
+								<Image
+									src={service.image}
+									height={120}
+									width={200}
+									alt={service.alt}
+									className='object-contain max-h-full opacity-80 transition-transform duration-500 ease-out group-hover:scale-105'
+								/>
+							</div>
+
+							{/* Title row */}
+							<div className='flex items-center justify-between gap-2 px-4 py-2.5 border-b border-gray-100'>
+								<h2 className='font-bold text-sm text-gray-800 transition-colors duration-500 ease-out group-hover:text-amber-600'>
+									{service.title}:
+								</h2>
+							</div>
+
+							{/* Service list */}
+							<ul className='px-4 py-2 text-xs sm:text-sm md:text-xs text-gray-600 space-y-0.5'>
+								{service.items.map((item) => (
+									<li key={item} className='flex items-start space-x-2'>
+										<span className='h-1.5 w-1.5 rounded-full bg-amber-500 flex-shrink-0 mt-[0.4rem]' />
+										<span>{item}</span>
+									</li>
+								))}
+							</ul>
+						</article>
+					))}
+				</section>
 			</div>
 		</div>
 	);
