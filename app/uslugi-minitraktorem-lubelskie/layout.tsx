@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
 	title: "Usługi minitraktorem Lublin i okolice | Dys-kop",
-	description: "Profesjonalne usługi minitraktorem w Lublinie i okolicach. Koszenie trawników i nieużytków, orka pod uprawy, przygotowanie terenu pod trawnik, uprawa gleby. Kompaktowy ciągnik 26 KM — precyzja tam, gdzie duże maszyny nie wjadą.",
+	description: "Profesjonalne usługi minitraktorem w Lublinie i okolicach. Koszenie trawników i nieużytków, orka pod uprawy, przygotowanie terenu pod trawnik. Ciągnik 26 KM.",
 	keywords: ["usługi minitraktorem", "minitraktor Lublin", "koszenie trawników Lublin", "orka Lublin", "przygotowanie terenu pod trawnik", "glebogryzarka", "kosiarka bijakowa"],
 	alternates: {
 		canonical: 'https://dys-kop.pl/uslugi-minitraktorem-lubelskie',

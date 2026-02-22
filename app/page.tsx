@@ -38,6 +38,7 @@ export default function Home() {
 
 				{/* Service cards */}
 				<div className='max-w-4xl mx-auto w-full mt-2'>
+					<h2 className='sr-only'>Nasze usługi</h2>
 					<ServiceCards />
 				</div>
 			</div>

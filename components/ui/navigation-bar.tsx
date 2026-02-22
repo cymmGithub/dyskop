@@ -15,18 +15,18 @@ import {
 import { cn } from '@/lib/utils';
 
 const services = [
-	{ title: 'Usługi minikoparką', href: '/uslugi-minikoparka-lubelskie', description: 'Profesjonalne usługi minikoparką, realizowane kompaktową maszyną Caterpillar 301.8', image: '/img/homepage/minikoparka-prace-ziemne-lublin.png' },
-	{ title: 'Konstrukcje sadownicze', href: '/konstrukcje-sadownicze-lubelskie', description: 'Wiercenie otworów i montaż słupów sadowniczych', image: '/img/homepage/konstrukcje-sadownicze-wiertnica-lublin.png' },
-	{ title: 'Usługi minitraktorem', href: '/uslugi-minitraktorem-lubelskie', description: 'Koszenie, orka, przygotowanie terenu', image: '/img/minitraktor-glebogryzarka-separacyjna-lublin.png' },
-	{ title: 'Glebogryzarka separacyjna', href: '/glebogryzarka-separacyjna-lubelskie', description: 'Przygotowanie terenu pod trawnik i ogrody', image: '/img/efekt-glebogryzarki-separacyjnej-trawnik-lublin.jpg' },
-	{ title: 'Koszenie działek', href: '/koszenie-dzialek-lubelskie', description: 'Kosiarka bijakowa i pielęgnacyjna na nieużytki i trawniki', image: '/img/koszenie-nieuzytkow-kosiarka-bijakowa-efekt.jpg' },
-	{ title: 'Orka działek', href: '/orka-dzialek-lubelskie', description: 'Orka pługiem dwuskibowym pod uprawy i ogrody', image: '/img/orka-plugiem-efekt-przygotowanie-gleby-lublin.jpg' },
+	{ title: 'Usługi minikoparką', href: '/uslugi-minikoparka-lubelskie', description: 'Profesjonalne usługi minikoparką, realizowane kompaktową maszyną Caterpillar 301.8', image: '/img/homepage/minikoparka-prace-ziemne-lublin.png', imageAlt: 'Minikoparka — prace ziemne Lublin' },
+	{ title: 'Konstrukcje sadownicze', href: '/konstrukcje-sadownicze-lubelskie', description: 'Wiercenie otworów i montaż słupów sadowniczych', image: '/img/homepage/konstrukcje-sadownicze-wiertnica-lublin.png', imageAlt: 'Wiertnica — konstrukcje sadownicze Lublin' },
+	{ title: 'Usługi minitraktorem', href: '/uslugi-minitraktorem-lubelskie', description: 'Koszenie, orka, przygotowanie terenu', image: '/img/minitraktor-glebogryzarka-separacyjna-lublin.png', imageAlt: 'Minitraktor z glebogryzarką separacyjną Lublin' },
+	{ title: 'Glebogryzarka separacyjna', href: '/glebogryzarka-separacyjna-lubelskie', description: 'Przygotowanie terenu pod trawnik i ogrody', image: '/img/efekt-glebogryzarki-separacyjnej-trawnik-lublin.jpg', imageAlt: 'Efekt glebogryzarki separacyjnej — trawnik Lublin' },
+	{ title: 'Koszenie działek', href: '/koszenie-dzialek-lubelskie', description: 'Kosiarka bijakowa i pielęgnacyjna na nieużytki i trawniki', image: '/img/koszenie-nieuzytkow-kosiarka-bijakowa-efekt.jpg', imageAlt: 'Koszenie nieużytków kosiarką bijakową Lublin' },
+	{ title: 'Orka działek', href: '/orka-dzialek-lubelskie', description: 'Orka pługiem dwuskibowym pod uprawy i ogrody', image: '/img/orka-plugiem-efekt-przygotowanie-gleby-lublin.jpg', imageAlt: 'Orka pługiem — przygotowanie gleby Lublin' },
 ];
 
 const ListItem = React.forwardRef<
 	React.ElementRef<'a'>,
-	React.ComponentPropsWithoutRef<'a'> & { title: string; image?: string }
->(({ className, title, children, href, image, ...props }, ref) => (
+	React.ComponentPropsWithoutRef<'a'> & { title: string; image?: string; imageAlt?: string }
+>(({ className, title, children, href, image, imageAlt, ...props }, ref) => (
 	<li>
 		<NavigationMenuLink asChild>
 			<Link
@@ -41,7 +41,7 @@ const ListItem = React.forwardRef<
 				{image && (
 					<Image
 						src={image}
-						alt=""
+						alt={imageAlt || title}
 						width={60}
 						height={40}
 						className="rounded-md object-cover shrink-0"
@@ -81,6 +81,7 @@ const NavigationBar = () => {
 									title={service.title}
 									href={service.href}
 									image={service.image}
+									imageAlt={service.imageAlt}
 								>
 									{service.description}
 								</ListItem>
