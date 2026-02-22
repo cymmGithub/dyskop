@@ -101,11 +101,11 @@ export default function Services() {
 					{services.map((service, i) => (
 						<article
 							key={i}
-							className='group relative bg-white rounded-xl border border-gray-200 overflow-hidden transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-xl hover:shadow-amber-400/15 hover:border-amber-300 opacity-0 animate-slideUp'
+							className='relative bg-white rounded-xl border border-gray-200 overflow-hidden opacity-0 animate-slideUp'
 							style={{ animationDelay: cardDelays[i], animationFillMode: 'forwards' }}
 						>
 							{/* Amber accent top line */}
-							<div className='absolute top-0 left-0 right-0 h-0.5 bg-amber-400 transform scale-x-0 origin-left transition-transform duration-500 ease-out group-hover:scale-x-100 z-10' />
+							<div className='absolute top-0 left-0 right-0 h-0.5 bg-amber-400 z-10' />
 
 							{/* Image strip */}
 							<div className='h-28 sm:h-32 md:h-28 flex items-center justify-center overflow-hidden'>
@@ -114,13 +114,13 @@ export default function Services() {
 									height={120}
 									width={200}
 									alt={service.alt}
-									className='p-1 object-contain max-h-full opacity-80 transition-transform duration-500 ease-out group-hover:scale-105'
+									className='p-1 object-contain max-h-full opacity-80'
 								/>
 							</div>
 
 							{/* Title row */}
 							<div className='flex items-center justify-between gap-2 px-4 py-2.5 border-b border-gray-100'>
-								<h3 className='font-bold text-sm text-gray-800 transition-colors duration-500 ease-out group-hover:text-amber-600'>
+								<h3 className='font-bold text-sm text-gray-800'>
 									{service.title}:
 								</h3>
 							</div>

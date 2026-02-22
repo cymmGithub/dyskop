@@ -63,10 +63,10 @@ export default function KonstrukcjeSadownicze() {
 							{scopeItems.map((item) => (
 								<div
 									key={item.title}
-									className='group relative bg-white/70 backdrop-blur-sm rounded-lg border border-gray-200 px-3 py-2 transition-all duration-300 hover:border-amber-300 hover:shadow-md hover:shadow-amber-400/10'
+									className='relative bg-white/70 backdrop-blur-sm rounded-lg border border-gray-200 px-3 py-2'
 								>
-									<div className='absolute top-0 left-0 w-8 h-0.5 bg-amber-400 rounded-full transition-all duration-300 group-hover:w-full' />
-									<h3 className='text-xs md:text-sm font-bold text-gray-800 group-hover:text-amber-600 transition-colors duration-300'>
+									<div className='absolute top-0 left-0 w-8 h-0.5 bg-amber-400 rounded-full' />
+									<h3 className='text-xs md:text-sm font-bold text-gray-800'>
 										{item.title}
 									</h3>
 									<p className='text-xs text-gray-500 mt-0.5 leading-snug'>{item.desc}</p>
