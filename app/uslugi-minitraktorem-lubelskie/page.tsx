@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { HiArrowRight } from "react-icons/hi";
+import TractorSpecsPopover from "@/components/tractor-specs-popover";
 
 const attachments = [
 	{
@@ -90,7 +91,7 @@ export default function UslugiMinitraktorem() {
 
 					{/* Row 1, Right: Farmtrac image */}
 					<div
-						className='md:col-span-2 flex items-end justify-center order-2 md:order-none opacity-0 animate-slideUp'
+						className='md:col-span-2 relative flex items-end justify-center order-2 md:order-none opacity-0 animate-slideUp'
 						style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
 					>
 						<Image
@@ -101,6 +102,9 @@ export default function UslugiMinitraktorem() {
 							priority
 							className='w-full max-w-[300px] object-contain drop-shadow-[0_8px_24px_rgba(245,158,11,0.15)]'
 						/>
+					<div className='absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+						<TractorSpecsPopover />
+					</div>
 					</div>
 
 					{/* Row 2: attachment cards spanning full width */}
