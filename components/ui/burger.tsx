@@ -16,12 +16,6 @@ import { Outfit } from 'next/font/google';
 const font = Outfit({ subsets: ['latin'] });
 
 const services = [
-	{ title: 'Wykopy', href: '/uslugi-minikoparka-lubelskie' },
-	{ title: 'Niwelacja terenu', href: '/uslugi-minikoparka-lubelskie' },
-	{ title: 'Rozbiórki', href: '/uslugi-minikoparka-lubelskie' },
-	{ title: 'Drenaż', href: '/uslugi-minikoparka-lubelskie' },
-	{ title: 'Przygotowanie działki', href: '/uslugi-minikoparka-lubelskie' },
-	{ title: 'Transport materiałów', href: '/uslugi-minikoparka-lubelskie' },
 	{ title: 'Konstrukcje sadownicze', href: '/konstrukcje-sadownicze-lubelskie' },
 	{ title: 'Usługi minitraktorem', href: '/uslugi-minitraktorem-lubelskie' },
 	{ title: 'Glebogryzarka separacyjna', href: '/glebogryzarka-separacyjna-lubelskie' },

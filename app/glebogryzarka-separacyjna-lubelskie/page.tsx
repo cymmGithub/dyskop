@@ -12,8 +12,8 @@ const scopeItems = [
 ];
 
 const galleryImages = [
-	{ src: '/img/efekt-glebogryzarki-separacyjnej-trawnik.jpg', alt: 'Efekt pracy glebogryzarki separacyjnej — wyrównany teren pod trawnik Lublin' },
-	{ src: '/img/przygotowanie-terenu-glebogryzarka-separacyjna.jpg', alt: 'Przygotowanie terenu glebogryzarką separacyjną — teren gotowy pod trawnik Lublin' },
+	{ src: '/img/efekt-glebogryzarki-separacyjnej-trawnik-lublin.jpg', alt: 'Efekt pracy glebogryzarki separacyjnej — wyrównany teren pod trawnik Lublin' },
+	{ src: '/img/przygotowanie-terenu-glebogryzarka-separacyjna-lublin.jpg', alt: 'Przygotowanie terenu glebogryzarką separacyjną — teren gotowy pod trawnik Lublin' },
 ];
 
 export default function GlebogryzarkaSeparacyjna() {
@@ -44,7 +44,7 @@ export default function GlebogryzarkaSeparacyjna() {
 						<h1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
 							Glebogryzarka separacyjna
 							<span className='block text-amber-500 text-base sm:text-lg md:text-xl mt-1 font-semibold tracking-normal'>
-								przygotowanie terenu pod trawnik | Lublin i&nbsp;okolice
+								przygotowanie terenu pod trawnik — Lublin i&nbsp;okolice
 							</span>
 						</h1>
 						<p className='mt-2 text-sm leading-snug text-gray-600 max-w-lg'>

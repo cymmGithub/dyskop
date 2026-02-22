@@ -26,7 +26,7 @@ export default function KonstrukcjeSadownicze() {
 						<h1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
 							Konstrukcje sadownicze
 							<span className='block text-amber-500 text-base sm:text-lg md:text-xl mt-1 font-semibold tracking-normal'>
-								wiercenie otworów i&nbsp;montaż słupów | Woj.&nbsp;lubelskie
+								wiercenie otworów i&nbsp;montaż słupów — Woj.&nbsp;lubelskie
 							</span>
 						</h1>
 						<p className='mt-2 text-sm leading-snug text-gray-600 max-w-lg'>
@@ -44,12 +44,12 @@ export default function KonstrukcjeSadownicze() {
 						style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
 					>
 						<Image
-							src='/img/konstrukcje-sadownicze-montaz-slupow-chwytak.png'
-							alt='Konstrukcje sadownicze - montaż słupów betonowych chwytakiem na minikoparce Lublin'
+							src='/img/konstrukcje-sadownicze-chwytak-slup-lublin.png'
+							alt='Konstrukcje sadownicze — montaż słupów betonowych chwytakiem na minikoparce Lublin'
 							width={460}
 							height={307}
 							priority
-							className='w-full max-w-[300px] lg:max-w-[360px] object-contain drop-shadow-[0_8px_24px_rgba(245,158,11,0.15)]'
+							className='w-full max-w-[200px] object-contain drop-shadow-[0_8px_24px_rgba(245,158,11,0.15)]'
 						/>
 					</div>
 
@@ -86,11 +86,11 @@ export default function KonstrukcjeSadownicze() {
 						style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}
 					>
 						<Image
-							src='/img/konstrukcje-sadownicze-wiercenie-otworow-wiertnica.png'
-							alt='Konstrukcje sadownicze - wiercenie otworów pod słupy wiertnicą z systemem pionowania Lublin'
+							src='/img/minikoparka-wiertnica-konstrukcje-sadownicze-lublin.png'
+							alt='Konstrukcje sadownicze — wiercenie otworów pod słupy wiertnicą z systemem pionowania Lublin'
 							width={460}
 							height={307}
-							className='w-full max-w-[300px] lg:max-w-[360px] object-contain drop-shadow-[0_8px_24px_rgba(245,158,11,0.15)]'
+							className='w-full max-w-[180px] object-contain drop-shadow-[0_8px_24px_rgba(245,158,11,0.15)]'
 						/>
 					</div>
 				</div>

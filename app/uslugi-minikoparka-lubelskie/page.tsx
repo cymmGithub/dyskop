@@ -28,7 +28,7 @@ const services = [
 	},
 	{
 		title: 'ODWIERTY POD',
-		image: '/img/homepage/wiertnica.png',
+		image: '/img/homepage/wiertnica-digga-odwierty-lublin.png',
 		alt: 'Wiertnica DIGGA PDX2H-2 — odwierty pod słupki Lublin',
 		items: [
 			'słupki ogrodzeniowe',
@@ -40,7 +40,7 @@ const services = [
 	},
 	{
 		title: 'INNE',
-		image: '/img/homepage/slupki.png',
+		image: '/img/homepage/minikoparka-wstawianie-slupkow-lublin.png',
 		alt: 'Wstawianie słupków i inne usługi minikoparką Lublin',
 		items: [
 			'wstawianie słupków betonowych/drewnianych',

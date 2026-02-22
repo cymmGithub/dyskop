@@ -13,7 +13,7 @@ const attachments = [
 	},
 	{
 		title: "PŁUG",
-		image: "/img/plug-minitraktor.png",
+		image: "/img/minitraktor-plug-dwuskibowy-lublin.png",
 		alt: "Pług do minitraktor — orka ogrodów i działek Lublin",
 		href: "/orka-dzialek-lubelskie",
 		items: ["orka pod uprawy", "orka ogrodów"],

@@ -44,7 +44,7 @@ export default function KoszenieDzialek() {
 						<h1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
 							Koszenie działek i&nbsp;nieużytków
 							<span className='block text-amber-500 text-base sm:text-lg md:text-xl mt-1 font-semibold tracking-normal'>
-								kosiarka bijakowa i&nbsp;pielęgnacyjna | Lublin i&nbsp;okolice
+								kosiarka bijakowa i&nbsp;pielęgnacyjna — Lublin i&nbsp;okolice
 							</span>
 						</h1>
 						<p className='mt-2 text-sm leading-snug text-gray-600 max-w-lg'>

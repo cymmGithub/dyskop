@@ -100,15 +100,15 @@ export default function AboutUs() {
 									<PopoverContent className='flex flex-col gap-2 shadow-xl text-sm sm:text-base w-80 sm:w-96'>
 										<div className='flex justify-center gap-2 mb-2'>
 											<Image
-												src='/img/homepage/wiertlo-1.png'
+												src='/img/homepage/wiertlo-digga-odwierty-zblizenie-lublin.png'
 												alt='Wiertnica DIGGA PDX2H-2 do odwiertów — Lublin'
 												width={100}
 												height={100}
 												className='rounded-md object-contain'
 											/>
 											<Image
-												src='/img/homepage/wiertlo-2.png'
-												alt='Wiertło wiertnica DIGGA PDX2H-2 — szczegóły konstrukcji'
+												src='/img/homepage/wiertlo-digga-spirala-szczegoly-lublin.png'
+												alt='Wiertło wiertnica DIGGA PDX2H-2 — szczegóły konstrukcji Lublin'
 												width={50}
 												height={50}
 												className='rounded-md object-contain'
