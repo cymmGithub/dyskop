@@ -17,26 +17,12 @@ export default function KonstrukcjeSadownicze() {
 				{/* Z-pattern grid — stacks on mobile, 5-col on desktop */}
 				<div className='grid grid-cols-1 md:grid-cols-5 md:grid-rows-[auto_1fr] gap-x-8 gap-y-4 md:gap-y-4 flex-1 mt-12 [&_p]:text-left'>
 
-					{/* Row 1, Left: gripper image */}
+					{/* Row 1, Left: headline + intro */}
 					<div
-						className='md:col-span-2 flex items-end justify-center order-2 md:order-none opacity-0 animate-slideUp'
-						style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
-					>
-						<Image
-							src='/img/konstrukcje-sadownicze-montaz-slupow-chwytak.png'
-							alt='Konstrukcje sadownicze - montaż słupów betonowych chwytakiem na minikoparce Lublin'
-							width={460}
-							height={307}
-							priority
-							className='w-full max-w-[300px] lg:max-w-[360px] object-contain drop-shadow-[0_8px_24px_rgba(245,158,11,0.15)]'
-						/>
-					</div>
-
-					{/* Row 1, Right: headline + intro */}
-					<div
-						className='md:col-span-3 flex flex-col justify-center border-l-4 border-amber-500 pl-5 order-1 md:order-none [&_p]:text-left opacity-0 animate-slideUp'
+						className='md:col-span-3 flex flex-col justify-center order-1 md:order-none [&_p]:text-left opacity-0 animate-slideUp'
 						style={{ animationDelay: '0.15s', animationFillMode: 'forwards' }}
 					>
+					<div className='border-l-4 border-amber-500 pl-5'>
 						<h1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
 							Konstrukcje sadownicze
 							<span className='block text-amber-500 text-base sm:text-lg md:text-xl mt-1 font-semibold tracking-normal'>
@@ -49,6 +35,22 @@ export default function KonstrukcjeSadownicze() {
 							Realizujemy prace zarówno przy nowych nasadzeniach, jak i&nbsp;przy modernizacji
 							istniejących sadów i&nbsp;plantacji.
 						</p>
+					</div>
+					</div>
+
+					{/* Row 1, Right: gripper image */}
+					<div
+						className='md:col-span-2 flex items-end justify-center order-2 md:order-none opacity-0 animate-slideUp'
+						style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
+					>
+						<Image
+							src='/img/konstrukcje-sadownicze-montaz-slupow-chwytak.png'
+							alt='Konstrukcje sadownicze - montaż słupów betonowych chwytakiem na minikoparce Lublin'
+							width={460}
+							height={307}
+							priority
+							className='w-full max-w-[300px] lg:max-w-[360px] object-contain drop-shadow-[0_8px_24px_rgba(245,158,11,0.15)]'
+						/>
 					</div>
 
 					{/* Row 2, Left: scope of work 2×2 cards */}

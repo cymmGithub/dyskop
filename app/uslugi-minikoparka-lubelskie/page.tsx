@@ -114,7 +114,7 @@ export default function Services() {
 									height={120}
 									width={200}
 									alt={service.alt}
-									className='object-contain max-h-full opacity-80 transition-transform duration-500 ease-out group-hover:scale-105'
+									className='p-1 object-contain max-h-full opacity-80 transition-transform duration-500 ease-out group-hover:scale-105'
 								/>
 							</div>
 

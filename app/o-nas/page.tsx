@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { FaCircleInfo } from 'react-icons/fa6';
 import { Badge } from '@/components/ui/badge';
 import {
@@ -38,21 +39,21 @@ export default function AboutUs() {
 								<li className='flex items-start gap-2'>
 									<span className='h-1.5 w-1.5 rounded-full bg-amber-500 flex-shrink-0 mt-[0.4rem]' />
 									<span>
-										<span className='font-semibold text-amber-600 underline'>usługi minikoparką</span>
+										<Link href='/uslugi-minikoparka-lubelskie' className='font-semibold text-amber-600 underline'>usługi minikoparką</Link>
 										{' '}– wykopy pod przyłącza i&nbsp;fundamenty, wiercenie otworów pod słupy, przygotowanie terenu
 									</span>
 								</li>
 								<li className='flex items-start gap-2'>
 									<span className='h-1.5 w-1.5 rounded-full bg-amber-500 flex-shrink-0 mt-[0.4rem]' />
 									<span>
-										<span className='font-semibold text-amber-600 underline'>konstrukcje sadownicze</span>
+										<Link href='/konstrukcje-sadownicze-lubelskie' className='font-semibold text-amber-600 underline'>konstrukcje sadownicze</Link>
 										{' '}– wiercenie otworów, wkręcanie kotew i&nbsp;montaż słupów pod sady i&nbsp;plantacje
 									</span>
 								</li>
 								<li className='flex items-start gap-2'>
 									<span className='h-1.5 w-1.5 rounded-full bg-amber-500 flex-shrink-0 mt-[0.4rem]' />
 									<span>
-										<span className='font-semibold text-amber-600 underline'>usługi minitraktorem</span>
+										<Link href='/uslugi-minitraktorem-lubelskie' className='font-semibold text-amber-600 underline'>usługi minitraktorem</Link>
 										{' '}– glebogryzarka separacyjna, koszenie działek i&nbsp;nieużytków, uprawa gleby i&nbsp;rekultywacja terenu
 									</span>
 								</li>
