@@ -5,8 +5,8 @@ import { FaMapMarkerAlt } from 'react-icons/fa';
 const services = [
 	{
 		title: 'PRACE ZIEMNE',
-		image: '/img/dig-service.png',
-		alt: 'Prace ziemne minikoparką - wykopy i niwelacje',
+		image: '/img/prace-ziemne-minikoparka.png',
+		alt: 'Prace ziemne minikoparką — wykopy i niwelacje Lublin',
 		items: [
 			'odkopywanie fundamentów pod izolacje',
 			'niwelacje i kształtowanie terenu',
@@ -16,8 +16,8 @@ const services = [
 	},
 	{
 		title: 'WYKOPY LINIOWE POD',
-		image: '/img/connections-service.png',
-		alt: 'Wykopy liniowe pod przyłącza i instalacje',
+		image: '/img/wykopy-liniowe-przylacza-minikoparka.png',
+		alt: 'Wykopy liniowe pod przyłącza i instalacje — minikoparka Lublin',
 		items: [
 			'przyłącza: elektryczne, gazowe, wodne, kanalizacyjne, telekomunikacyjne',
 			'światłowody',
@@ -29,7 +29,7 @@ const services = [
 	{
 		title: 'ODWIERTY POD',
 		image: '/img/homepage/wiertnica.png',
-		alt: 'Wiertnica DIGGA PDX2H-2 do precyzyjnych odwiertów',
+		alt: 'Wiertnica DIGGA PDX2H-2 — odwierty pod słupki Lublin',
 		items: [
 			'słupki ogrodzeniowe',
 			'konstrukcje/rusztowania sadownicze',
@@ -41,7 +41,7 @@ const services = [
 	{
 		title: 'INNE',
 		image: '/img/homepage/slupki.png',
-		alt: 'Wstawianie słupków i inne usługi minikoparką',
+		alt: 'Wstawianie słupków i inne usługi minikoparką Lublin',
 		items: [
 			'wstawianie słupków betonowych/drewnianych',
 			'montaż/demontaż podkładów kolejowych',
@@ -56,7 +56,7 @@ const cardDelays = ['0.2s', '0.4s', '0.6s', '0.8s'];
 
 export default function Services() {
 	return (
-		<div className='relative overflow-x-hidden pt-20 md:pt-28 pb-8 sm:pb-16'>
+		<main className='relative overflow-x-hidden pt-20 md:pt-28 pb-8 sm:pb-16'>
 			<div className='sketchy-bg absolute inset-0 opacity-30 pointer-events-none' />
 			<div className='relative z-10 container mx-auto px-5 sm:px-10'>
 				{/* Section 1: Hero + Coverage side by side */}
@@ -120,9 +120,9 @@ export default function Services() {
 
 							{/* Title row */}
 							<div className='flex items-center justify-between gap-2 px-4 py-2.5 border-b border-gray-100'>
-								<h2 className='font-bold text-sm text-gray-800 transition-colors duration-500 ease-out group-hover:text-amber-600'>
+								<h3 className='font-bold text-sm text-gray-800 transition-colors duration-500 ease-out group-hover:text-amber-600'>
 									{service.title}:
-								</h2>
+								</h3>
 							</div>
 
 							{/* Service list */}
@@ -138,6 +138,6 @@ export default function Services() {
 					))}
 				</section>
 			</div>
-		</div>
+		</main>
 	);
 }

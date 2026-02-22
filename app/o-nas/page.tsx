@@ -10,7 +10,7 @@ import EquipmentSpecsPopover from '@/components/equipment-specs-popover';
 
 export default function AboutUs() {
 	return (
-		<div className='relative overflow-x-hidden pt-20 md:pt-28 pb-4 md:pb-36'>
+		<main className='relative overflow-x-hidden pt-20 md:pt-28 pb-4 md:pb-36'>
 			<div className='sketchy-bg absolute inset-0 opacity-30 pointer-events-none' />
 			<div className='relative z-10 container mx-auto px-5 sm:px-10'>
 				<div
@@ -75,8 +75,8 @@ export default function AboutUs() {
 					>
 						<div className='relative'>
 							<Image
-								src='/img/koparka-wiertnica.png'
-								alt='Minikoparka Caterpillar 301.8 z wiertnicą DIGGA PDX2H-2'
+								src='/img/minikoparka-caterpillar-301-wiertnica-digga.png'
+								alt='Minikoparka Caterpillar 301.8 z wiertnicą DIGGA PDX2H-2 — Lublin'
 								width={320}
 								height={240}
 								priority
@@ -100,14 +100,14 @@ export default function AboutUs() {
 										<div className='flex justify-center gap-2 mb-2'>
 											<Image
 												src='/img/homepage/wiertlo-1.png'
-												alt='Wiertnica DIGGA PDX2H-2 - widok 1'
+												alt='Wiertnica DIGGA PDX2H-2 do odwiertów — Lublin'
 												width={100}
 												height={100}
 												className='rounded-md object-contain'
 											/>
 											<Image
 												src='/img/homepage/wiertlo-2.png'
-												alt='Wiertnica DIGGA PDX2H-2 - widok 2'
+												alt='Wiertło wiertnica DIGGA PDX2H-2 — szczegóły konstrukcji'
 												width={50}
 												height={50}
 												className='rounded-md object-contain'
@@ -128,6 +128,6 @@ export default function AboutUs() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
 	);
 }

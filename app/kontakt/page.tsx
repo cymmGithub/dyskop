@@ -61,9 +61,10 @@ export default function Contact() {
 	};
 
 	return (
-		<div className='relative w-full bg-white pt-24 sm:pt-28 text-center'>
+		<main className='relative w-full bg-white pt-24 sm:pt-28 text-center'>
 			<div className='w-full px-4 sm:px-6 lg:px-8 py-2 sm:py-4'>
 				<div className='max-w-xl mx-auto'>
+					<h1 className='text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4'>Kontakt</h1>
 					<div className='text-center mb-3 sm:mb-6'>
 						<p className='text-sm sm:text-base text-gray-600'>
 							Skontaktuj się z nami bezpośrednio telefonicznie{' '}
@@ -173,6 +174,6 @@ export default function Contact() {
 					</form>
 				</div>
 			</div>
-		</div>
+		</main>
 	);
 }

@@ -6,20 +6,20 @@ import { HiArrowRight } from "react-icons/hi";
 const cards = [
 	{
 		label: "Usługi minikoparką",
-		image: "/img/homepage/home-01.png",
-		alt: "Minikoparki do prac ziemnych i wykopów",
+		image: "/img/homepage/minikoparka-prace-ziemne-lublin.png",
+		alt: "Minikoparka do prac ziemnych i wykopów — usługi Lublin",
 		href: "/uslugi-minikoparka-lubelskie",
 	},
 	{
 		label: "Konstrukcje sadownicze",
-		image: "/img/homepage/home-03.png",
-		alt: "Konstrukcje sadownicze - słupki i wiertnica",
+		image: "/img/homepage/konstrukcje-sadownicze-wiertnica-lublin.png",
+		alt: "Konstrukcje sadownicze — wiertnica i słupki Lublin",
 		href: "/konstrukcje-sadownicze-lubelskie",
 	},
 	{
 		label: "Usługi minitraktorem",
-		image: "/img/homepage/home-02.png",
-		alt: "Minitraktor do przygotowania terenu",
+		image: "/img/homepage/minitraktor-przygotowanie-terenu-lublin.png",
+		alt: "Minitraktor do przygotowania terenu — usługi Lublin",
 		href: "/uslugi-minitraktorem-lubelskie",
 	},
 ];

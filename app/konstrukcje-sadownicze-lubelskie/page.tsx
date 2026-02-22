@@ -9,7 +9,7 @@ const scopeItems = [
 
 export default function KonstrukcjeSadownicze() {
 	return (
-		<div className='relative overflow-hidden min-h-screen'>
+		<main className='relative overflow-hidden min-h-screen'>
 			<div className='sketchy-bg absolute inset-0 opacity-30 pointer-events-none' />
 
 			<div className='relative z-10 container mx-auto px-5 sm:px-10 pt-20 md:pt-24 pb-4 min-h-screen flex flex-col'>
@@ -56,7 +56,7 @@ export default function KonstrukcjeSadownicze() {
 						className='md:col-span-3 order-4 md:order-none opacity-0 animate-slideUp'
 						style={{ animationDelay: '0.45s', animationFillMode: 'forwards' }}
 					>
-						<p className='text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2'>Zakres prac</p>
+						<h2 className='text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2'>Zakres prac</h2>
 						<div className='grid grid-cols-2 gap-2'>
 							{scopeItems.map((item) => (
 								<div
@@ -93,6 +93,6 @@ export default function KonstrukcjeSadownicze() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
 	);
 }
