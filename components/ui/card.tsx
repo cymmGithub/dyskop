@@ -8,16 +8,19 @@ const cards = [
 		label: "Usługi minikoparką",
 		image: "/img/homepage/home-01.png",
 		alt: "Minikoparki do prac ziemnych i wykopów",
+		href: "/uslugi-minikoparka-lublin",
 	},
 	{
 		label: "Konstrukcje sadownicze",
 		image: "/img/homepage/home-03.png",
 		alt: "Konstrukcje sadownicze - słupki i wiertnica",
+		href: "/konstrukcje-sadownicze-lubelskie",
 	},
 	{
 		label: "Usługi minitraktorem",
 		image: "/img/homepage/home-02.png",
 		alt: "Minitraktor do przygotowania terenu",
+		href: "/uslugi-minikoparka-lublin",
 	},
 ];
 
@@ -29,7 +32,7 @@ export default function ServiceCards() {
 			{cards.map((card, i) => (
 				<Link
 					key={card.label}
-					href="/uslugi-minikoparka-lublin"
+					href={card.href}
 					className="group animate-slideUp opacity-0"
 					style={{
 						animationDelay: delays[i],

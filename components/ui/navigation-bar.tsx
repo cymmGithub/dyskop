@@ -20,6 +20,7 @@ const services = [
 	{ title: 'Drenaż', href: '/uslugi-minikoparka-lublin', description: 'Systemy odwadniające i drenaże opaskowe' },
 	{ title: 'Przygotowanie działki', href: '/uslugi-minikoparka-lublin', description: 'Karczowanie, czyszczenie i przygotowanie gruntu' },
 	{ title: 'Transport materiałów', href: '/uslugi-minikoparka-lublin', description: 'Załadunek i przemieszczanie materiałów sypkich' },
+	{ title: 'Konstrukcje sadownicze', href: '/konstrukcje-sadownicze-lubelskie', description: 'Wiercenie otworów i montaż słupów sadowniczych' },
 ];
 
 const ListItem = React.forwardRef<

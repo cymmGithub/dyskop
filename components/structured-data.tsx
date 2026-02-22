@@ -110,6 +110,14 @@ export default function StructuredData() {
 						"name": "Wstawianie słupków",
 						"description": "Profesjonalne wstawianie słupków betonowych i drewnianych"
 					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Konstrukcje sadownicze",
+						"description": "Wiercenie otworów pod słupy sadownicze, wkręcanie kotew naciągowych, montaż i demontaż słupków betonowych i drewnianych"
+					}
 				}
 			]
 		}

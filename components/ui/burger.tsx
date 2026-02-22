@@ -22,6 +22,7 @@ const services = [
 	{ title: 'Drenaż', href: '/uslugi-minikoparka-lublin' },
 	{ title: 'Przygotowanie działki', href: '/uslugi-minikoparka-lublin' },
 	{ title: 'Transport materiałów', href: '/uslugi-minikoparka-lublin' },
+	{ title: 'Konstrukcje sadownicze', href: '/konstrukcje-sadownicze-lubelskie' },
 ];
 
 const Burger = () => {

@@ -24,6 +24,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			priority: 0.9,
 		},
 		{
+			url: `${baseUrl}/konstrukcje-sadownicze-lubelskie`,
+			lastModified: currentDate,
+			changeFrequency: 'monthly',
+			priority: 0.9,
+		},
+		{
 			url: `${baseUrl}/realizacje`,
 			lastModified: currentDate,
 			changeFrequency: 'weekly',
