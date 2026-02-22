@@ -114,7 +114,7 @@ export default function Services() {
 									height={120}
 									width={200}
 									alt={service.alt}
-									className='p-1 object-contain max-h-full opacity-80'
+									className='p-2 object-contain max-h-full opacity-80'
 								/>
 							</div>
 

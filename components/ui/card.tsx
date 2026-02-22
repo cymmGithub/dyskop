@@ -28,7 +28,7 @@ const delays = ["1.8s", "2.1s", "2.4s"];
 
 export default function ServiceCards() {
 	return (
-		<div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 w-full">
+		<div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 w-full max-w-xs md:max-w-none mx-auto">
 			{cards.map((card, i) => (
 				<Link
 					key={card.label}
@@ -43,7 +43,7 @@ export default function ServiceCards() {
 						{/* Amber accent line */}
 						<div className="absolute top-0 left-0 right-0 h-0.5 bg-amber-400 transform scale-x-0 origin-left transition-transform duration-500 ease-out group-hover:scale-x-100 z-10" />
 
-						<div className="aspect-[4/3] relative overflow-hidden">
+						<div className="aspect-[5/3] md:aspect-[4/3] relative overflow-hidden">
 							<Image
 								src={card.image}
 								alt={card.alt}

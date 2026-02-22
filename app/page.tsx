@@ -37,7 +37,7 @@ export default function Home() {
 				</div>
 
 				{/* Service cards */}
-				<div className='max-w-4xl mx-auto w-full mt-2'>
+				<div className='max-w-4xl mx-auto w-full'>
 					<h2 className='sr-only'>Nasze usługi</h2>
 					<ServiceCards />
 				</div>

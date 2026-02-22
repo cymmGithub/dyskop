@@ -6,6 +6,7 @@ import Link from 'next/link';
 const Footer = () => {
 	const pathname = usePathname();
 	const isContactPage = pathname === '/kontakt';
+	const currentYear = new Date().getFullYear();
 
 	return (
 		<footer
@@ -24,13 +25,13 @@ const Footer = () => {
 			</div>
 			<div className="footer_bottom">
 				<div className="container">
-					<div className="flex justify-center items-center">
-						<p className="text-sm">
-							© Firma Dys-Kop, kontakt@dys-kop.pl | NIP 7133124621
-							<Link href="/login" className="opacity-1 ">
-							</Link>
-						</p>
-					</div>
+					<address className="not-italic flex justify-center items-center gap-x-4 gap-y-1 flex-wrap text-sm text-[#7f88a6]">
+						<span>© {currentYear} <Link href="/" className="hover:text-amber-500 transition-colors">Dys-Kop</Link></span>
+						<span className="text-[#d1d5db]" aria-hidden="true">·</span>
+						<a href="tel:+48506502709" className="hover:text-amber-500 transition-colors">506 502 709</a>
+						<span className="text-[#d1d5db]" aria-hidden="true">·</span>
+						<a href="mailto:kontakt@dys-kop.pl" className="hover:text-amber-500 transition-colors">kontakt@dys-kop.pl</a>
+					</address>
 				</div>
 			</div>
 		</footer>
