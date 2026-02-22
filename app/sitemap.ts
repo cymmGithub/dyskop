@@ -42,6 +42,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			priority: 0.8,
 		},
 		{
+			url: `${baseUrl}/koszenie-dzialek-lubelskie`,
+			lastModified: currentDate,
+			changeFrequency: 'monthly',
+			priority: 0.8,
+		},
+		{
 			url: `${baseUrl}/realizacje`,
 			lastModified: currentDate,
 			changeFrequency: 'weekly',

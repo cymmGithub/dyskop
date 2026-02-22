@@ -22,14 +22,14 @@ const attachments = [
 		title: "KOSIARKA PIELĘGNACYJNA",
 		image: "/img/kosiarka-pielegnacyjna-minitraktor.png",
 		alt: "Kosiarka pielęgnacyjna na minitraktorze — koszenie trawników Lublin",
-		href: "#",
+		href: "/koszenie-dzialek-lubelskie",
 		items: ["koszenie trawników", "pielęgnacja terenów zielonych"],
 	},
 	{
 		title: "KOSIARKA BIJAKOWA",
 		image: "/img/kosiarka-bijakowa-minitraktor.png",
 		alt: "Kosiarka bijakowa — mulczowanie nieużytków i koszenie Lublin",
-		href: "#",
+		href: "/koszenie-dzialek-lubelskie",
 		items: ["mulczowanie nieużytków", "koszenie wysokiej roślinności"],
 	},
 ];

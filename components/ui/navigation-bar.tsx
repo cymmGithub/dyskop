@@ -18,6 +18,7 @@ const services = [
 	{ title: 'Konstrukcje sadownicze', href: '/konstrukcje-sadownicze-lubelskie', description: 'Wiercenie otworów i montaż słupów sadowniczych' },
 	{ title: 'Usługi minitraktorem', href: '/uslugi-minitraktorem-lubelskie', description: 'Koszenie, orka, przygotowanie terenu' },
 	{ title: 'Glebogryzarka separacyjna', href: '/glebogryzarka-separacyjna-lubelskie', description: 'Przygotowanie terenu pod trawnik i ogrody' },
+	{ title: 'Koszenie działek', href: '/koszenie-dzialek-lubelskie', description: 'Kosiarka bijakowa i pielęgnacyjna na nieużytki i trawniki' },
 ];
 
 const ListItem = React.forwardRef<

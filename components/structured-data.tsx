@@ -134,6 +134,14 @@ export default function StructuredData() {
 						"name": "Glebogryzarka separacyjna",
 						"description": "Profesjonalne przygotowanie terenu pod trawnik glebogryzarką separacyjną — spulchnianie, przesiewanie i wyrównanie gleby w jednym przejeździe"
 					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Koszenie działek i nieużytków",
+						"description": "Koszenie kosiarką bijakową i pielęgnacyjną — mulczowanie nieużytków, zarośli i samosiejek oraz regularna pielęgnacja trawników"
+					}
 				}
 			]
 		}
