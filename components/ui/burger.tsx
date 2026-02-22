@@ -16,12 +16,12 @@ import { Outfit } from 'next/font/google';
 const font = Outfit({ subsets: ['latin'] });
 
 const services = [
-	{ title: 'Wykopy', href: '/uslugi-minikoparka-lublin' },
-	{ title: 'Niwelacja terenu', href: '/uslugi-minikoparka-lublin' },
-	{ title: 'Rozbiórki', href: '/uslugi-minikoparka-lublin' },
-	{ title: 'Drenaż', href: '/uslugi-minikoparka-lublin' },
-	{ title: 'Przygotowanie działki', href: '/uslugi-minikoparka-lublin' },
-	{ title: 'Transport materiałów', href: '/uslugi-minikoparka-lublin' },
+	{ title: 'Wykopy', href: '/uslugi-minikoparka-lubelskie' },
+	{ title: 'Niwelacja terenu', href: '/uslugi-minikoparka-lubelskie' },
+	{ title: 'Rozbiórki', href: '/uslugi-minikoparka-lubelskie' },
+	{ title: 'Drenaż', href: '/uslugi-minikoparka-lubelskie' },
+	{ title: 'Przygotowanie działki', href: '/uslugi-minikoparka-lubelskie' },
+	{ title: 'Transport materiałów', href: '/uslugi-minikoparka-lubelskie' },
 	{ title: 'Konstrukcje sadownicze', href: '/konstrukcje-sadownicze-lubelskie' },
 ];
 

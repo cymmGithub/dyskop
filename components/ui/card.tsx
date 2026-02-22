@@ -8,7 +8,7 @@ const cards = [
 		label: "Usługi minikoparką",
 		image: "/img/homepage/home-01.png",
 		alt: "Minikoparki do prac ziemnych i wykopów",
-		href: "/uslugi-minikoparka-lublin",
+		href: "/uslugi-minikoparka-lubelskie",
 	},
 	{
 		label: "Konstrukcje sadownicze",
@@ -20,7 +20,7 @@ const cards = [
 		label: "Usługi minitraktorem",
 		image: "/img/homepage/home-02.png",
 		alt: "Minitraktor do przygotowania terenu",
-		href: "/uslugi-minikoparka-lublin",
+		href: "/uslugi-minikoparka-lubelskie",
 	},
 ];
 
