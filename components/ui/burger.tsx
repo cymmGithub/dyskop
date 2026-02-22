@@ -16,6 +16,7 @@ import { Outfit } from 'next/font/google';
 const font = Outfit({ subsets: ['latin'] });
 
 const services = [
+	{ title: 'Usługi minikoparką', href: '/uslugi-minikoparka-lubelskie' },
 	{ title: 'Konstrukcje sadownicze', href: '/konstrukcje-sadownicze-lubelskie' },
 	{ title: 'Usługi minitraktorem', href: '/uslugi-minitraktorem-lubelskie' },
 	{ title: 'Glebogryzarka separacyjna', href: '/glebogryzarka-separacyjna-lubelskie' },
@@ -33,7 +34,7 @@ const Burger = () => {
 					<AlignJustify className='ml-11 mr-2' />
 				</SheetTrigger>
 				<SheetContent>
-					<SheetHeader>
+					<SheetHeader className='text-left'>
 						<SheetDescription>
 							<div className={`flex flex-col space-y-4 items-start w-full text-lg text-black mt-10 ${font.className}`}>
 								<SheetClose asChild>
@@ -53,7 +54,7 @@ const Burger = () => {
 										className={`grid overflow-hidden transition-all duration-200 ${servicesOpen ? 'grid-rows-[1fr] mt-2' : 'grid-rows-[0fr]'}`}
 									>
 										<div className='overflow-hidden'>
-											<div className='flex flex-col space-y-2 pl-4 border-l-2 border-amber-400'>
+											<div className='flex flex-col space-y-2 pl-4 border-l-2 border-amber-400 text-left'>
 												{services.map((service) => (
 													<SheetClose asChild key={service.title}>
 														<Link

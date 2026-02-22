@@ -1,5 +1,0 @@
-Dys-Kop to firma specjalizująca się w usługach minikoparką, wiertnicą oraz minitraktorem na terenie Lublina i województwa lubelskiego. Realizujemy prace ziemne oraz przygotowanie terenu pod inwestycje budowlane, ogrodowe i sadownicze.
-
-Zakres naszych usług obejmuje: • usługi minikoparką [link] – wykopy pod przyłącza i fundamenty, wiercenie otworów pod słupy, przygotowanie terenu • konstrukcje sadownicze [link]– wiercenie otworów, wkręcanie kotew i montaż słupów pod sady i plantacje • usługi minitraktorem [link]– glebogryzarka separacyjna, koszenie działek i nieużytków, uprawa gleby i rekultywacja terenu
-
-Działamy głównie w Lublinie i okolicznych powiatach: lubelskim, świdnickim, lubartowskim, opolskim, puławskim i kraśnickim. Większe projekty, w tym konstrukcje sadownicze, realizujemy na terenie całego województwa lubelskiego oraz w regionach sąsiednich.
