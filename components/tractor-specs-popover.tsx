@@ -21,38 +21,13 @@ export default function TractorSpecsPopover() {
 				</Badge>
 			</PopoverTrigger>
 			<PopoverContent className='flex flex-col gap-2 shadow-xl text-sm'>
-				Farmtrac 26 PRO 4WD — dane techniczne:
+				Dane techniczne:
 				<ul className='list-disc mx-5'>
-					<li>
-						silnik: 3-cylindrowy, <b>26&nbsp;KM</b> @ 2500&nbsp;obr/min
-					</li>
-					<li>
-						skrzynia biegów: <b>9&nbsp;przód + 3&nbsp;tył</b>
-					</li>
-					<li>
-						WOM (PTO): <b>540/540E</b>&nbsp;obr/min
-					</li>
-					<li>
-						hydraulika: kat.&nbsp;I&nbsp;N, udźwig <b>750&nbsp;kg</b>
-					</li>
-					<li>
-						napęd: <b>4WD</b> z blokadą mechanizmu różnicowego
-					</li>
-					<li>
-						układ kierowniczy: <b>wspomagany</b>
-					</li>
-					<li>
-						hamulce: <b>olejowe</b>
-					</li>
-					<li>
-						opony: przód 6×12, tył 8.3×20
-					</li>
-					<li>
-						masa: <b>869–879&nbsp;kg</b>
-					</li>
-					<li>
-						zbiornik paliwa: <b>24&nbsp;l</b>
-					</li>
+					<li>napęd <b>4x4</b></li>
+					<li>moc <b>26&nbsp;KM</b></li>
+					<li>masa: <b>1067&nbsp;kg</b></li>
+					<li>udźwig podnośnika: <b>800&nbsp;kg</b></li>
+					<li>długość — <b>270&nbsp;cm</b> / szerokość — <b>120&nbsp;cm</b></li>
 				</ul>
 			</PopoverContent>
 		</Popover>

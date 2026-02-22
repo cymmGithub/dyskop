@@ -8,6 +8,7 @@ import {
 	PopoverTrigger,
 } from '@/components/ui/popover';
 import EquipmentSpecsPopover from '@/components/equipment-specs-popover';
+import { H1, P, Span } from '@/components/ui/text';
 
 export default function AboutUs() {
 	return (
@@ -20,53 +21,53 @@ export default function AboutUs() {
 				>
 					{/* LEFT — Text content */}
 					<div className='w-full md:w-1/2 border-l-4 border-amber-500 pl-5 [&_p]:text-left'>
-						<h1 className='text-2xl sm:text-3xl font-bold text-gray-900 leading-tight tracking-tight'>
+						<H1 className='text-2xl sm:text-3xl font-bold text-gray-900 leading-tight tracking-tight'>
 							O nas
-						</h1>
+						</H1>
 
-						<p className='mt-2 text-sm leading-snug text-gray-600'>
-							Dys-Kop to firma specjalizująca się w&nbsp;usługach minikoparką, wiertnicą
-							oraz minitraktorem na terenie Lublina i&nbsp;województwa lubelskiego.
+						<P className='mt-2 text-sm leading-snug text-gray-600'>
+							Dys-Kop to firma specjalizująca się w usługach minikoparką, wiertnicą
+							oraz minitraktorem na terenie Lublina i województwa lubelskiego.
 							Realizujemy prace ziemne oraz przygotowanie terenu pod inwestycje
-							budowlane, ogrodowe i&nbsp;sadownicze.
-						</p>
+							budowlane, ogrodowe i sadownicze.
+						</P>
 
 						<div className='mt-2'>
-							<p className='text-sm leading-snug text-gray-600 mb-1.5'>
+							<P className='text-sm leading-snug text-gray-600 mb-1.5'>
 								Zakres naszych usług obejmuje:
-							</p>
+							</P>
 							<ul className='space-y-1 text-sm text-gray-600'>
 								<li className='flex items-start gap-2'>
 									<span className='h-1.5 w-1.5 rounded-full bg-amber-500 flex-shrink-0 mt-[0.4rem]' />
-									<span>
+									<Span>
 										<Link href='/uslugi-minikoparka-lubelskie' className='font-semibold text-amber-600 underline'>usługi minikoparką</Link>
-										{' '}– wykopy pod przyłącza i&nbsp;fundamenty, wiercenie otworów pod słupy, przygotowanie terenu
-									</span>
+										{' '}– wykopy pod przyłącza i fundamenty, wiercenie otworów pod słupy, przygotowanie terenu
+									</Span>
 								</li>
 								<li className='flex items-start gap-2'>
 									<span className='h-1.5 w-1.5 rounded-full bg-amber-500 flex-shrink-0 mt-[0.4rem]' />
-									<span>
+									<Span>
 										<Link href='/konstrukcje-sadownicze-lubelskie' className='font-semibold text-amber-600 underline'>konstrukcje sadownicze</Link>
-										{' '}– wiercenie otworów, wkręcanie kotew i&nbsp;montaż słupów pod sady i&nbsp;plantacje
-									</span>
+										{' '}– wiercenie otworów, wkręcanie kotew i montaż słupów pod sady i plantacje
+									</Span>
 								</li>
 								<li className='flex items-start gap-2'>
 									<span className='h-1.5 w-1.5 rounded-full bg-amber-500 flex-shrink-0 mt-[0.4rem]' />
-									<span>
+									<Span>
 										<Link href='/uslugi-minitraktorem-lubelskie' className='font-semibold text-amber-600 underline'>usługi minitraktorem</Link>
-										{' '}– glebogryzarka separacyjna, koszenie działek i&nbsp;nieużytków, uprawa gleby i&nbsp;rekultywacja terenu
-									</span>
+										{' '}– glebogryzarka separacyjna, koszenie działek i nieużytków, uprawa gleby i rekultywacja terenu
+									</Span>
 								</li>
 							</ul>
 						</div>
 
-						<p className='mt-2 text-sm leading-snug text-gray-600'>
-							Działamy głównie w&nbsp;<b>Lublinie</b> i&nbsp;okolicznych powiatach:{' '}
+						<P className='mt-2 text-sm leading-snug text-gray-600'>
+							Działamy głównie w <b>Lublinie</b> i okolicznych powiatach:{' '}
 							<b>lubelskim</b>, <b>świdnickim</b>, <b>lubartowskim</b>,{' '}
-							<b>opolskim</b>, <b>puławskim</b> i&nbsp;<b>kraśnickim</b>.
-							Większe projekty, w&nbsp;tym konstrukcje sadownicze, realizujemy na terenie
-							całego województwa lubelskiego oraz w&nbsp;regionach sąsiednich.
-						</p>
+							<b>opolskim</b>, <b>puławskim</b> i <b>kraśnickim</b>.
+							Większe projekty, w tym konstrukcje sadownicze, realizujemy na terenie
+							całego województwa lubelskiego oraz w regionach sąsiednich.
+						</P>
 					</div>
 
 					{/* RIGHT — Equipment showcase */}

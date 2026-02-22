@@ -1,4 +1,5 @@
 import ServiceCards from '@/components/ui/card';
+import { H1, Span, P } from '@/components/ui/text';
 import { FaPhoneAlt } from 'react-icons/fa';
 
 export default function Home() {
@@ -11,15 +12,15 @@ export default function Home() {
 					className='flex flex-col max-w-3xl mx-auto w-full gap-2 md:gap-3 animate-slideUp opacity-0 pt-6 md:pt-8 text-center'
 					style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}
 				>
-					<h1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
-						Usługi minikoparką, wiertnicą i&nbsp;minitraktorem
-						<span className='block text-amber-500 text-lg sm:text-xl md:text-2xl mt-1 font-semibold tracking-normal'>
-							Lublin i&nbsp;okolice
-						</span>
-					</h1>
-					<p className='text-gray-500 text-xs sm:text-sm md:text-base leading-relaxed max-w-2xl mx-auto'>
-						Wykopy, odwierty, konstrukcje sadownicze oraz przygotowanie terenu pod trawniki i&nbsp;uprawy.
-					</p>
+					<H1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
+						Usługi minikoparką, wiertnicą i minitraktorem
+						<Span className='block text-amber-500 text-lg sm:text-xl md:text-2xl mt-1 font-semibold tracking-normal'>
+							Lublin i okolice
+						</Span>
+					</H1>
+					<P className='text-gray-500 text-xs sm:text-sm md:text-base leading-relaxed max-w-2xl mx-auto'>
+						Wykopy, odwierty, konstrukcje sadownicze oraz przygotowanie terenu pod trawniki i uprawy.
+					</P>
 				</div>
 
 				{/* Phone CTA */}

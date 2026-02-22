@@ -3,12 +3,13 @@
 import { useState, useCallback } from 'react';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
+import { H1, H2, P, Span } from '@/components/ui/text';
 
 const scopeItems = [
-	{ title: 'Siew trawy', desc: 'Przygotowanie podłoża pod wysiew — spulchniona, oczyszczona i wyrównana gleba' },
-	{ title: 'Zakładanie ogrodów', desc: 'Kompleksowe przygotowanie terenu pod nasadzenia i trawniki' },
-	{ title: 'Tereny przydomowe', desc: 'Działki prywatne i inwestycyjne — nowe i wymagające renowacji' },
-	{ title: 'Boiska i place', desc: 'Tereny rekreacyjne, place zabaw i inne tereny zielone' },
+	{ title: 'Zakładanie trawników', desc: 'idealnie przygotowuje podłoże, usuwając stare darnie, chwasty i kamienie, co pozwala na siew od razu po przejeździe maszyny' },
+	{ title: 'Rekultywacja terenów', desc: 'Odnawianie starych, zniszczonych trawników oraz przygotowanie gruntu po pracach budowlanych' },
+	{ title: 'Wyrównywanie terenu', desc: 'Tylny wał zagęszcza i równa podłoże, niwelując nierówności' },
+	{ title: 'Prace ogrodnicze', desc: 'uprawa gleby w warzywnikach, ogrodach, rabatach; mieszanie ziemi z nawozami lub kompostem' },
 ];
 
 const galleryImages = [
@@ -41,18 +42,17 @@ export default function GlebogryzarkaSeparacyjna() {
 						style={{ animationDelay: '0.15s', animationFillMode: 'forwards' }}
 					>
 					<div className='border-l-4 border-amber-500 pl-5'>
-						<h1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
+						<H1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
 							Glebogryzarka separacyjna
-							<span className='block text-amber-500 text-base sm:text-lg md:text-xl mt-1 font-semibold tracking-normal'>
-								przygotowanie terenu pod trawnik — Lublin i&nbsp;okolice
-							</span>
-						</h1>
-						<p className='mt-2 text-sm leading-snug text-gray-600 max-w-lg'>
+							<Span className='block text-amber-500 text-base sm:text-lg md:text-xl mt-1 font-semibold tracking-normal'>
+								przygotowanie terenu pod trawnik — Lublin i okolice
+							</Span>
+						</H1>
+						<P className='mt-2 text-sm leading-snug text-gray-600 max-w-lg'>
 							Glebogryzarka separacyjna to specjalistyczna maszyna do profesjonalnego
 							przygotowania gleby przed założeniem trawnika, ogrodu lub terenów zielonych.
-							Jej zadaniem jest nie tylko spulchnienie ziemi, ale również oddzielenie kamieni,
-							korzeni i&nbsp;zanieczyszczeń od żyznej warstwy gleby — wszystko w&nbsp;jednym przejeździe.
-						</p>
+							Dzięki pracy w kierunku przeciwnym do jazdy oddziela kamienie i darń od gleby, zakopując zanieczyszczenia i pozostawiając spulchnioną, wyrównaną powierzchnię - wszystko w jednym przejeździe.
+						</P>
 					</div>
 					</div>
 
@@ -76,7 +76,7 @@ export default function GlebogryzarkaSeparacyjna() {
 						className='md:col-span-3 order-4 md:order-none opacity-0 animate-slideUp'
 						style={{ animationDelay: '0.45s', animationFillMode: 'forwards' }}
 					>
-						<h2 className='text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2'>Co można przygotować?</h2>
+						<H2 className='text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2'>Główne zastosowania glebogryzarki separacyjnej:</H2>
 						<div className='grid grid-cols-2 gap-2'>
 							{scopeItems.map((item) => (
 								<div

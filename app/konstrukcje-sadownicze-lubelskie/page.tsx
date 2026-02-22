@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { H2, P } from '@/components/ui/text';
 
 const scopeItems = [
 	{ title: 'Odwierty wiertnicą', desc: 'System pionowania HALO – gwarancja pionu i powtarzalnych odwiertów pod kątem' },
@@ -29,12 +30,12 @@ export default function KonstrukcjeSadownicze() {
 								wiercenie otworów i&nbsp;montaż słupów — Woj.&nbsp;lubelskie
 							</span>
 						</h1>
-						<p className='mt-2 text-sm leading-snug text-gray-600 max-w-lg'>
-							Specjalizujemy się w&nbsp;precyzyjnym wierceniu otworów pod słupy sadownicze
-							oraz montażu słupów betonowych i&nbsp;drewnianych przy użyciu chwytaka.
-							Realizujemy prace zarówno przy nowych nasadzeniach, jak i&nbsp;przy modernizacji
-							istniejących sadów i&nbsp;plantacji.
-						</p>
+						<P className='mt-2 text-sm leading-snug text-gray-600 max-w-lg'>
+							Specjalizujemy się w precyzyjnym wierceniu otworów pod słupy sadownicze
+							oraz montażu słupów betonowych i drewnianych przy użyciu chwytaka.
+							Realizujemy prace zarówno przy nowych nasadzeniach, jak i przy modernizacji
+							istniejących sadów i plantacji.
+						</P>
 					</div>
 					</div>
 
@@ -58,7 +59,7 @@ export default function KonstrukcjeSadownicze() {
 						className='md:col-span-3 order-4 md:order-none opacity-0 animate-slideUp'
 						style={{ animationDelay: '0.45s', animationFillMode: 'forwards' }}
 					>
-						<h2 className='text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2'>Zakres prac</h2>
+						<H2 className='text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2'>Zakres prac:</H2>
 						<div className='grid grid-cols-2 gap-2'>
 							{scopeItems.map((item) => (
 								<div

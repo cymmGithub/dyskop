@@ -3,6 +3,7 @@ import Link from "next/link";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { HiArrowRight } from "react-icons/hi";
 import TractorSpecsPopover from "@/components/tractor-specs-popover";
+import { H1, H2, Span } from '@/components/ui/text';
 
 const attachments = [
 	{
@@ -49,12 +50,12 @@ export default function UslugiMinitraktorem() {
 						className='md:col-span-3 flex flex-col justify-center border-l-4 border-amber-500 pl-5 order-1 md:order-none [&_p]:text-left opacity-0 animate-slideUp'
 						style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
 					>
-						<h1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
+						<H1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
 							Usługi minitraktorem
-							<span className='block text-amber-500 text-base sm:text-lg md:text-xl mt-1 font-semibold tracking-normal'>
-								powiat lubelski i&nbsp;okolice
-							</span>
-						</h1>
+							<Span className='block text-amber-500 text-base sm:text-lg md:text-xl mt-1 font-semibold tracking-normal'>
+								powiat lubelski i okolice
+							</Span>
+						</H1>
 						<p className='mt-2 text-sm leading-snug text-gray-600 max-w-lg'>
 							Oferujemy profesjonalne usługi minitraktorem wykonywane
 							kompaktowym ciągnikiem o&nbsp;mocy{" "}
@@ -70,10 +71,10 @@ export default function UslugiMinitraktorem() {
 							className='md:col-span-2 flex flex-col justify-start order-3 md:order-none opacity-0 animate-slideUp'
 							style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}
 						>
-							<h2 className='flex items-center gap-2 text-sm font-semibold text-gray-900 mb-2 mt-2'>
+							<H2 className='flex items-center gap-2 text-sm font-semibold text-gray-900 mb-2 mt-2'>
 								<FaMapMarkerAlt className='text-amber-500 text-xs' />
 								Gdzie realizujemy usługi minitraktorem?
-							</h2>
+							</H2>
 							<span className='text-xs text-gray-500 leading-snug'>
 								Usługi minitraktorem realizujemy na terenie{" "}
 								<span className='text-gray-600 font-medium'>Lublina</span>,
@@ -113,7 +114,7 @@ export default function UslugiMinitraktorem() {
 							className='text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2 opacity-0 animate-slideUp'
 							style={{ animationDelay: "0.1s", animationFillMode: "forwards" }}
 						>
-							Osprzęt
+							Osprzęt:
 						</h2>
 						<div className='grid grid-cols-2 xl:grid-cols-4 gap-3 grid-rows-[repeat(auto-fill,auto)]'>
 							{attachments.map((attachment, i) => (

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { FaMapMarkerAlt } from 'react-icons/fa';
+import { H1, H2, Span } from '@/components/ui/text';
 
 
 const services = [
@@ -66,12 +67,12 @@ export default function Services() {
 				>
 					{/* Left — Hero */}
 					<div className='border-l-4 border-amber-500 pl-6 md:flex-1'>
-						<h1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
+						<H1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
 							Usługi minikoparką
-							<span className='block text-amber-500 text-base sm:text-lg md:text-xl mt-1 font-semibold tracking-normal'>
-								powiat lubelski i&nbsp;okolice
-							</span>
-						</h1>
+							<Span className='block text-amber-500 text-base sm:text-lg md:text-xl mt-1 font-semibold tracking-normal'>
+								powiat lubelski i okolice
+							</Span>
+						</H1>
 						<p className='mt-3 sm:mt-4 text-sm sm:text-base leading-relaxed text-gray-600 max-w-2xl text-left'>
 							Oferujemy profesjonalne usługi minikoparką, realizowane kompaktową maszyną{' '}
 							<b className='text-gray-800'>Caterpillar&nbsp;301.8</b>, idealną tam, gdzie duży sprzęt
@@ -83,10 +84,10 @@ export default function Services() {
 
 					{/* Right — Coverage area */}
 					<div className='md:flex-1 md:max-w-sm'>
-						<h2 className='flex items-center gap-2 text-base sm:text-lg font-semibold text-gray-900 mb-3'>
+						<H2 className='flex items-center gap-2 text-base sm:text-lg font-semibold text-gray-900 mb-3'>
 							<FaMapMarkerAlt className='text-amber-500 text-sm' />
 							Gdzie realizujemy usługi?
-						</h2>
+						</H2>
 						<div className='flex flex-wrap gap-2'>
 
 							<span className='px-2.5 py-1 rounded-full text-xs text-gray-500'>

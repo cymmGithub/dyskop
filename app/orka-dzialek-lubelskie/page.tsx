@@ -4,15 +4,16 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { X } from "lucide-react";
+import { H1, H2, P, Span } from '@/components/ui/text';
 
 const scopeItems = [
 	{
-		title: "Ogródki warzywne",
+		title: "Ogródki warzywne; działki ROD",
 		desc: "Orka przydomowych ogródków i grządek pod warzywa",
 	},
 	{
-		title: "Działki rekreacyjne",
-		desc: "Działki rekreacyjne, ROD i tereny sezonowe",
+		title: "Wymieszanie resztek roślinnych",
+		desc: "Poprawa struktury gley i ograniczenie rozwoju chwastów",
 	},
 	{
 		title: "Ugory i odłogi",
@@ -20,7 +21,7 @@ const scopeItems = [
 	},
 	{
 		title: "Przygotowanie pod uprawy",
-		desc: "Spulchnianie i napowietrzanie gleby przed siewem",
+		desc: "Spulchnianie i napowietrzanie gleby",
 	},
 ];
 
@@ -40,29 +41,29 @@ export default function OrkaDzialek() {
 						style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
 					>
 						<div className='border-l-4 border-amber-500 pl-5'>
-							<h1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
+							<H1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
 								Orka działek pługiem
-								<span className='block text-amber-500 text-base sm:text-lg md:text-xl mt-1 font-semibold tracking-normal'>
-									pług dwuskibowy — Lublin i&nbsp;okolice
-								</span>
-							</h1>
-							<p className='mt-2 text-sm leading-snug text-gray-600 max-w-lg'>
+								<Span className='block text-amber-500 text-base sm:text-lg md:text-xl mt-1 font-semibold tracking-normal'>
+									pług dwuskibowy — Lublin i okolice
+								</Span>
+							</H1>
+							<P className='mt-2 text-sm leading-snug text-gray-600 max-w-lg'>
 								Oferujemy usługę orki pługiem dwuskibowym, idealną do
 								przygotowania gleby pod uprawy na mniejszych powierzchniach. To
 								skuteczne rozwiązanie dla przydomowych ogródków warzywnych,
 								działek rekreacyjnych oraz terenów wymagających odświeżenia
 								przed nowym sezonem.
-							</p>
-							<p className='mt-2 text-sm leading-snug text-gray-600 max-w-lg'>
-								Orka działki pozwala szybko i&nbsp;dokładnie przygotować podłoże
+							</P>
+							<P className='mt-2 text-sm leading-snug text-gray-600 max-w-lg'>
+								Orka działki pozwala szybko i dokładnie przygotować podłoże
 								pod siew oraz sadzenie roślin.
-							</p>
-							<p className='mt-2 text-sm leading-snug text-gray-600 max-w-lg'>
+							</P>
+							<P className='mt-2 text-sm leading-snug text-gray-600 max-w-lg'>
 								Po wykonaniu usługi gleba jest równomiernie odwrócona,
 								spulchniona i przygotowana do dalszych prac – np. do użycia
 								<Link href='/glebogryzarka-separacyjna-lubelskie' className='ms-2 font-semibold text-amber-600 underline'>glebogryzarki separacyjnej</Link>. To solidna podstawa pod zdrowe i
 								obfite plony.
-							</p>
+							</P>
 						</div>
 					</div>
 
@@ -86,9 +87,9 @@ export default function OrkaDzialek() {
 						className='md:col-span-3 order-4 md:order-none opacity-0 animate-slideUp'
 						style={{ animationDelay: "0.45s", animationFillMode: "forwards" }}
 					>
-						<h2 className='text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2'>
-							Zakres usług orki
-						</h2>
+						<H2 className='text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2'>
+							Zastosowanie:
+						</H2>
 						<div className='grid grid-cols-2 gap-2'>
 							{scopeItems.map((item) => (
 								<div

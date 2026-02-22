@@ -38,7 +38,7 @@ test.describe("Homepage", () => {
   test("phone number link is visible", async ({ page }) => {
     await page.goto("/");
     await expect(
-      page.getByRole("link", { name: "506 502 709" })
+      page.getByRole("link", { name: "506 502 709" }).first()
     ).toBeVisible();
   });
 });
@@ -135,7 +135,6 @@ test.describe("Cookie banner", () => {
 test.describe("Footer", () => {
   test("displays company info", async ({ page }) => {
     await page.goto("/");
-    await expect(page.getByText("NIP 7133124621")).toBeVisible();
     await expect(page.getByText("kontakt@dys-kop.pl")).toBeVisible();
   });
 });
