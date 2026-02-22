@@ -18,10 +18,40 @@ export default function sitemap(): MetadataRoute.Sitemap {
 			priority: 0.8,
 		},
 		{
-			url: `${baseUrl}/zakres-uslug`,
+			url: `${baseUrl}/uslugi-minikoparka-lubelskie`,
 			lastModified: currentDate,
 			changeFrequency: 'monthly',
 			priority: 0.9,
+		},
+		{
+			url: `${baseUrl}/konstrukcje-sadownicze-lubelskie`,
+			lastModified: currentDate,
+			changeFrequency: 'monthly',
+			priority: 0.9,
+		},
+		{
+			url: `${baseUrl}/uslugi-minitraktorem-lubelskie`,
+			lastModified: currentDate,
+			changeFrequency: 'monthly',
+			priority: 0.9,
+		},
+		{
+			url: `${baseUrl}/glebogryzarka-separacyjna-lubelskie`,
+			lastModified: currentDate,
+			changeFrequency: 'monthly',
+			priority: 0.8,
+		},
+		{
+			url: `${baseUrl}/koszenie-dzialek-lubelskie`,
+			lastModified: currentDate,
+			changeFrequency: 'monthly',
+			priority: 0.8,
+		},
+		{
+			url: `${baseUrl}/orka-dzialek-lubelskie`,
+			lastModified: currentDate,
+			changeFrequency: 'monthly',
+			priority: 0.8,
 		},
 		{
 			url: `${baseUrl}/realizacje`,

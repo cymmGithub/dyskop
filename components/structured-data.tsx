@@ -110,6 +110,46 @@ export default function StructuredData() {
 						"name": "Wstawianie słupków",
 						"description": "Profesjonalne wstawianie słupków betonowych i drewnianych"
 					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Konstrukcje sadownicze",
+						"description": "Wiercenie otworów pod słupy sadownicze, wkręcanie kotew naciągowych, montaż i demontaż słupków betonowych i drewnianych"
+					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Usługi minitraktorem",
+						"description": "Koszenie trawników i nieużytków, orka pod uprawy, przygotowanie terenu pod trawnik, uprawa gleby. Kompaktowy ciągnik 26 KM."
+					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Glebogryzarka separacyjna",
+						"description": "Profesjonalne przygotowanie terenu pod trawnik glebogryzarką separacyjną — spulchnianie, przesiewanie i wyrównanie gleby w jednym przejeździe"
+					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Koszenie działek i nieużytków",
+						"description": "Koszenie kosiarką bijakową i pielęgnacyjną — mulczowanie nieużytków, zarośli i samosiejek oraz regularna pielęgnacja trawników"
+					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Orka działek pługiem",
+						"description": "Orka pługiem dwuskibowym — przygotowanie gleby pod uprawy, ogródki warzywne i tereny rekreacyjne"
+					}
 				}
 			]
 		}

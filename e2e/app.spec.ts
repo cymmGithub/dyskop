@@ -16,17 +16,17 @@ async function dismissCookieBanner(page: import("@playwright/test").Page) {
 test.describe("Homepage", () => {
   test("displays the main heading and service cards", async ({ page }) => {
     await page.goto("/");
-    await expect(page.getByRole("heading", { level: 1 })).toHaveText(
-      "USŁUGI MINIKOPARKĄ"
+    await expect(page.getByRole("heading", { level: 1 })).toContainText(
+      "Usługi minikoparką, wiertnicą i minitraktorem"
     );
     await expect(
-      page.getByRole("heading", { name: "PRACE ZIEMNE" })
+      page.getByRole("heading", { name: "Usługi minikoparką", exact: true })
     ).toBeVisible();
     await expect(
-      page.getByRole("heading", { name: "ODWIERTY WIERTNICĄ" })
+      page.getByRole("heading", { name: "Konstrukcje sadownicze", exact: true })
     ).toBeVisible();
     await expect(
-      page.getByRole("heading", { name: "WSTAWIANIE SŁUPKÓW" })
+      page.getByRole("heading", { name: "Usługi minitraktorem", exact: true })
     ).toBeVisible();
   });
 
@@ -52,9 +52,8 @@ test.describe("Navigation", () => {
     await expect(page).toHaveURL("/o-nas");
     await expect(page).toHaveTitle(/O nas/);
 
-    await dismissCookieBanner(page);
-    await page.getByRole("link", { name: "Zakres Usług" }).click();
-    await expect(page).toHaveURL("/zakres-uslug");
+    await page.goto("/uslugi-minikoparka-lubelskie");
+    await expect(page).toHaveURL("/uslugi-minikoparka-lubelskie");
 
     await dismissCookieBanner(page);
     await page.getByRole("link", { name: "Realizacje" }).click();
@@ -80,14 +79,14 @@ test.describe("About page", () => {
   test("displays company description", async ({ page }) => {
     await page.goto("/o-nas");
     await expect(
-      page.getByText("Firma Dys-Kop mieści się w Dysie k. Lublina")
+      page.getByText("Dys-Kop to firma specjalizująca się")
     ).toBeVisible();
   });
 
-  test("has 360 turntable image slider", async ({ page }) => {
+  test("has equipment image", async ({ page }) => {
     await page.goto("/o-nas");
     await expect(
-      page.getByRole("slider", { name: "Image turntable" })
+      page.getByAltText(/Minikoparka Caterpillar 301.8/)
     ).toBeVisible();
   });
 });
@@ -103,7 +102,7 @@ test.describe("Gallery page", () => {
   test("has pagination", async ({ page }) => {
     await page.goto("/realizacje");
     await expect(
-      page.getByRole("button", { name: "Next page" })
+      page.getByRole("button", { name: "Następna strona" })
     ).toBeVisible();
   });
 });
@@ -138,5 +137,65 @@ test.describe("Footer", () => {
     await page.goto("/");
     await expect(page.getByText("NIP 7133124621")).toBeVisible();
     await expect(page.getByText("kontakt@dys-kop.pl")).toBeVisible();
+  });
+});
+
+test.describe("Usługi minikoparką page", () => {
+  test("displays heading and has correct title", async ({ page }) => {
+    await page.goto("/uslugi-minikoparka-lubelskie");
+    await expect(page.getByRole("heading", { level: 1 })).toContainText(
+      "Usługi minikoparką"
+    );
+    await expect(page).toHaveTitle(/Usługi minikoparką/);
+  });
+});
+
+test.describe("Usługi minitraktorem page", () => {
+  test("displays heading and has correct title", async ({ page }) => {
+    await page.goto("/uslugi-minitraktorem-lubelskie");
+    await expect(page.getByRole("heading", { level: 1 })).toContainText(
+      "Usługi minitraktorem"
+    );
+    await expect(page).toHaveTitle(/Usługi minitraktorem/);
+  });
+});
+
+test.describe("Konstrukcje sadownicze page", () => {
+  test("displays heading and has correct title", async ({ page }) => {
+    await page.goto("/konstrukcje-sadownicze-lubelskie");
+    await expect(page.getByRole("heading", { level: 1 })).toContainText(
+      "Konstrukcje sadownicze"
+    );
+    await expect(page).toHaveTitle(/Konstrukcje sadownicze/);
+  });
+});
+
+test.describe("Glebogryzarka separacyjna page", () => {
+  test("displays heading and has correct title", async ({ page }) => {
+    await page.goto("/glebogryzarka-separacyjna-lubelskie");
+    await expect(page.getByRole("heading", { level: 1 })).toContainText(
+      "Glebogryzarka separacyjna"
+    );
+    await expect(page).toHaveTitle(/Glebogryzarka separacyjna/);
+  });
+});
+
+test.describe("Koszenie działek page", () => {
+  test("displays heading and has correct title", async ({ page }) => {
+    await page.goto("/koszenie-dzialek-lubelskie");
+    await expect(page.getByRole("heading", { level: 1 })).toContainText(
+      "Koszenie działek"
+    );
+    await expect(page).toHaveTitle(/Koszenie działek/);
+  });
+});
+
+test.describe("Orka działek page", () => {
+  test("displays heading and has correct title", async ({ page }) => {
+    await page.goto("/orka-dzialek-lubelskie");
+    await expect(page.getByRole("heading", { level: 1 })).toContainText(
+      "Orka działek"
+    );
+    await expect(page).toHaveTitle(/Orka działek/);
   });
 });

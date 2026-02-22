@@ -7,8 +7,8 @@ const Logo = () => {
 			<div className="flex w-[60px] md:w-[260px] hover:cursor-pointer">
 			<Image
 				src="/img/logo/dyskop-logo.png"
-				width={150}
-				height={150}
+				width={130}
+				height={130}
 				alt="Dys-kop - Usługi minikoparką Lublin"
 				priority
 			/>

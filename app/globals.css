@@ -220,13 +220,12 @@ body {
 }
 
 .sketchy-bg {
-	background-color: #ffffff;
+	background-color: #fbfcff;
 	background-image:
-		radial-gradient(#f5f5f5 1px, transparent 1px),
-		repeating-linear-gradient(45deg, #f5f5f5 0, #f5f5f5 1px, #ffffff 0, #ffffff 50%);
-	background-size: 20px 20px, 20px 20px;
-	background-position: 0 0;
-	opacity: 0.7;
+		linear-gradient(#e3ecf7 1px, transparent 1px),
+		linear-gradient(90deg, #e3ecf7 1px, transparent 1px);
+	background-size: 40px 40px;
+	opacity: 0.6;
 }
 
 .sketchy-bg::before {
@@ -237,7 +236,9 @@ body {
 	right: 0;
 	bottom: 0;
 	background-image:
-		repeating-linear-gradient(-45deg, #f5f5f5 0, #f5f5f5 1px, transparent 1px, transparent 20px);
-	opacity: 0.5;
+		linear-gradient(#edf2fa 1px, transparent 1px),
+		linear-gradient(90deg, #edf2fa 1px, transparent 1px);
+	background-size: 8px 8px;
+	opacity: 0.4;
 	pointer-events: none;
 }

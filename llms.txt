@@ -1,6 +1,6 @@
 # Dys-kop
 
-> Dys-kop is a professional mini excavator service website built with Next.js 14, serving the Lublin area in Poland. The site provides information about mini excavator services (Caterpillar 301.8), drilling services (DIGGA PDX2H-2), and includes features like gallery management, contact forms, and an admin panel.
+> Dys-kop is a professional mini excavator and mini tractor service website built with Next.js 14, serving the Lublin area in Poland. The site provides information about mini excavator services (Caterpillar 301.8), drilling services (DIGGA PDX2H-2), mini tractor services (Farmtrac 26 PRO), and includes features like gallery management, contact forms, and an admin panel.
 
 This is a server-side rendered Next.js application using the App Router, TypeScript, and Tailwind CSS. The site is optimized for SEO with structured data, sitemap, and proper meta tags. It features an admin panel for gallery management using Vercel Blob storage, a contact form with email integration via Nodemailer, and a responsive design with custom UI components built on Radix UI.
 
@@ -9,9 +9,11 @@ This is a server-side rendered Next.js application using the App Router, TypeScr
 **Business Services:**
 - Mini excavator services (Caterpillar 301.8, 2-ton excavator)
 - Drilling services with DIGGA PDX2H-2 drill (150mm & 250mm diameter, up to 120cm depth)
-- Earthworks and linear excavations
-- Installing concrete and wooden posts
-- Installing anchors and foundations
+- Mini tractor services (Farmtrac 26 PRO) — mowing, plowing, soil preparation
+- Orchard construction installation (posts, anchors, foundations)
+- Lawn mowing and land clearing with flail and maintenance mowers
+- Soil preparation with separating rotary tiller
+- Plowing with double-furrow plow
 
 **Target Area:** Lublin and surrounding districts (Świdnik, Lubartów, Opole Lubelskie, Puławy, Kraśnik)
 
@@ -27,8 +29,13 @@ This is a server-side rendered Next.js application using the App Router, TypeScr
 
 - [app/page.tsx](./app/page.tsx): Home page featuring service overview and call-to-action
 - [app/layout.tsx](./app/layout.tsx): Root layout with metadata, SEO configuration, and Google Analytics
-- [app/o-nas/page.tsx](./app/o-nas/page.tsx): About us page with 360° excavator view and technical specifications
-- [app/zakres-uslug/page.tsx](./app/zakres-uslug/page.tsx): Scope of services page
+- [app/o-nas/page.tsx](./app/o-nas/page.tsx): About us page with company info and equipment details
+- [app/uslugi-minikoparka-lubelskie/page.tsx](./app/uslugi-minikoparka-lubelskie/page.tsx): Mini excavator services page
+- [app/uslugi-minitraktorem-lubelskie/page.tsx](./app/uslugi-minitraktorem-lubelskie/page.tsx): Mini tractor services page
+- [app/konstrukcje-sadownicze-lubelskie/page.tsx](./app/konstrukcje-sadownicze-lubelskie/page.tsx): Orchard construction services page
+- [app/koszenie-dzialek-lubelskie/page.tsx](./app/koszenie-dzialek-lubelskie/page.tsx): Lawn mowing and land clearing services page
+- [app/glebogryzarka-separacyjna-lubelskie/page.tsx](./app/glebogryzarka-separacyjna-lubelskie/page.tsx): Separating rotary tiller services page
+- [app/orka-dzialek-lubelskie/page.tsx](./app/orka-dzialek-lubelskie/page.tsx): Plowing services page
 - [app/realizacje/page.tsx](./app/realizacje/page.tsx): Portfolio/gallery page showcasing completed projects
 - [app/kontakt/page.tsx](./app/kontakt/page.tsx): Contact page with form and business information
 - [app/admin/page.tsx](./app/admin/page.tsx): Admin dashboard for gallery management
@@ -37,10 +44,13 @@ This is a server-side rendered Next.js application using the App Router, TypeScr
 ## Components
 
 - [components/layout-wrapper.tsx](./components/layout-wrapper.tsx): Main layout wrapper component
+- [components/client-layout.tsx](./components/client-layout.tsx): Client-side layout with navbar/footer conditional rendering
 - [components/structured-data.tsx](./components/structured-data.tsx): JSON-LD structured data for SEO
+- [components/equipment-specs-popover.tsx](./components/equipment-specs-popover.tsx): Excavator equipment specs popover
+- [components/tractor-specs-popover.tsx](./components/tractor-specs-popover.tsx): Tractor equipment specs popover
 - [components/navbar](./components/navbar): Navigation components
 - [components/footer](./components/footer): Footer components
-- [components/ui](./components/ui): Reusable UI components (buttons, cards, dialogs, popovers, badges)
+- [components/ui](./components/ui): Reusable UI components (buttons, cards, dialogs, popovers, badges, burger menu, navigation bar)
 - [components/admin](./components/admin): Admin-specific components for gallery management
 
 ## API Routes & Server Actions
