@@ -126,6 +126,14 @@ export default function StructuredData() {
 						"name": "Usługi minitraktorem",
 						"description": "Koszenie trawników i nieużytków, orka pod uprawy, przygotowanie terenu pod trawnik, uprawa gleby. Kompaktowy ciągnik 26 KM."
 					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Glebogryzarka separacyjna",
+						"description": "Profesjonalne przygotowanie terenu pod trawnik glebogryzarką separacyjną — spulchnianie, przesiewanie i wyrównanie gleby w jednym przejeździe"
+					}
 				}
 			]
 		}

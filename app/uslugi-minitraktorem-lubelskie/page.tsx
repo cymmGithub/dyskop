@@ -8,7 +8,7 @@ const attachments = [
 		title: "GLEBOGRYZARKA SEPARACYJNA",
 		image: "/img/glebogryzarka-separacyjna-minitraktor.png",
 		alt: "Glebogryzarka separacyjna — przygotowanie terenu pod trawnik Lublin",
-		href: "#",
+		href: "/glebogryzarka-separacyjna-lubelskie",
 		items: ["przygotowanie terenu pod trawnik", "uprawa gleby"],
 	},
 	{

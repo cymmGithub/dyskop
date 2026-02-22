@@ -17,6 +17,7 @@ const services = [
 	{ title: 'Usługi minikoparką', href: '/uslugi-minikoparka-lubelskie', description: 'Profesjonalne usługi minikoparką, realizowane kompaktową maszyną Caterpillar 301.8' },
 	{ title: 'Konstrukcje sadownicze', href: '/konstrukcje-sadownicze-lubelskie', description: 'Wiercenie otworów i montaż słupów sadowniczych' },
 	{ title: 'Usługi minitraktorem', href: '/uslugi-minitraktorem-lubelskie', description: 'Koszenie, orka, przygotowanie terenu' },
+	{ title: 'Glebogryzarka separacyjna', href: '/glebogryzarka-separacyjna-lubelskie', description: 'Przygotowanie terenu pod trawnik i ogrody' },
 ];
 
 const ListItem = React.forwardRef<

@@ -24,6 +24,7 @@ const services = [
 	{ title: 'Transport materiałów', href: '/uslugi-minikoparka-lubelskie' },
 	{ title: 'Konstrukcje sadownicze', href: '/konstrukcje-sadownicze-lubelskie' },
 	{ title: 'Usługi minitraktorem', href: '/uslugi-minitraktorem-lubelskie' },
+	{ title: 'Glebogryzarka separacyjna', href: '/glebogryzarka-separacyjna-lubelskie' },
 ];
 
 const Burger = () => {
