@@ -23,6 +23,7 @@ const services = [
 	{ title: 'Przygotowanie działki', href: '/uslugi-minikoparka-lubelskie' },
 	{ title: 'Transport materiałów', href: '/uslugi-minikoparka-lubelskie' },
 	{ title: 'Konstrukcje sadownicze', href: '/konstrukcje-sadownicze-lubelskie' },
+	{ title: 'Usługi minitraktorem', href: '/uslugi-minitraktorem-lubelskie' },
 ];
 
 const Burger = () => {

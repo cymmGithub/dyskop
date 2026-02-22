@@ -21,6 +21,7 @@ const services = [
 	{ title: 'Przygotowanie działki', href: '/uslugi-minikoparka-lubelskie', description: 'Karczowanie, czyszczenie i przygotowanie gruntu' },
 	{ title: 'Transport materiałów', href: '/uslugi-minikoparka-lubelskie', description: 'Załadunek i przemieszczanie materiałów sypkich' },
 	{ title: 'Konstrukcje sadownicze', href: '/konstrukcje-sadownicze-lubelskie', description: 'Wiercenie otworów i montaż słupów sadowniczych' },
+	{ title: 'Usługi minitraktorem', href: '/uslugi-minitraktorem-lubelskie', description: 'Koszenie, orka, przygotowanie terenu' },
 ];
 
 const ListItem = React.forwardRef<

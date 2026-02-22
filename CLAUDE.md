@@ -33,9 +33,41 @@ Dyskop (dys-kop.pl) is a Next.js 14 business website for a mini-excavator servic
 - **Server Actions** (`"use server"`) for auth and gallery operations, not API routes
 - **Image storage:** Vercel Blob (primary) with filesystem fallback; `sharp`/`plaiceholder` for blur data
 - **SEO:** Structured data (`structured-data.tsx`), OpenGraph/Twitter metadata in layout
-- **SEO takes precedence** every new feature, page, image, text, needs to be adjusted to fit SEO best practices
+- **SEO takes precedence** — every new feature, page, image, or text must follow SEO best practices (see SEO section below)
 - **Forms:** Honeypot bot trap field, client-side validation, react-toastify for feedback
 - **Path alias:** `@/*` maps to project root
+
+## SEO Standards
+
+Every page must follow these rules. When adding new pages or modifying existing ones, apply all of them.
+
+### Image files
+- **File names must be SEO-friendly:** descriptive, hyphenated, keyword-rich, 3–7 words. Example: `minitraktor-farmtrac-26-pro.png`, not `Farmtrac-26PRO.png` or `pielegnacyjna.png`
+- **No Polish diacritics in file names** — use ASCII equivalents (`plug` not `pług`)
+- **Alt text must include location keyword** ("Lublin") naturally. Keep under 125 chars. Describe the image + service context + location. Example: `Kosiarka bijakowa — mulczowanie nieużytków i koszenie Lublin`
+
+### Heading hierarchy
+- Each page gets exactly one `<h1>` (page title)
+- Section labels use `<h2>` (even if visually small — styling is separate from semantics)
+- Items within sections use `<h3>`
+- Never skip levels (no `<h1>` → `<h3>` without `<h2>`)
+
+### Semantic HTML
+- Service page primary content must be wrapped in `<main>`, not `<div>`
+- Use `<article>` for self-contained content blocks (cards, posts)
+- Use `<section>` for thematic groupings when appropriate
+
+### Metadata (layout.tsx)
+Every page layout must include:
+- `title` — with "Lublin" or location + `| Dys-kop` suffix
+- `description` — 155–200 chars, include primary keyword and location
+- `keywords` — array of 5–10 relevant Polish search terms including location variants
+- `alternates.canonical` — full canonical URL (`https://dys-kop.pl/...`)
+- `openGraph` — title, description, url, type
+- `twitter` — card, title, description
+
+### URL slugs
+- Polish, hyphenated, lowercase, include location: `uslugi-minikoparka-lubelskie`, `konstrukcje-sadownicze-lubelskie`
 
 ## Environment Variables
 

@@ -20,7 +20,7 @@ const cards = [
 		label: "Usługi minitraktorem",
 		image: "/img/homepage/home-02.png",
 		alt: "Minitraktor do przygotowania terenu",
-		href: "/uslugi-minikoparka-lubelskie",
+		href: "/uslugi-minitraktorem-lubelskie",
 	},
 ];
 

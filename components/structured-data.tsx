@@ -118,6 +118,14 @@ export default function StructuredData() {
 						"name": "Konstrukcje sadownicze",
 						"description": "Wiercenie otworów pod słupy sadownicze, wkręcanie kotew naciągowych, montaż i demontaż słupków betonowych i drewnianych"
 					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Usługi minitraktorem",
+						"description": "Koszenie trawników i nieużytków, orka pod uprawy, przygotowanie terenu pod trawnik, uprawa gleby. Kompaktowy ciągnik 26 KM."
+					}
 				}
 			]
 		}
