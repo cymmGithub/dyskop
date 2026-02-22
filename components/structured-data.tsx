@@ -142,6 +142,14 @@ export default function StructuredData() {
 						"name": "Koszenie działek i nieużytków",
 						"description": "Koszenie kosiarką bijakową i pielęgnacyjną — mulczowanie nieużytków, zarośli i samosiejek oraz regularna pielęgnacja trawników"
 					}
+				},
+				{
+					"@type": "Offer",
+					"itemOffered": {
+						"@type": "Service",
+						"name": "Orka działek pługiem",
+						"description": "Orka pługiem dwuskibowym — przygotowanie gleby pod uprawy, ogródki warzywne i tereny rekreacyjne"
+					}
 				}
 			]
 		}

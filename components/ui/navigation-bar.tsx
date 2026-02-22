@@ -19,6 +19,7 @@ const services = [
 	{ title: 'Usługi minitraktorem', href: '/uslugi-minitraktorem-lubelskie', description: 'Koszenie, orka, przygotowanie terenu' },
 	{ title: 'Glebogryzarka separacyjna', href: '/glebogryzarka-separacyjna-lubelskie', description: 'Przygotowanie terenu pod trawnik i ogrody' },
 	{ title: 'Koszenie działek', href: '/koszenie-dzialek-lubelskie', description: 'Kosiarka bijakowa i pielęgnacyjna na nieużytki i trawniki' },
+	{ title: 'Orka działek', href: '/orka-dzialek-lubelskie', description: 'Orka pługiem dwuskibowym pod uprawy i ogrody' },
 ];
 
 const ListItem = React.forwardRef<
