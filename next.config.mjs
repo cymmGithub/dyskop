@@ -8,6 +8,15 @@ const nextConfig = {
 			},
 		],
 	},
+	async redirects() {
+		return [
+			{
+				source: "/zakres-uslug",
+				destination: "/uslugi-minikoparka-lubelskie",
+				permanent: true,
+			},
+		];
+	},
 };
 
 export default nextConfig;
