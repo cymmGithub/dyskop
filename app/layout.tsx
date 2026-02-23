@@ -80,7 +80,7 @@ export const metadata: Metadata = {
 	},
 	verification: {
 		// Add your verification tokens here when available
-		// google: 'your-google-verification-code',
+		google: 'j19cBVL-4kdGvWr1dWgE-tYK13_4KfMbS7OxPFOI_T8',
 	},
 };
 
