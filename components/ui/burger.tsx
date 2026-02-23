@@ -12,6 +12,7 @@ import {
 } from '@/components/ui/sheet';
 import Link from 'next/link';
 import { Outfit } from 'next/font/google';
+import SocialButtons from '@/components/social-buttons/social-buttons';
 
 const font = Outfit({ subsets: ['latin'] });
 
@@ -33,8 +34,8 @@ const Burger = () => {
 				<SheetTrigger>
 					<AlignJustify className='ml-11 mr-2' />
 				</SheetTrigger>
-				<SheetContent>
-					<SheetHeader className='text-left'>
+				<SheetContent className='flex flex-col'>
+					<SheetHeader className='text-left flex-1'>
 						<SheetDescription>
 							<div className={`flex flex-col space-y-4 items-start w-full text-lg text-black mt-10 ${font.className}`}>
 								<SheetClose asChild>
@@ -78,6 +79,10 @@ const Burger = () => {
 							</div>
 						</SheetDescription>
 					</SheetHeader>
+					<div className='mt-auto border-t border-gray-100 pt-4 pb-2'>
+						<p className='text-xs text-muted-foreground mb-3'>Znajdź nas</p>
+						<SocialButtons variant="burger" />
+					</div>
 				</SheetContent>
 			</Sheet>
 		</div>
