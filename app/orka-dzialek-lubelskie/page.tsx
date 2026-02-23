@@ -122,7 +122,7 @@ export default function OrkaDzialek() {
 						className='md:col-span-2 flex items-start justify-center order-3 md:order-none opacity-0 animate-slideUp'
 						style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}
 					>
-						<div className='w-full max-w-[340px] lg:max-w-[400px]'>
+						<div className='w-full max-w-[340px]'>
 							<button
 								onClick={() => setLightbox(true)}
 								className='relative w-full cursor-zoom-in'
