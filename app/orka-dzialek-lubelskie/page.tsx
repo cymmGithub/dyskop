@@ -13,7 +13,7 @@ const scopeItems = [
 	},
 	{
 		title: "Wymieszanie resztek roślinnych",
-		desc: "Poprawa struktury gley i ograniczenie rozwoju chwastów",
+		desc: "Poprawa struktury gleby i ograniczenie rozwoju chwastów",
 	},
 	{
 		title: "Ugory i odłogi",
