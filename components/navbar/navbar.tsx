@@ -15,7 +15,7 @@ const Navbar = () => {
 						<div className="flex-1 flex justify-start">
 							<Logo />
 						</div>
-						<div className="flex-1 flex justify-center items-center gap-2 sm:gap-2 md:gap-8 sm:me-2">
+						<div className="flex-1 flex justify-center items-center gap-2 sm:gap-2 md:gap-8">
 							<PhoneNumber />
 							<NavigationBar />
 						</div>

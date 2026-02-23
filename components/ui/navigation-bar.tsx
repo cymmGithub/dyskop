@@ -62,7 +62,7 @@ ListItem.displayName = 'ListItem';
 
 const NavigationBar = () => {
 	return (
-		<NavigationMenu>
+		<NavigationMenu className='lg:ms-14'>
 			<NavigationMenuList className="hidden md:flex md:space-x-2 lg:space-x-4">
 				<NavigationMenuItem>
 					<Link href="/o-nas" legacyBehavior passHref>
