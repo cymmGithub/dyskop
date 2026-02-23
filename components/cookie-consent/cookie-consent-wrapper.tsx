@@ -7,15 +7,15 @@ import { type ReactNode } from 'react';
 
 interface CookieConsentWrapperProps {
   children: ReactNode;
-  gaId: string;
+  gtmId: string;
 }
 
-export default function CookieConsentWrapper({ children, gaId }: CookieConsentWrapperProps) {
+export default function CookieConsentWrapper({ children, gtmId }: CookieConsentWrapperProps) {
   return (
     <CookieConsentProvider>
       {children}
       <CookieBanner />
-      <ConditionalAnalytics gaId={gaId} />
+      <ConditionalAnalytics gtmId={gtmId} />
     </CookieConsentProvider>
   );
 }

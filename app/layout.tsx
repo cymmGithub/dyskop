@@ -95,7 +95,7 @@ export default function RootLayout({
 				<StructuredData />
 			</head>
 			<body>
-				<CookieConsentWrapper gaId="AW-17061194297">
+				<CookieConsentWrapper gtmId="GTM-W2GKPG8J">
 					<LayoutWrapper myFont={myFont}>{children}</LayoutWrapper>
 				</CookieConsentWrapper>
 			</body>
