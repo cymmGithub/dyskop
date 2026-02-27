@@ -155,7 +155,7 @@ export default function AdminGallery({
 						<div className='mb-4 text-sm text-gray-500'>
 							Nazwa pliku:{" "}
 							<span className='font-medium text-gray-900 break-all'>
-								{decodeURIComponent(imageToDelete.url.split("/").pop() || "")}
+								{decodeURIComponent(imageToDelete.id.split("/").pop() || "")}
 							</span>
 						</div>
 

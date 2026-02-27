@@ -17,12 +17,12 @@ export async function getGalleryData(): Promise<GalleryImage[]> {
 			.filter(blob => !blob.pathname.endsWith('.json'))
 			.map(blob => ({
 				id: blob.url,
-				url: blob.url,
+				url: `${blob.url}?v=${blob.uploadedAt.getTime()}`,
 				base64: '', // No blur data available from simple list
 			}));
 
-		// Sort by pathname (filename) alphabetical
-		images.sort((a, b) => a.url.localeCompare(b.url));
+		// Sort by clean URL (id) — url now contains cache-busting query string
+		images.sort((a, b) => a.id.localeCompare(b.id));
 
 		return images;
 	} catch (error) {
@@ -38,6 +38,7 @@ export async function addImage(file: File): Promise<GalleryImage> {
 
 	const blob = await put(sanitizedFilename, file, {
 		access: "public",
+		allowOverwrite: true,
 	});
 
 	// 2. Return Image Object

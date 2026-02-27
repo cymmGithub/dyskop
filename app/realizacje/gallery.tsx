@@ -4,7 +4,7 @@ import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { useState, useEffect, useCallback } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Camera, ChevronLeft, ChevronRight } from "lucide-react";
 
 interface GalleryProps {
 	images: {
@@ -71,6 +71,15 @@ export default function Gallery({ images }: GalleryProps) {
 		window.addEventListener("keydown", handleKeyDown);
 		return () => window.removeEventListener("keydown", handleKeyDown);
 	}, [isOpen, goToNextPage, goToPreviousPage]);
+
+	if (images.length === 0) {
+		return (
+			<section className="h-full flex flex-col items-center justify-center mt-32 px-4">
+				<Camera className="w-16 h-16 text-gray-300 mb-4" />
+				<p className="text-gray-500 text-lg">Galeria jest w trakcie aktualizacji</p>
+			</section>
+		);
+	}
 
 	return (
 		<section className="h-full flex flex-col">
