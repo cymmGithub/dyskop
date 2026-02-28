@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
 
-## Getting Started
+# Dys-Kop
 
-First, run the development server:
+**Business website for mini-excavator, drill & mini-tractor services in Lublin, Poland**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000?logo=vercel)](https://vercel.com/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[**View Live Site**](https://dys-kop.pl)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+</div>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+## About
 
-To learn more about Next.js, take a look at the following resources:
+Dys-Kop is a production Next.js 14 website built for a mini-excavator services company operating in the Lublin region of Poland. The site is fully server-rendered with App Router, features a custom admin panel for gallery management via Vercel Blob storage, and is optimized for Polish-language SEO with structured data, sitemaps, and semantic HTML.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## SEO Results
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+SEO was a top priority for the client. The site achieves a **Lighthouse SEO score of 100** and ranks **#1 on Google** for target keywords like *"uslugi minitraktorem lubelskie"* (mini-tractor services Lublin region).
 
-## Deploy on Vercel
+<table>
+<tr>
+<td width="50%">
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**#1 Google Search Result**
+![Google Search Result](docs/screenshots/google-search-result.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+</td>
+<td width="50%">
+
+**Lighthouse SEO: 100/100**
+![Lighthouse SEO Score](docs/screenshots/lighthouse-seo-score.png)
+
+</td>
+</tr>
+</table>
+
+## Pages
+
+<table>
+<tr>
+<td width="50%">
+
+![Homepage](docs/screenshots/homepage.png)
+
+</td>
+<td width="50%">
+
+![About](docs/screenshots/about.png)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td width="50%">
+
+![Excavator Services](docs/screenshots/excavator-services.png)
+
+</td>
+<td width="50%">
+
+![Tractor Services](docs/screenshots/tractor-services.png)
+
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td>
+
+![Gallery](docs/screenshots/gallery.png)
+
+</td>
+</tr>
+</table>
+
+## Admin Panel
+
+Password-protected dashboard for managing the photo gallery. Supports image upload to Vercel Blob storage with automatic blur placeholder generation, and single-click deletion.
+
+<table>
+<tr>
+<td width="50%">
+
+**Login**
+![Admin Login](docs/screenshots/admin-login.png)
+
+</td>
+<td width="50%">
+
+**Gallery Management**
+![Admin Panel](docs/screenshots/admin-panel.png)
+
+</td>
+</tr>
+</table>
+
+## Tech Stack
+
+![Next.js](https://img.shields.io/badge/Next.js_14-000?logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
+![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000?logo=shadcnui&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000?logo=vercel&logoColor=white)
+![Vercel Blob](https://img.shields.io/badge/Vercel_Blob-000?logo=vercel&logoColor=white)
+![Nodemailer](https://img.shields.io/badge/Nodemailer-0F9DCE?logo=nodemailer&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?logo=playwright&logoColor=white)
