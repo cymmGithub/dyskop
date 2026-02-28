@@ -198,3 +198,21 @@ test.describe("Orka działek page", () => {
     await expect(page).toHaveTitle(/Orka działek/);
   });
 });
+
+test.describe("Rate limiting middleware", () => {
+  test("returns 429 after exceeding request limit to contact form API", async ({
+    request,
+  }) => {
+    // Use GET requests to test middleware without triggering the POST email handler.
+    // Send enough requests to exhaust the limit (some may already be consumed by prior tests).
+    for (let i = 0; i < 10; i++) {
+      await request.get("/api/contact-form");
+    }
+
+    // Next request must be rate limited
+    const rateLimited = await request.get("/api/contact-form");
+    expect(rateLimited.status()).toBe(429);
+    const body = await rateLimited.json();
+    expect(body.message).toBe("Spróbuj ponownie za 1 minutę");
+  });
+});

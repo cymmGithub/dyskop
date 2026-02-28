@@ -1,11 +1,10 @@
-import { NextResponse } from 'next/server';
-import requestIp from 'request-ip'
+import { NextRequest, NextResponse } from 'next/server';
 
-const rateLimitMap = new Map();
+const rateLimitMap = new Map<string, { count: number; lastReset: number }>();
 
-export function middleware(req: any, res: any) {
-	const ip = requestIp.getClientIp(req);
-	const limit = 1; // Limiting requests to 5 per minute per IP
+export function middleware(req: NextRequest) {
+	const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ?? 'unknown';
+	const limit = 1;
 	const windowMs = 60 * 1000; // 1 minute
 
 	if (!rateLimitMap.has(ip)) {
@@ -15,7 +14,7 @@ export function middleware(req: any, res: any) {
 		});
 	}
 
-	const ipData = rateLimitMap.get(ip);
+	const ipData = rateLimitMap.get(ip)!;
 
 	if (Date.now() - ipData.lastReset > windowMs) {
 		ipData.count = 0;
@@ -23,15 +22,17 @@ export function middleware(req: any, res: any) {
 	}
 
 	if (ipData.count >= limit) {
-		return NextResponse.json({
-			status: 429,
-			message: 'Spróbuj ponownie za 1 minutę'
-		})
+		return NextResponse.json(
+			{ message: 'Spróbuj ponownie za 1 minutę' },
+			{ status: 429 }
+		);
 	}
 
 	ipData.count += 1;
+
+	return NextResponse.next();
 }
 
 export const config = {
-  matcher: '/api/contact-form',
-}
+	matcher: '/api/contact-form',
+};
