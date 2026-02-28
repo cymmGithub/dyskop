@@ -156,19 +156,20 @@ export default function Contact() {
 
 						<button
 							type='submit'
-							className='w-full rounded-md bg-indigo-600 px-2.5 sm:px-3 py-2 sm:py-2.5 text-sm sm:text-base font-semibold text-white shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 transition-colors duration-200'
+							className='w-full rounded-md bg-indigo-600 px-2.5 sm:px-3 py-2 sm:py-2.5 text-sm sm:text-base font-semibold text-white shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 transition-colors duration-200 relative'
 							disabled={isPending}
 						>
-							{isPending ? (
-								<PropagateLoader
-									color={'#ffffff'}
-									loading={isPending}
-									aria-label='Loading Spinner'
-									data-testid='loader'
-									size={6}
-								/>
-							) : (
-								'Wyślij'
+							<span className={isPending ? 'invisible' : ''}>Wyślij</span>
+							{isPending && (
+								<span className='absolute inset-0 flex items-center justify-center'>
+									<PropagateLoader
+										color={'#ffffff'}
+										loading={isPending}
+										aria-label='Loading Spinner'
+										data-testid='loader'
+										size={6}
+									/>
+								</span>
 							)}
 						</button>
 					</form>
