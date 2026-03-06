@@ -12,10 +12,8 @@ interface LayoutWrapperProps {
 export default function LayoutWrapper({ children, myFont }: LayoutWrapperProps) {
 	const pathname = usePathname();
 
-	// Routes that should not use the main ClientLayout (no navbar/footer)
-	const isStandaloneRoute = pathname?.startsWith('/admin') || pathname?.startsWith('/login');
-
-	if (isStandaloneRoute) {
+	// Safety net: /admin is handled by Payload's own layout via (payload) route group
+	if (pathname?.startsWith('/admin')) {
 		return <>{children}</>;
 	}
 

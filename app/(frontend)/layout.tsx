@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import localFont from "next/font/local";
-import LayoutWrapper from "../components/layout-wrapper";
-import StructuredData from "../components/structured-data";
-import CookieConsentWrapper from "../components/cookie-consent/cookie-consent-wrapper";
+import LayoutWrapper from "../../components/layout-wrapper";
+import StructuredData from "../../components/structured-data";
+import CookieConsentWrapper from "../../components/cookie-consent/cookie-consent-wrapper";
 
-const myFont = localFont({ src: "../public/fonts/Consolas.ttf" });
+const myFont = localFont({ src: "../../public/fonts/Consolas.ttf" });
 
 export const viewport: Viewport = {
 	width: "device-width",
@@ -80,12 +80,11 @@ export const metadata: Metadata = {
 		},
 	},
 	verification: {
-		// Add your verification tokens here when available
 		google: "j19cBVL-4kdGvWr1dWgE-tYK13_4KfMbS7OxPFOI_T8",
 	},
 };
 
-export default function RootLayout({
+export default function FrontendLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;

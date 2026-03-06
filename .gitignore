@@ -40,3 +40,6 @@ test-results/
 
 # worktrees
 .worktrees/
+
+# payload
+payload-types.ts
