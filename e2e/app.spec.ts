@@ -94,7 +94,7 @@ test.describe("About page", () => {
 test.describe("Gallery page", () => {
   test("displays gallery images", async ({ page }) => {
     await page.goto("/realizacje");
-    const images = page.getByAltText(/Zdjęcie z galerii/);
+    const images = page.getByAltText(/Lublin/);
     await expect(images.first()).toBeVisible();
     expect(await images.count()).toBeGreaterThan(0);
   });

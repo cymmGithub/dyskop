@@ -65,11 +65,11 @@ const NavigationBar = () => {
 		<NavigationMenu className='lg:ms-14'>
 			<NavigationMenuList className="hidden md:flex md:space-x-2 lg:space-x-4">
 				<NavigationMenuItem>
-					<Link href="/o-nas" legacyBehavior passHref>
-						<NavigationMenuLink className={navigationMenuTriggerStyle()}>
+					<NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+						<Link href="/o-nas">
 							O Nas
-						</NavigationMenuLink>
-					</Link>
+						</Link>
+					</NavigationMenuLink>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
 					<NavigationMenuTrigger>Zakres Usług</NavigationMenuTrigger>
@@ -90,11 +90,11 @@ const NavigationBar = () => {
 					</NavigationMenuContent>
 				</NavigationMenuItem>
 				<NavigationMenuItem>
-					<Link href="/realizacje" legacyBehavior passHref>
-						<NavigationMenuLink className={navigationMenuTriggerStyle()}>
+					<NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+						<Link href="/realizacje">
 							Realizacje
-						</NavigationMenuLink>
-					</Link>
+						</Link>
+					</NavigationMenuLink>
 				</NavigationMenuItem>
 			</NavigationMenuList>
 		</NavigationMenu>

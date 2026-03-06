@@ -8,7 +8,7 @@ export default function NotFound() {
 				<b>404 not found</b>
 			</h1>
 			<h2>Przykro nam, ale strona nie istnieje :(</h2>
-			<Link href='/' passHref legacyBehavior>
+			<Link href='/'>
 				<Button
 					className='my-10 bg-indigo-600 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500'
 					size='lg'
