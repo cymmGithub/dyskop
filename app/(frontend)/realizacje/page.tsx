@@ -13,7 +13,7 @@ export default async function RealizationsPage() {
 	});
 
 	const images = result.docs.map((doc) => ({
-		src: doc.url!,
+		src: `${doc.url}?v=${new Date(doc.updatedAt).getTime()}`,
 		base64: "",
 		alt: doc.alt,
 	}));

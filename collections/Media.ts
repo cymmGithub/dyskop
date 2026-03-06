@@ -1,7 +1,16 @@
 import type { CollectionConfig } from 'payload'
+import { revalidatePath } from 'next/cache'
+
+const revalidateRealizacje = () => {
+  revalidatePath('/realizacje')
+}
 
 export const Media: CollectionConfig = {
   slug: 'media',
+  hooks: {
+    afterChange: [revalidateRealizacje],
+    afterDelete: [revalidateRealizacje],
+  },
   access: {
     read: () => true,
     create: ({ req: { user } }) => Boolean(user),
