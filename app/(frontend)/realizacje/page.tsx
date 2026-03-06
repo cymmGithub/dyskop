@@ -2,8 +2,6 @@ import { getPayload } from "payload";
 import config from "@payload-config";
 import Gallery from "./gallery";
 
-export const dynamic = "force-dynamic";
-
 export default async function RealizationsPage() {
 	const payload = await getPayload({ config });
 	const result = await payload.find({

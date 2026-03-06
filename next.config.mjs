@@ -9,6 +9,8 @@ const nextConfig = {
 				hostname: "*.public.blob.vercel-storage.com",
 			},
 		],
+		formats: ["image/avif", "image/webp"],
+		minimumCacheTTL: 2592000,
 	},
 	async redirects() {
 		return [
