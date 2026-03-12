@@ -35,6 +35,7 @@ export default function Gallery({ images }: GalleryProps) {
 	const [currentPage, setCurrentPage] = useState(0);
 	const [isTransitioning, setIsTransitioning] = useState(false);
 	const [hasMounted, setHasMounted] = useState(false);
+	const [loadedImages, setLoadedImages] = useState<Set<string>>(new Set());
 
 	const totalPages = Math.ceil(images.length / IMAGES_PER_PAGE);
 	const startIndex = currentPage * IMAGES_PER_PAGE;
@@ -44,11 +45,16 @@ export default function Gallery({ images }: GalleryProps) {
 		setHasMounted(true);
 	}, []);
 
+	const handleImageLoad = useCallback((src: string) => {
+		setLoadedImages((prev) => new Set(prev).add(src));
+	}, []);
+
 	const changePage = useCallback((newPage: number) => {
 		if (newPage < 0 || newPage >= totalPages || newPage === currentPage) return;
 		setIsTransitioning(true);
 		setTimeout(() => {
 			setCurrentPage(newPage);
+			setLoadedImages(new Set());
 			setIsTransitioning(false);
 		}, 150);
 	}, [totalPages, currentPage]);
@@ -129,6 +135,9 @@ export default function Gallery({ images }: GalleryProps) {
 							>
 								{image && (
 									<>
+										{!loadedImages.has(image.src) && (
+											<div className="absolute inset-0 bg-gray-200 animate-pulse rounded-lg" />
+										)}
 										<Image
 											src={image.src}
 											alt={image.alt || `Zdjęcie z galerii ${startIndex + i + 1}`}
@@ -138,6 +147,7 @@ export default function Gallery({ images }: GalleryProps) {
 											placeholder={image.base64 ? "blur" : "empty"}
 											blurDataURL={image.base64 || undefined}
 											priority={currentPage === 0 && isFeatured}
+											onLoad={() => handleImageLoad(image.src)}
 										/>
 
 										{/* Hover overlay */}
@@ -182,6 +192,9 @@ export default function Gallery({ images }: GalleryProps) {
 							setIsOpen(true);
 						}}
 					>
+						{!loadedImages.has(image.src) && (
+							<div className="absolute inset-0 bg-gray-200 animate-pulse rounded-lg" />
+						)}
 						<Image
 							src={image.src}
 							alt={image.alt || `Zdjęcie z galerii ${i + 1}`}
@@ -190,6 +203,7 @@ export default function Gallery({ images }: GalleryProps) {
 							sizes="48vw"
 							placeholder={image.base64 ? "blur" : "empty"}
 							blurDataURL={image.base64 || undefined}
+							onLoad={() => handleImageLoad(image.src)}
 						/>
 					</div>
 				))}
