@@ -5,7 +5,7 @@ import LayoutWrapper from "../../components/layout-wrapper";
 import StructuredData from "../../components/structured-data";
 import CookieConsentWrapper from "../../components/cookie-consent/cookie-consent-wrapper";
 
-const myFont = localFont({ src: "../../public/fonts/Consolas.ttf" });
+const myFont = localFont({ src: "../../public/fonts/Consolas.ttf", display: "swap" });
 
 export const viewport: Viewport = {
 	width: "device-width",

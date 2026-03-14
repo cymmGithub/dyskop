@@ -34,7 +34,7 @@ export default function Contact() {
 		event.preventDefault();
 		const form = document.getElementById('contact-form') as HTMLFormElement;
 
-		const formData = new FormData(event.target);
+		const formData = new FormData(event.currentTarget);
 		try {
 			setIsPending(true);
 			const response = await fetch('/api/contact-form', {

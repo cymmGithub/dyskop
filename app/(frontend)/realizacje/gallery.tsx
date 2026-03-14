@@ -1,10 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
+import dynamic from "next/dynamic";
 import { useState, useEffect, useCallback } from "react";
 import { Camera, ChevronLeft, ChevronRight } from "lucide-react";
+
+import "yet-another-react-lightbox/styles.css";
+
+const Lightbox = dynamic(() => import("yet-another-react-lightbox"), { ssr: false });
 
 interface GalleryProps {
 	images: {

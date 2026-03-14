@@ -45,7 +45,6 @@ const ListItem = React.forwardRef<
 						width={60}
 						height={40}
 						className="rounded-md object-cover shrink-0"
-						style={{ width: 60, height: 40 }}
 					/>
 				)}
 				<div className="space-y-1 leading-none">

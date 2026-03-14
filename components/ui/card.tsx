@@ -48,6 +48,7 @@ export default function ServiceCards() {
 								src={card.image}
 								alt={card.alt}
 								fill
+								priority
 								className="object-contain transition-transform duration-500 ease-out group-hover:scale-105"
 								sizes="(max-width: 768px) 100vw, 33vw"
 							/>
