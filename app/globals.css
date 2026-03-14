@@ -33,6 +33,13 @@
 		--ring: 222.2 84% 4.9%;
 
 		--radius: 0.5rem;
+
+		--brand: 43 96% 56%;
+		--brand-light: 48 96% 65%;
+		--brand-dark: 38 92% 50%;
+		--brand-text: 32 95% 44%;
+		--brand-hover: 28 80% 52%;
+		--brand-subtle: 48 100% 96%;
 	}
 
 	.dark {
@@ -170,35 +177,6 @@ body {
 	}
 }
 
-@keyframes slideIn {
-	0% {
-		opacity: 0;
-		transform: translateX(-100%);
-	}
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
-}
-
-@keyframes slideUp {
-	0% {
-		opacity: 0;
-		transform: translateY(50px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
-
-.animate-slideIn {
-	animation: slideIn 1s ease-out;
-}
-
-.animate-slideUp {
-	animation: slideUp 1s ease-out;
-}
 
 @keyframes bounce {
 	0%, 100% {

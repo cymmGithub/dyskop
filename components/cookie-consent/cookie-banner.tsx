@@ -84,17 +84,14 @@ export default function CookieBanner() {
 									<div className='flex-shrink-0 w-10 h-10 rounded-lg bg-amber-400/10 border border-amber-400/30 flex items-center justify-center'>
 										<svg
 											className='w-5 h-5 text-amber-400'
-											fill='none'
 											viewBox='0 0 24 24'
-											stroke='currentColor'
+											fill='currentColor'
 											aria-hidden='true'
 										>
-											<path
-												strokeLinecap='round'
-												strokeLinejoin='round'
-												strokeWidth={2}
-												d='M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z'
-											/>
+											<path d='M21.598 11.064a1.006 1.006 0 0 0-.854-.172A2.938 2.938 0 0 1 20 11c-1.654 0-3-1.346-3-3 0-.217.031-.444.099-.716a1.004 1.004 0 0 0-1.29-1.19A3.002 3.002 0 0 1 14 7c-1.654 0-3-1.346-3-3 0-.291.039-.578.117-.86a1.004 1.004 0 0 0-1.21-1.242A9.006 9.006 0 0 0 3 11c0 4.963 4.037 9 9 9s9-4.037 9-9c0-.057-.012-.118-.012-.178a1.012 1.012 0 0 0-.39-.758zM12 18c-3.86 0-7-3.14-7-7 0-3.14 2.07-5.79 4.91-6.71A5.022 5.022 0 0 0 14 8c.34 0 .68-.04 1.01-.11A4.978 4.978 0 0 0 18.5 12c.34 0 .68-.03 1.01-.1C18.78 15.14 15.7 18 12 18z' />
+											<circle cx='8.5' cy='12.5' r='1.5' />
+											<circle cx='10.5' cy='16' r='1' />
+											<circle cx='13' cy='13.5' r='1' />
 										</svg>
 									</div>
 									<h2

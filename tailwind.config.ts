@@ -18,6 +18,11 @@ const config: Config = {
     extend: {
       fontSize: {
         'tiny': '0.85rem',
+        'fluid-sm': 'clamp(0.875rem, 0.8rem + 0.25vw, 1rem)',
+        'fluid-base': 'clamp(1rem, 0.9rem + 0.35vw, 1.125rem)',
+        'fluid-lg': 'clamp(1.125rem, 1rem + 0.5vw, 1.5rem)',
+        'fluid-xl': 'clamp(1.25rem, 1rem + 1vw, 1.75rem)',
+        'fluid-2xl': 'clamp(1.5rem, 1.1rem + 1.5vw, 2.25rem)',
       },
       colors: {
         border: "hsl(var(--border))",
@@ -53,6 +58,14 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        brand: {
+          DEFAULT: "hsl(var(--brand))",
+          light: "hsl(var(--brand-light))",
+          dark: "hsl(var(--brand-dark))",
+          text: "hsl(var(--brand-text))",
+          hover: "hsl(var(--brand-hover))",
+          subtle: "hsl(var(--brand-subtle))",
+        },
       },
       gridTemplateColumns: {
         'gallery': 'repeat(1, 1fr)',
@@ -84,7 +97,7 @@ const config: Config = {
         },
         "slideUp": {
           "0%": {
-            transform: "translateY(30px)",
+            transform: "translateY(50px)",
             opacity: "0"
           },
           "100%": {
@@ -101,7 +114,7 @@ const config: Config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "slide-up": "slide-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards",
-        "slideUp": "slideUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+        "slideUp": "slideUp 1s ease-out forwards",
         "fade-in": "fade-in 0.4s ease-in-out forwards"
       },
     },
