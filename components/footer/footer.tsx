@@ -25,7 +25,7 @@ const Footer = () => {
 			</div>
 			<div className="footer_bottom">
 				<div className="container">
-					<address className="not-italic flex justify-center items-center gap-x-4 gap-y-1 flex-wrap text-sm text-[#7f88a6]">
+					<address className="not-italic flex justify-center items-center gap-x-4 gap-y-1 flex-wrap text-sm text-[#6b7280]">
 						<span>© {currentYear} <Link href="/" className="hover:text-amber-500 transition-colors">Dys-Kop</Link></span>
 						<span className="hidden sm:inline text-[#d1d5db]" aria-hidden="true">·</span>
 						<a href="tel:+48506502709" className="hidden sm:inline hover:text-amber-500 transition-colors">506 502 709</a>

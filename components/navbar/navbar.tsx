@@ -21,14 +21,13 @@ const Navbar = () => {
 						</div>
 						<div className="flex-1 flex justify-end items-center gap-3 sm:gap-4">
 							<SocialButtons />
-							<Link href="/kontakt">
-								<Button
-									className="hidden lg:flex shadow-2xl text-sm font-bold bg-amber-400 hover:bg-amber-300 px-10"
-									size="default"
-								>
-									<span>KONTAKT</span>
-								</Button>
-							</Link>
+							<Button
+								asChild
+								className="hidden lg:flex shadow-2xl text-sm font-bold bg-amber-400 hover:bg-amber-300 px-10"
+								size="default"
+							>
+								<Link href="/kontakt">KONTAKT</Link>
+							</Button>
 							<Burger />
 						</div>
 					</div>

@@ -3,7 +3,7 @@
 import { ToastContainer } from 'react-toastify';
 import Navbar from './navbar/navbar';
 import Footer from './footer/footer';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import LoadingSpinner from './ui/loading-spinner';
 import ToastProvider from './toast-provider/ToastProvider';
 import type { NextFont } from 'next/dist/compiled/@next/font';
@@ -17,29 +17,37 @@ interface ClientLayoutProps {
 export default function ClientLayout({ children, myFont }: ClientLayoutProps) {
   const [isLoading, setIsLoading] = useState(true);
 
+  const handleLoad = useCallback(() => setIsLoading(false), []);
+
   useEffect(() => {
     if (document.readyState === 'complete') {
       setIsLoading(false);
     } else {
-      window.addEventListener('load', () => setIsLoading(false));
-      return () => window.removeEventListener('load', () => setIsLoading(false));
+      window.addEventListener('load', handleLoad);
+      return () => window.removeEventListener('load', handleLoad);
     }
-  }, []);
+  }, [handleLoad]);
 
   if (isLoading) return <LoadingSpinner />;
 
   return (
     <div className="h-screen overflow-hidden">
-      <main
+      <div
         className={`${myFont.className} md:container mx-auto h-screen flex flex-col`}
       >
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:bg-amber-400 focus:text-gray-900 focus:font-bold focus:rounded-md focus:text-sm"
+        >
+          Przejdź do treści
+        </a>
         <ToastContainer />
         <Navbar />
-        <div className='flex-1 min-h-0 overflow-y-auto xl:overflow-hidden'>
+        <div id="main-content" className='flex-1 min-h-0 overflow-y-auto xl:overflow-hidden'>
           <ToastProvider>{children}</ToastProvider>
         </div>
         <Footer />
-      </main>
+      </div>
     </div>
   );
 }
