@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { HiArrowRight } from "react-icons/hi";
 import TractorSpecsPopover from "@/components/tractor-specs-popover";
-import { H1, H2, Span } from '@/components/ui/text';
+import { H1, H2, H3, Span } from '@/components/ui/text';
 
 const attachments = [
 	{
@@ -143,9 +143,9 @@ export default function UslugiMinitraktorem() {
 
 									{/* Title row */}
 									<div className='flex items-center justify-between gap-2 px-3 py-2 border-b border-gray-100'>
-										<h3 className='font-bold text-xs text-gray-800 transition-colors duration-500 ease-out group-hover:text-amber-600'>
+										<H3 className='font-bold text-xs text-gray-800 transition-colors duration-500 ease-out group-hover:text-amber-600'>
 											{attachment.title}:
-										</h3>
+										</H3>
 										<HiArrowRight className='text-gray-300 text-xs transition-all duration-500 ease-out group-hover:text-amber-500 group-hover:translate-x-1' />
 									</div>
 

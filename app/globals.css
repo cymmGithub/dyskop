@@ -80,7 +80,7 @@
 }
 
 body {
-	background: #ffffff00;
+	background: transparent;
 }
 
 
@@ -112,7 +112,7 @@ body {
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 20px;
-	color: #6b7280;
+	color: hsl(var(--muted-foreground));
 	padding: 10px 0px;
 }
 

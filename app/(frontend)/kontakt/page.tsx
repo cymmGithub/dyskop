@@ -30,7 +30,7 @@ export default function Contact() {
 			theme: 'light',
 		});
 
-	const handleSubmit = async (event: any) => {
+	const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
 		const form = document.getElementById('contact-form') as HTMLFormElement;
 
@@ -49,8 +49,7 @@ export default function Contact() {
 				notify(responseData.message, Toasts.success);
 				form.reset();
 			}
-		} catch (err: any) {
-			console.error(err);
+		} catch {
 			setIsPending(false);
 
 			notify(
@@ -91,7 +90,7 @@ export default function Contact() {
 									name='name'
 									id='name'
 									autoComplete='given-name'
-									className='w-full rounded-md border border-gray-300 px-2.5 sm:px-3 py-1.5 sm:py-2 text-gray-900 placeholder:text-gray-400 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 text-sm sm:text-base'
+									className='w-full rounded-md border border-gray-300 px-2.5 sm:px-3 py-1.5 sm:py-2 text-gray-900 placeholder:text-gray-400 focus:border-brand focus:ring-1 focus:ring-brand text-sm sm:text-base'
 								/>
 							</div>
 
@@ -107,7 +106,7 @@ export default function Contact() {
 									country='PL'
 									value={valueE}
 									onChange={setValueE}
-									className='w-full rounded-md border border-gray-300 px-2.5 sm:px-3 py-1.5 sm:py-2 text-gray-900 placeholder:text-gray-400 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 text-sm sm:text-base'
+									className='w-full rounded-md border border-gray-300 px-2.5 sm:px-3 py-1.5 sm:py-2 text-gray-900 placeholder:text-gray-400 focus:border-brand focus:ring-1 focus:ring-brand text-sm sm:text-base'
 								/>
 							</div>
 
@@ -124,7 +123,7 @@ export default function Contact() {
 									name='email'
 									id='email'
 									autoComplete='email'
-									className='w-full rounded-md border border-gray-300 px-2.5 sm:px-3 py-1.5 sm:py-2 text-gray-900 placeholder:text-gray-400 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 text-sm sm:text-base'
+									className='w-full rounded-md border border-gray-300 px-2.5 sm:px-3 py-1.5 sm:py-2 text-gray-900 placeholder:text-gray-400 focus:border-brand focus:ring-1 focus:ring-brand text-sm sm:text-base'
 								/>
 							</div>
 
@@ -140,8 +139,7 @@ export default function Contact() {
 									name='message'
 									id='message'
 									rows={3}
-									className='w-full rounded-md border border-gray-300 px-2.5 sm:px-3 py-1.5 sm:py-2 text-gray-900 placeholder:text-gray-400 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 text-sm sm:text-base max-h-[230px] overflow-y-auto resize-y'
-									defaultValue={''}
+									className='w-full rounded-md border border-gray-300 px-2.5 sm:px-3 py-1.5 sm:py-2 text-gray-900 placeholder:text-gray-400 focus:border-brand focus:ring-1 focus:ring-brand text-sm sm:text-base max-h-[230px] overflow-y-auto resize-y'
 								/>
 							</div>
 
@@ -156,7 +154,7 @@ export default function Contact() {
 
 						<button
 							type='submit'
-							className='w-full rounded-md bg-indigo-600 px-2.5 sm:px-3 py-2 sm:py-2.5 text-sm sm:text-base font-semibold text-white shadow-sm hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 transition-colors duration-200 relative'
+							className='w-full rounded-md bg-gray-900 px-2.5 sm:px-3 py-2 sm:py-2.5 text-sm sm:text-base font-semibold text-white shadow-sm hover:bg-brand focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 transition-colors duration-200 relative'
 							disabled={isPending}
 						>
 							<span className={isPending ? 'invisible' : ''}>Wyślij</span>

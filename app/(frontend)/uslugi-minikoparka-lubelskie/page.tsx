@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { FaMapMarkerAlt } from 'react-icons/fa';
-import { H1, H2, Span } from '@/components/ui/text';
+import { H1, H2, H3, Span } from '@/components/ui/text';
 
 
 const services = [
@@ -121,9 +121,9 @@ export default function Services() {
 
 							{/* Title row */}
 							<div className='flex items-center justify-between gap-2 px-4 py-2.5 border-b border-gray-100'>
-								<h3 className='font-bold text-sm text-gray-800'>
+								<H3 className='font-bold text-sm text-gray-800'>
 									{service.title}:
-								</h3>
+								</H3>
 							</div>
 
 							{/* Service list */}

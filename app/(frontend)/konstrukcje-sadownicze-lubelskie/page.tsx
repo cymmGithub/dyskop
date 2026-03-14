@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { H2, P } from "@/components/ui/text";
+import { H1, H2, H3, P, Span } from "@/components/ui/text";
 
 const scopeItems = [
 	{
@@ -34,12 +34,12 @@ export default function KonstrukcjeSadownicze() {
 						style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
 					>
 						<div className='border-l-4 border-amber-500 pl-5'>
-							<h1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
+							<H1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
 								Konstrukcje sadownicze
-								<span className='block text-amber-500 text-base sm:text-lg md:text-xl mt-1 font-semibold tracking-normal'>
+								<Span className='block text-amber-500 text-base sm:text-lg md:text-xl mt-1 font-semibold tracking-normal'>
 									wiercenie otworów i&nbsp;montaż słupów — Woj.&nbsp;lubelskie
-								</span>
-							</h1>
+								</Span>
+							</H1>
 							<P className='mt-2 text-sm leading-snug text-gray-600 max-w-lg'>
 								Specjalizujemy się w precyzyjnym wierceniu otworów pod słupy
 								sadownicze oraz montażu słupów betonowych i drewnianych przy
@@ -80,9 +80,9 @@ export default function KonstrukcjeSadownicze() {
 									className='relative bg-white/70 backdrop-blur-sm rounded-lg border border-gray-200 px-3 py-2'
 								>
 									<div className='absolute top-0 left-0 w-8 h-0.5 bg-amber-400 rounded-full' />
-									<h3 className='text-xs md:text-sm font-bold text-gray-800'>
+									<H3 className='text-xs md:text-sm font-bold text-gray-800'>
 										{item.title}
-									</h3>
+									</H3>
 									<p className='text-xs text-gray-500 mt-0.5 leading-snug'>
 										{item.desc}
 									</p>

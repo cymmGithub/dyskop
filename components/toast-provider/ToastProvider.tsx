@@ -10,12 +10,12 @@ interface ToastProviderProps {
 
 export default function ToastProvider({ children }: ToastProviderProps) {
   const contextClass = {
-    success: "bg-indigo-600",
+    success: "bg-green-600",
     error: "bg-red-600",
     info: "bg-gray-600",
     warning: "bg-orange-400",
-    default: "bg-indigo-600",
-    dark: "bg-white-600 font-gray-300",
+    default: "bg-gray-900",
+    dark: "bg-gray-800 text-gray-300",
   };
 
   return (

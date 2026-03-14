@@ -8,6 +8,7 @@ import {
 	SheetContent,
 	SheetDescription,
 	SheetHeader,
+	SheetTitle,
 	SheetTrigger,
 } from '@/components/ui/sheet';
 import Link from 'next/link';
@@ -36,7 +37,8 @@ const Burger = () => {
 				</SheetTrigger>
 				<SheetContent className='flex flex-col'>
 					<SheetHeader className='text-left flex-1'>
-						<SheetDescription>
+						<SheetTitle className='sr-only'>Menu nawigacji</SheetTitle>
+						<SheetDescription asChild className='text-lg text-black'>
 							<div className={`flex flex-col space-y-4 items-start w-full text-lg text-black mt-10 ${font.className}`}>
 								<SheetClose asChild>
 									<Link href='/o-nas'>O Nas</Link>

@@ -3,7 +3,7 @@
 import { useState, useCallback } from 'react';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
-import { H1, H2, P, Span } from '@/components/ui/text';
+import { H1, H2, H3, P, Span } from '@/components/ui/text';
 
 const scopeItems = [
 	{ title: 'Zakładanie trawników', desc: 'idealnie przygotowuje podłoże, usuwając stare darnie, chwasty i kamienie, co pozwala na siew od razu po przejeździe maszyny' },
@@ -84,9 +84,9 @@ export default function GlebogryzarkaSeparacyjna() {
 									className='relative bg-white/70 backdrop-blur-sm rounded-lg border border-gray-200 px-3 py-2'
 								>
 									<div className='absolute top-0 left-0 w-8 h-0.5 bg-amber-400 rounded-full' />
-									<h3 className='text-xs md:text-sm font-bold text-gray-800'>
+									<H3 className='text-xs md:text-sm font-bold text-gray-800'>
 										{item.title}
-									</h3>
+									</H3>
 									<p className='text-xs text-gray-500 mt-0.5 leading-snug'>{item.desc}</p>
 								</div>
 							))}

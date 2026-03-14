@@ -37,7 +37,7 @@ export default function EquipmentSpecsPopover() {
 					</li>
 				</ul>
 				<b>
-					Maszyna ma fukncje pływającego lemiesza (niespotykaną w innych
+					Maszyna ma funkcję pływającego lemiesza (niespotykaną w innych
 					minikoparkach).
 				</b>
 				System automatycznie w czasie jazdy koryguje jego pozycję,
