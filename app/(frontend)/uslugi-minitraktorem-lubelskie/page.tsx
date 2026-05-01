@@ -46,10 +46,7 @@ export default function UslugiMinitraktorem() {
 			<div className='relative z-10 container mx-auto px-5 sm:px-10 pt-20 md:pt-24 pb-4 min-h-screen flex flex-col'>
 				<div className='grid grid-cols-1 md:grid-cols-5 md:grid-rows-[auto_1fr] gap-x-8 gap-y-4 md:gap-y-4 flex-1 mt-8 [&_p]:text-left'>
 					{/* Row 1, Left: headline + intro */}
-					<div
-						className='md:col-span-3 flex flex-col justify-center border-l-4 border-amber-500 pl-5 order-1 md:order-none [&_p]:text-left opacity-0 animate-slideUp'
-						style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
-					>
+					<div className='md:col-span-3 flex flex-col justify-center border-l-4 border-amber-500 pl-5 order-1 md:order-none [&_p]:text-left'>
 						<H1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
 							Usługi minitraktorem
 							<Span className='block text-amber-500 text-base sm:text-lg md:text-xl mt-1 font-semibold tracking-normal'>
@@ -67,10 +64,7 @@ export default function UslugiMinitraktorem() {
 						</p>
 
 						{/* Row 2, Right: coverage area */}
-						<div
-							className='md:col-span-2 flex flex-col justify-start order-3 md:order-none opacity-0 animate-slideUp'
-							style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}
-						>
+						<div className='md:col-span-2 flex flex-col justify-start order-3 md:order-none'>
 							<H2 className='flex items-center gap-2 text-sm font-semibold text-gray-900 mb-2 mt-2'>
 								<FaMapMarkerAlt className='text-amber-500 text-xs' />
 								Gdzie realizujemy usługi minitraktorem?
@@ -91,10 +85,7 @@ export default function UslugiMinitraktorem() {
 					</div>
 
 					{/* Row 1, Right: Farmtrac image */}
-					<div
-						className='md:col-span-2 relative flex items-end justify-center order-2 md:order-none opacity-0 animate-slideUp'
-						style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
-					>
+					<div className='md:col-span-2 relative flex items-end justify-center order-2 md:order-none'>
 						<Image
 							src='/img/minitraktor-farmtrac-26-pro.png'
 							alt='Minitraktor Farmtrac 26 PRO — usługi minitraktorem Lublin i okolice'
@@ -110,10 +101,7 @@ export default function UslugiMinitraktorem() {
 
 					{/* Row 2: attachment cards spanning full width */}
 					<div className='md:col-span-5 order-4 md:order-none'>
-						<h2
-							className='text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2 opacity-0 animate-slideUp'
-							style={{ animationDelay: "0.1s", animationFillMode: "forwards" }}
-						>
+						<h2 className='text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2'>
 							Osprzęt:
 						</h2>
 						<div className='grid grid-cols-2 xl:grid-cols-4 gap-3 grid-rows-[repeat(auto-fill,auto)]'>

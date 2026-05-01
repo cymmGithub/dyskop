@@ -61,10 +61,7 @@ export default function Services() {
 			<div className='sketchy-bg absolute inset-0 opacity-30 pointer-events-none' />
 			<div className='relative z-10 container mx-auto px-5 sm:px-10'>
 				{/* Section 1: Hero + Coverage side by side */}
-				<section
-					className='flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-8 mb-5 md:mb-6 opacity-0 animate-slideUp mt-6'
-					style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}
-				>
+				<section className='flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-8 mb-5 md:mb-6 mt-6'>
 					{/* Left — Hero */}
 					<div className='border-l-4 border-amber-500 pl-6 md:flex-1'>
 						<H1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>

@@ -36,10 +36,7 @@ export default function OrkaDzialek() {
 				{/* Z-pattern grid — stacks on mobile, 5-col on desktop */}
 				<div className='grid grid-cols-1 md:grid-cols-5 md:grid-rows-[auto_1fr] gap-x-8 gap-y-4 md:gap-y-4 flex-1 mt-12 [&_p]:text-left'>
 					{/* Row 1, Left: headline + intro */}
-					<div
-						className='md:col-span-3 flex flex-col justify-center order-1 md:order-none [&_p]:text-left opacity-0 animate-slideUp'
-						style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
-					>
+					<div className='md:col-span-3 flex flex-col justify-center order-1 md:order-none [&_p]:text-left'>
 						<div className='border-l-4 border-amber-500 pl-5'>
 							<H1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
 								Orka działek pługiem
@@ -68,10 +65,7 @@ export default function OrkaDzialek() {
 					</div>
 
 					{/* Row 1, Right: equipment hero image */}
-					<div
-						className='md:col-span-2 flex items-end justify-center order-2 md:order-none opacity-0 animate-slideUp'
-						style={{ animationDelay: "0.3s", animationFillMode: "forwards" }}
-					>
+					<div className='md:col-span-2 flex items-end justify-center order-2 md:order-none'>
 						<Image
 							src='/img/minitraktor-plug-dwuskibowy-orka-lublin.png'
 							alt='Minitraktor z pługiem dwuskibowym — orka działek Lublin'
@@ -83,10 +77,7 @@ export default function OrkaDzialek() {
 					</div>
 
 					{/* Row 2, Left: scope of work 2x2 cards */}
-					<div
-						className='md:col-span-3 order-4 md:order-none opacity-0 animate-slideUp'
-						style={{ animationDelay: "0.45s", animationFillMode: "forwards" }}
-					>
+					<div className='md:col-span-3 order-4 md:order-none'>
 						<H2 className='text-xs font-semibold text-gray-400 uppercase tracking-widest mb-2'>
 							Zastosowanie:
 						</H2>
@@ -118,10 +109,7 @@ export default function OrkaDzialek() {
 					</div>
 
 					{/* Row 2, Right: single gallery image */}
-					<div
-						className='md:col-span-2 flex items-start justify-center order-3 md:order-none opacity-0 animate-slideUp'
-						style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}
-					>
+					<div className='md:col-span-2 flex items-start justify-center order-3 md:order-none'>
 						<div className='w-full max-w-[340px]'>
 							<button
 								onClick={() => setLightbox(true)}

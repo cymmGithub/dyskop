@@ -15,10 +15,7 @@ export default function AboutUs() {
 		<main className='relative overflow-x-hidden pt-20 md:pt-28 pb-4 md:pb-36'>
 			<div className='sketchy-bg absolute inset-0 opacity-30 pointer-events-none' />
 			<div className='relative z-10 container mx-auto px-5 sm:px-10'>
-				<div
-					className='flex flex-col items-start md:flex-row md:items-center gap-6 md:gap-8 mt-2 md:mt-4 opacity-0 animate-slideUp'
-					style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}
-				>
+				<div className='flex flex-col items-start md:flex-row md:items-center gap-6 md:gap-8 mt-2 md:mt-4'>
 					{/* LEFT — Text content */}
 					<div className='w-full md:w-1/2 border-l-4 border-amber-500 pl-5 [&_p]:text-left'>
 						<H1 className='text-2xl sm:text-3xl font-bold text-gray-900 leading-tight tracking-tight'>
@@ -71,10 +68,7 @@ export default function AboutUs() {
 					</div>
 
 					{/* RIGHT — Equipment showcase */}
-					<div
-						className='w-full md:w-1/2 relative flex flex-col items-center md:self-start md:mt-12 opacity-0 animate-slideUp'
-						style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
-					>
+					<div className='w-full md:w-1/2 relative flex flex-col items-center md:self-start md:mt-12'>
 						<div className='relative'>
 							<Image
 								src='/img/minikoparka-caterpillar-301-wiertnica-digga.png'
