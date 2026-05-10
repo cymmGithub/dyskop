@@ -57,7 +57,7 @@ const cardDelays = ['0.2s', '0.4s', '0.6s', '0.8s'];
 
 export default function Services() {
 	return (
-		<main className='relative overflow-x-hidden pt-20 md:pt-28 pb-8 sm:pb-16'>
+		<main className='relative overflow-hidden min-h-screen pt-20 md:pt-28 pb-8 sm:pb-16'>
 			<div className='sketchy-bg absolute inset-0 opacity-30 pointer-events-none' />
 			<div className='relative z-10 container mx-auto px-5 sm:px-10'>
 				{/* Section 1: Hero + Coverage side by side */}

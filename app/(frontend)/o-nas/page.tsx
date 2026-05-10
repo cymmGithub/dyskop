@@ -12,7 +12,7 @@ import { H1, P, Span } from '@/components/ui/text';
 
 export default function AboutUs() {
 	return (
-		<main className='relative overflow-x-hidden pt-20 md:pt-28 pb-4 md:pb-36'>
+		<main className='relative overflow-hidden min-h-screen pt-20 md:pt-28 pb-4 md:pb-36'>
 			<div className='sketchy-bg absolute inset-0 opacity-30 pointer-events-none' />
 			<div className='relative z-10 container mx-auto px-5 sm:px-10'>
 				<div className='flex flex-col items-start md:flex-row md:items-center gap-6 md:gap-8 mt-2 md:mt-4'>
