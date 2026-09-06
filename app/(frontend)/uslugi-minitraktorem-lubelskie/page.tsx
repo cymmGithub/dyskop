@@ -1,9 +1,10 @@
+import ServiceHeading from '@/components/service-heading';
 import Image from "next/image";
 import Link from "next/link";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { HiArrowRight } from "react-icons/hi";
 import TractorSpecsPopover from "@/components/tractor-specs-popover";
-import { H1, H2, H3, Span } from '@/components/ui/text';
+import { H2, H3 } from '@/components/ui/text';
 
 const attachments = [
 	{
@@ -43,16 +44,11 @@ export default function UslugiMinitraktorem() {
 		<main className='relative overflow-hidden min-h-screen'>
 			<div className='sketchy-bg absolute inset-0 opacity-30 pointer-events-none' />
 
-			<div className='relative z-10 container mx-auto px-5 sm:px-10 pt-20 md:pt-24 pb-4 min-h-screen flex flex-col'>
-				<div className='grid grid-cols-1 md:grid-cols-5 md:grid-rows-[auto_1fr] gap-x-8 gap-y-4 md:gap-y-4 flex-1 mt-8 [&_p]:text-left'>
+			<div className='relative z-10 container mx-auto px-5 sm:px-10 pt-24 md:pt-36 pb-8 min-h-screen flex flex-col'>
+				<div className='grid grid-cols-1 md:grid-cols-5 md:grid-rows-[auto_1fr] gap-x-8 gap-y-4 md:gap-y-4 flex-1 [&_p]:text-left'>
 					{/* Row 1, Left: headline + intro */}
-					<div className='md:col-span-3 flex flex-col justify-center border-l-4 border-amber-500 pl-5 order-1 md:order-none [&_p]:text-left'>
-						<H1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
-							Usługi minitraktorem
-							<Span className='block text-amber-500 text-base sm:text-lg md:text-xl mt-1 font-semibold tracking-normal'>
-								powiat lubelski i okolice
-							</Span>
-						</H1>
+					<div className='md:col-span-3 flex flex-col justify-start border-l-4 border-amber-500 pl-5 order-1 md:order-none [&_p]:text-left'>
+						<ServiceHeading title="Usługi minitraktorem" subtitle="powiat lubelski i okolice" />
 						<p className='mt-2 text-sm leading-snug text-gray-600 max-w-lg'>
 							Oferujemy profesjonalne usługi minitraktorem wykonywane
 							kompaktowym ciągnikiem o&nbsp;mocy{" "}

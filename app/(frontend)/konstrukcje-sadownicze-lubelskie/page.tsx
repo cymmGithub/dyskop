@@ -1,5 +1,6 @@
+import ServiceHeading from '@/components/service-heading';
 import Image from "next/image";
-import { H1, H2, H3, P, Span } from "@/components/ui/text";
+import { H2, H3, P } from "@/components/ui/text";
 
 const scopeItems = [
 	{
@@ -25,18 +26,13 @@ export default function KonstrukcjeSadownicze() {
 		<main className='relative overflow-hidden min-h-screen'>
 			<div className='sketchy-bg absolute inset-0 opacity-30 pointer-events-none' />
 
-			<div className='relative z-10 container mx-auto px-5 sm:px-10 pt-20 md:pt-24 pb-4 min-h-screen flex flex-col'>
+			<div className='relative z-10 container mx-auto px-5 sm:px-10 pt-24 md:pt-36 pb-8 min-h-screen flex flex-col'>
 				{/* Z-pattern grid — stacks on mobile, 5-col on desktop */}
-				<div className='grid grid-cols-1 md:grid-cols-5 md:grid-rows-[auto_1fr] gap-x-8 gap-y-4 md:gap-y-4 flex-1 mt-12 [&_p]:text-left'>
+				<div className='grid grid-cols-1 md:grid-cols-5 md:grid-rows-[auto_1fr] gap-x-8 gap-y-4 md:gap-y-4 flex-1 [&_p]:text-left'>
 					{/* Row 1, Left: headline + intro */}
-					<div className='md:col-span-3 flex flex-col justify-center order-1 md:order-none [&_p]:text-left'>
+					<div className='md:col-span-3 flex flex-col justify-start order-1 md:order-none [&_p]:text-left'>
 						<div className='border-l-4 border-amber-500 pl-5'>
-							<H1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight'>
-								Konstrukcje sadownicze
-								<Span className='block text-amber-500 text-base sm:text-lg md:text-xl mt-1 font-semibold tracking-normal'>
-									wiercenie otworów i&nbsp;montaż słupów — Woj.&nbsp;lubelskie
-								</Span>
-							</H1>
+							<ServiceHeading title="Konstrukcje sadownicze" subtitle="wiercenie otworów i&nbsp;montaż słupów — Woj.&nbsp;lubelskie" />
 							<P className='mt-2 text-sm leading-snug text-gray-600 max-w-lg'>
 								Specjalizujemy się w precyzyjnym wierceniu otworów pod słupy
 								sadownicze oraz montażu słupów betonowych i drewnianych przy
