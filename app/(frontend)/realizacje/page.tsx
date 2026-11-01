@@ -3,7 +3,7 @@ import config from "@payload-config";
 import Gallery from "./gallery";
 
 export default async function RealizationsPage() {
-	let images: { src: string; base64: string; alt: string }[] = [];
+	let images: { src: string; base64: string; alt: string; width?: number; height?: number }[] = [];
 
 	try {
 		const payload = await getPayload({ config });
@@ -17,6 +17,8 @@ export default async function RealizationsPage() {
 			src: `${doc.url}?v=${new Date(doc.updatedAt).getTime()}`,
 			base64: "",
 			alt: doc.alt,
+			width: doc.width ?? undefined,
+			height: doc.height ?? undefined,
 		}));
 	} catch {
 		// Payload/database unavailable — render empty gallery

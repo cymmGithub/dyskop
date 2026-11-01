@@ -14,10 +14,18 @@ interface GalleryProps {
 		src: string;
 		base64: string;
 		alt?: string;
+		width?: number;
+		height?: number;
 	}[];
 }
 
 const IMAGES_PER_PAGE = 8;
+
+// Must be values from Next's default images.deviceSizes, or /_next/image rejects them.
+const LIGHTBOX_WIDTHS = [640, 1080, 1920];
+
+const optimizedUrl = (src: string, width: number) =>
+	`/_next/image?url=${encodeURIComponent(src)}&w=${width}&q=75`;
 
 const GRID_AREAS = ["a", "b", "c", "d", "e", "f", "g", "h"] as const;
 
@@ -216,8 +224,18 @@ export default function Gallery({ images }: GalleryProps) {
 				open={isOpen}
 				close={() => setIsOpen(false)}
 				index={photoIndex}
-				slides={images.map((img) => ({
-					src: img.src,
+				slides={images.map(({ src, width, height }) => ({
+					src: optimizedUrl(src, 1920),
+					width,
+					height,
+					srcSet:
+						width && height
+							? LIGHTBOX_WIDTHS.map((w) => ({
+									src: optimizedUrl(src, w),
+									width: w,
+									height: Math.round((height * w) / width),
+								}))
+							: undefined,
 				}))}
 			/>
 		</section>
