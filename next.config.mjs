@@ -19,6 +19,12 @@ const nextConfig = {
 				destination: "/uslugi-minikoparka-lubelskie",
 				permanent: true,
 			},
+			{
+				// Legacy Payload file-proxy URLs; media is now served directly from Blob.
+				source: "/api/media/file/:file",
+				destination: "https://pj6je9pcrv1w181y.public.blob.vercel-storage.com/:file",
+				permanent: true,
+			},
 		];
 	},
 };
